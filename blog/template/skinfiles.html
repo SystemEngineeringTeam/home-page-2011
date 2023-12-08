@@ -1,0 +1,50 @@
+{BLOGN_INFORMATION}
+<div class="blogn_main">
+<form action="./admin.php?mode=skinfile&amp;action=post" enctype="multipart/form-data" method="post">
+<div class="blogn_bar">画像追加</div>
+<table class="blogn_user_list">
+<tr>
+<td>
+<div style="padding:2px;"><input type="file" name="blogn_upload_file[0]" accept="image/jpeg,image/gif,image/png" size="40"></div>
+<div style="padding:2px;"><input type="file" name="blogn_upload_file[1]" accept="image/jpeg,image/gif,image/png" size="40"></div>
+<div style="padding:2px;"><input type="file" name="blogn_upload_file[2]" accept="image/jpeg,image/gif,image/png" size="40"></div>
+<div style="padding:2px;"><input type="file" name="blogn_upload_file[3]" accept="image/jpeg,image/gif,image/png" size="40"></div>
+<div style="padding:2px;"><input type="file" name="blogn_upload_file[4]" accept="image/jpeg,image/gif,image/png" size="40"></div>
+</td>
+<td>
+<div style="padding:2px;"><input type="file" name="blogn_upload_file[5]" accept="image/jpeg,image/gif,image/png" size="40"></div>
+<div style="padding:2px;"><input type="file" name="blogn_upload_file[6]" accept="image/jpeg,image/gif,image/png" size="40"></div>
+<div style="padding:2px;"><input type="file" name="blogn_upload_file[7]" accept="image/jpeg,image/gif,image/png" size="40"></div>
+<div style="padding:2px;"><input type="file" name="blogn_upload_file[8]" accept="image/jpeg,image/gif,image/png" size="40"></div>
+<div style="padding:2px;"><input type="file" name="blogn_upload_file[9]" accept="image/jpeg,image/gif,image/png" size="40"></div>
+</td>
+</tr>
+</table>
+<div align="right"><input type="reset" value="クリアする"><input type="submit" value="追加する"></div>
+</form>
+<div class="blogn_bar">画像一覧</div>
+<table class="blogn_user_list">
+<tr align="center">
+{BLOGN_SKIN_FILES}
+{BLOGN_SKIN_FILES_LOOP}
+<td>
+<form action="admin.php?mode=skinfile&amp;action=delete" method=post>
+<input type="hidden" name="blogn_file_name" value="{BLOGN_FILE_NAME}">
+<div style="padding:5px;background-color:#dcdcdc;"><a href="{BLOGN_FILE_URL}" target="_blank">{BLOGN_FILE_NAME}</a></div>
+<table>
+	<tr>
+		<td style="height:100px;width:100px;"><div><img src="{BLOGN_FILE_URL}" width="{BLOGN_FILE_WIDTH}" height="{BLOGN_FILE_HEIGHT}" style="border:0px;"></div></td>
+	</tr>
+</table>
+<div>{BLOGN_FILE_SIZE}KB</div>
+<div>{BLOGN_FILE_TIME}</div>
+<input type="image" src="./images/trash.gif" name="submit" alt="削除">
+</form>
+</td>
+{/BLOGN_SKIN_FILES_LOOP}
+{BLOGN_SKIN_FILES_ELSE}
+<td align="center">登録されている画像はありません。</td>
+{/BLOGN_SKIN_FILES}
+</tr></table>
+{BLOGN_PAGE}
+<br><br></div>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+
+  xmlns="http://purl.org/rss/1.0/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xml:lang="ja">
+ <channel rdf:about="http://aitech.ac.jp/set1/wiki/?RecentChanges">
+  <title>S.E.T. OBmembers Page</title>
+  <link>http://aitech.ac.jp/set1/wiki/?RecentChanges</link>
+  <description>PukiWiki RecentChanges</description>
+  <items>
+   <rdf:Seq>
+    <rdf:li rdf:resource="http://aitech.ac.jp/set1/wiki/?TOP" />
+    <rdf:li rdf:resource="http://aitech.ac.jp/set1/wiki/?SandBox" />
+    <rdf:li rdf:resource="http://aitech.ac.jp/set1/wiki/?%C2%B4%B6%C8%C0%B8%CF%A2%CD%ED%A5%DA%A1%BC%A5%B8" />
+    <rdf:li rdf:resource="http://aitech.ac.jp/set1/wiki/?RecentDeleted" />
+    <rdf:li rdf:resource="http://aitech.ac.jp/set1/wiki/?%C2%B4%B6%C8%C0%B8%CF%A2%CD%ED%A5%DA%A1%BC%A5%B8%2F2001%C7%AF%C2%B4%B6%C8%C1%C8" />
+    <rdf:li rdf:resource="http://aitech.ac.jp/set1/wiki/?%C2%B4%B6%C8%C0%B8%CF%A2%CD%ED%A5%DA%A1%BC%A5%B8%2F%B3%D8%C0%D2%C8%D6%B9%E6%A4%AC99" />
+    <rdf:li rdf:resource="http://aitech.ac.jp/set1/wiki/?%CD%BD%C4%EA%C8%C4" />
+    <rdf:li rdf:resource="http://aitech.ac.jp/set1/wiki/?%A4%B4%B0%D5%B8%AB%C8%C4" />
+    <rdf:li rdf:resource="http://aitech.ac.jp/set1/wiki/?WikiEngines" />
+    <rdf:li rdf:resource="http://aitech.ac.jp/set1/wiki/?WikiName" />
+    <rdf:li rdf:resource="http://aitech.ac.jp/set1/wiki/?YukiWiki" />
+    <rdf:li rdf:resource="http://aitech.ac.jp/set1/wiki/?WikiWikiWeb" />
+    <rdf:li rdf:resource="http://aitech.ac.jp/set1/wiki/?lib" />
+    <rdf:li rdf:resource="http://aitech.ac.jp/set1/wiki/?PukiWiki%2F1.4%2FManual%2FPlugin%2FV-Z" />
+    <rdf:li rdf:resource="http://aitech.ac.jp/set1/wiki/?SiteMenu" />
+
+   </rdf:Seq>
+  </items>
+ </channel>
+
+<item rdf:about="http://aitech.ac.jp/set1/wiki/?TOP">
+ <title>TOP</title>
+ <link>http://aitech.ac.jp/set1/wiki/?TOP</link>
+ <dc:date>2007-11-02T17:36:43+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?TOP</dc:identifier>
+
+</item>
+<item rdf:about="http://aitech.ac.jp/set1/wiki/?SandBox">
+ <title>SandBox</title>
+ <link>http://aitech.ac.jp/set1/wiki/?SandBox</link>
+ <dc:date>2007-10-31T16:25:55+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?SandBox</dc:identifier>
+
+</item>
+<item rdf:about="http://aitech.ac.jp/set1/wiki/?%C2%B4%B6%C8%C0%B8%CF%A2%CD%ED%A5%DA%A1%BC%A5%B8">
+ <title>卒業生連絡ページ</title>
+ <link>http://aitech.ac.jp/set1/wiki/?%C2%B4%B6%C8%C0%B8%CF%A2%CD%ED%A5%DA%A1%BC%A5%B8</link>
+ <dc:date>2007-10-29T19:06:45+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?%C2%B4%B6%C8%C0%B8%CF%A2%CD%ED%A5%DA%A1%BC%A5%B8</dc:identifier>
+
+</item>
+<item rdf:about="http://aitech.ac.jp/set1/wiki/?RecentDeleted">
+ <title>RecentDeleted</title>
+ <link>http://aitech.ac.jp/set1/wiki/?RecentDeleted</link>
+ <dc:date>2007-10-29T18:56:57+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?RecentDeleted</dc:identifier>
+
+</item>
+<item rdf:about="http://aitech.ac.jp/set1/wiki/?%C2%B4%B6%C8%C0%B8%CF%A2%CD%ED%A5%DA%A1%BC%A5%B8%2F2001%C7%AF%C2%B4%B6%C8%C1%C8">
+ <title>卒業生連絡ページ/2001年卒業組</title>
+ <link>http://aitech.ac.jp/set1/wiki/?%C2%B4%B6%C8%C0%B8%CF%A2%CD%ED%A5%DA%A1%BC%A5%B8%2F2001%C7%AF%C2%B4%B6%C8%C1%C8</link>
+ <dc:date>2007-10-29T18:56:37+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?%C2%B4%B6%C8%C0%B8%CF%A2%CD%ED%A5%DA%A1%BC%A5%B8%2F2001%C7%AF%C2%B4%B6%C8%C1%C8</dc:identifier>
+
+</item>
+<item rdf:about="http://aitech.ac.jp/set1/wiki/?%C2%B4%B6%C8%C0%B8%CF%A2%CD%ED%A5%DA%A1%BC%A5%B8%2F%B3%D8%C0%D2%C8%D6%B9%E6%A4%AC99">
+ <title>卒業生連絡ページ/学籍番号が99</title>
+ <link>http://aitech.ac.jp/set1/wiki/?%C2%B4%B6%C8%C0%B8%CF%A2%CD%ED%A5%DA%A1%BC%A5%B8%2F%B3%D8%C0%D2%C8%D6%B9%E6%A4%AC99</link>
+ <dc:date>2007-10-29T18:46:09+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?%C2%B4%B6%C8%C0%B8%CF%A2%CD%ED%A5%DA%A1%BC%A5%B8%2F%B3%D8%C0%D2%C8%D6%B9%E6%A4%AC99</dc:identifier>
+
+</item>
+<item rdf:about="http://aitech.ac.jp/set1/wiki/?%CD%BD%C4%EA%C8%C4">
+ <title>予定板</title>
+ <link>http://aitech.ac.jp/set1/wiki/?%CD%BD%C4%EA%C8%C4</link>
+ <dc:date>2007-09-27T14:42:43+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?%CD%BD%C4%EA%C8%C4</dc:identifier>
+
+</item>
+<item rdf:about="http://aitech.ac.jp/set1/wiki/?%A4%B4%B0%D5%B8%AB%C8%C4">
+ <title>ご意見板</title>
+ <link>http://aitech.ac.jp/set1/wiki/?%A4%B4%B0%D5%B8%AB%C8%C4</link>
+ <dc:date>2007-03-12T18:26:45+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?%A4%B4%B0%D5%B8%AB%C8%C4</dc:identifier>
+
+</item>
+<item rdf:about="http://aitech.ac.jp/set1/wiki/?WikiEngines">
+ <title>WikiEngines</title>
+ <link>http://aitech.ac.jp/set1/wiki/?WikiEngines</link>
+ <dc:date>2007-03-12T18:26:44+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?WikiEngines</dc:identifier>
+
+</item>
+<item rdf:about="http://aitech.ac.jp/set1/wiki/?WikiName">
+ <title>WikiName</title>
+ <link>http://aitech.ac.jp/set1/wiki/?WikiName</link>
+ <dc:date>2007-03-12T18:26:44+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?WikiName</dc:identifier>
+
+</item>
+<item rdf:about="http://aitech.ac.jp/set1/wiki/?YukiWiki">
+ <title>YukiWiki</title>
+ <link>http://aitech.ac.jp/set1/wiki/?YukiWiki</link>
+ <dc:date>2007-03-12T18:26:44+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?YukiWiki</dc:identifier>
+
+</item>
+<item rdf:about="http://aitech.ac.jp/set1/wiki/?WikiWikiWeb">
+ <title>WikiWikiWeb</title>
+ <link>http://aitech.ac.jp/set1/wiki/?WikiWikiWeb</link>
+ <dc:date>2007-03-12T18:26:44+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?WikiWikiWeb</dc:identifier>
+
+</item>
+<item rdf:about="http://aitech.ac.jp/set1/wiki/?lib">
+ <title>lib</title>
+ <link>http://aitech.ac.jp/set1/wiki/?lib</link>
+ <dc:date>2007-03-12T18:26:44+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?lib</dc:identifier>
+
+</item>
+<item rdf:about="http://aitech.ac.jp/set1/wiki/?PukiWiki%2F1.4%2FManual%2FPlugin%2FV-Z">
+ <title>PukiWiki/1.4/Manual/Plugin/V-Z</title>
+ <link>http://aitech.ac.jp/set1/wiki/?PukiWiki%2F1.4%2FManual%2FPlugin%2FV-Z</link>
+ <dc:date>2007-03-12T18:26:43+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?PukiWiki%2F1.4%2FManual%2FPlugin%2FV-Z</dc:identifier>
+
+</item>
+<item rdf:about="http://aitech.ac.jp/set1/wiki/?SiteMenu">
+ <title>SiteMenu</title>
+ <link>http://aitech.ac.jp/set1/wiki/?SiteMenu</link>
+ <dc:date>2007-03-12T18:26:43+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?SiteMenu</dc:identifier>
+
+</item>
+
+</rdf:RDF>http://aitech.ac.jp/set1/wiki/?lib</link>
+ <dc:date>2007-03-12T18:26:44+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?lib</dc:identifier>
+
+</item>
+<item rdf:about="http://aitech.ac.jp/set1/wiki/?PukiWiki%2F1.4%2FManual%2FPlugin%2FV-Z">
+ <title>PukiWiki/1.4/Manual/Plugin/V-Z</title>
+ <link>http://aitech.ac.jp/set1/wiki/?PukiWiki%2F1.4%2FManual%2FPlugin%2FV-Z</link>
+ <dc:date>2007-03-12T18:26:43+09:00</dc:date>
+ <dc:identifier>http://aitech.ac.jp/set1/wiki/?PukiWiki%2F1.4%2FManual%2FPlugin%2FV-Z</dc:identifier>

@@ -1,0 +1,56 @@
+<!--SKIN_COMMENT_HEAD_START-->
+<hr>
+■コメント表示
+<hr>
+<!--SKIN_COMMENT_HEAD_END-->
+
+<!--SKIN_COMMENT_START-->
+題名:${ARTICLE_SUBJ}<br>
+投稿者:${ARTICLE_NAME}
+${ARTICLE_TEXT}
+${ARTICLE_MONTH}/${ARTICLE_DAY}-${ARTICLE_HOUR}:${ARTICLE_MINUTE}<br>
+<a href="${INFO_PATH}?mode=edit&amp;no=${ARTICLE_NO}">記事編集・削除</a><br>
+<!--SKIN_COMMENT_END-->
+
+<!--SKIN_COMMENT_FOOT_START-->
+<hr>
+▲<a href="${INFO_PATH}">戻る</a>
+<!--SKIN_COMMENT_FOOT_END-->
+
+<!--SKIN_FORM_START-->
+<hr>
+■${FORM_LABEL}
+<hr>
+<form action="${INFO_PATH}" method="${INFO_METHOD}">
+<input type="hidden" name="admin_user" value="${INFO_USER}">
+<input type="hidden" name="admin_pwd" value="${INFO_PWD}">
+<input type="hidden" name="mode" value="${FORM_MODE}">
+<input type="hidden" name="work" value="${FORM_WORK}">
+<input type="hidden" name="key" value="${FORM_PWD}">
+<input type="hidden" name="no" value="${FORM_NO}">
+<input type="hidden" name="pno" value="${FORM_PNO}">
+<input type="hidden" name="date" value="${FORM_DATE}">
+<input type="hidden" name="subj" value="${FORM_SUBJ}">
+<input type="hidden" name="host" value="${FORM_HOST}">
+名前<br>
+<input type="text" name="name" value="${FORM_NAME}"><br>
+Ｅメール<br>
+<input type="text" name="mail" value="${FORM_MAIL}"><br>
+ＵＲＬ<br>
+<input type="text" name="url" value="${FORM_URL}"><br>
+コメント<br>
+<textarea name="text" cols="14" rows="5">${FORM_TEXT}</textarea><br>
+<!--FORM_PWD_START-->
+削除キー<br>
+<input type="password" name="pwd" size="10" value="${FORM_PWD}"><br>
+<!--FORM_PWD_END-->
+<!--FORM_STAT_START-->
+公開設定<br>
+${FORM_STAT}<br>
+<!--FORM_STAT_END-->
+<br>
+<input type="submit" name="exec_regist" value="投稿する">
+</form>
+<hr>
+▲<a href="${INFO_PATH}">戻る</a>
+<!--SKIN_FORM_END-->

@@ -1,0 +1,54 @@
+<!--SKIN_CONTENTS_START-->
+<div id="form">
+	<h2>ログ検索</h2>
+	<ul>
+		<li>検索キーワードを入力して<em>検索ボタン</em>を押してください。</li>
+		<li>キーワードは<em>半角スペース</em>で区切って複数指定することができます。</li>
+	</ul>
+	<form action="${INFO_PATH}" method="get">
+		<fieldset>
+			<legend>検索フォーム</legend>
+			<input type="hidden" name="mode" value="search" />
+			<dl>
+				<dt>キーワード</dt>
+					<dd><input type="text" name="word" size="30" value="${FORM_WORD}" /></dd>
+				<!--FORM_FIELD_START-->
+				<dt>検索対象</dt>
+					<dd>
+						<select name="field" xml:lang="ja" lang="ja">
+							<option value="">すべて</option>
+							${FORM_FIELD}
+						</select>
+					</dd>
+				<!--FORM_FIELD_END-->
+				<dt>検索条件</dt>
+					<dd>
+						<select name="cond" xml:lang="ja" lang="ja">
+							<option value="and"${FORM_COND_AND}>AND検索</option>
+							<option value="or"${FORM_COND_OR}>OR検索</option>
+						</select>
+					</dd>
+			</dl>
+			<p><input type="submit" value="検索する" /></p>
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_CONTENTS_END-->
+
+<!--SKIN_DIARY_HEAD_START-->
+<div id="contents">
+	<h2>検索結果一覧</h2>
+	<ul>
+		<li>検索結果は以下のとおりです。</li>
+	</ul>
+	<ul>
+<!--SKIN_DIARY_HEAD_END-->
+
+	<!--SKIN_DIARY_START-->
+		<li>${ARTICLE_YEAR}/${ARTICLE_MONTH}/${ARTICLE_DAY} ${ARTICLE_HOUR}:${ARTICLE_MINUTE} ... <a href="${ARTICLE_URL}">${ARTICLE_SUBJ}</a></li>
+	<!--SKIN_DIARY_END-->
+
+<!--SKIN_DIARY_FOOT_START-->
+	</ul>
+</div>
+<!--SKIN_DIARY_FOOT_END-->

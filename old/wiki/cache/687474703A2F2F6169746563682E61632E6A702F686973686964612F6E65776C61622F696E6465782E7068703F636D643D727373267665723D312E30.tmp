@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+
+  xmlns="http://purl.org/rss/1.0/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xml:lang="ja">
+ <channel rdf:about="http://192.168.94.151/newlab/index.php?RecentChanges">
+  <title>PukiWiki</title>
+  <link>http://aitech.ac.jp/hishida/newlab/index.php?RecentChanges</link>
+  <description>PukiWiki RecentChanges</description>
+  <items>
+   <rdf:Seq>
+    <rdf:li rdf:resource="http://192.168.94.151/newlab/index.php?2007%C7%AF%C5%D9%A1%A1%BB%A8%B5%AD%A1%F5%C6%FC%C4%F8%C9%BD" />
+    <rdf:li rdf:resource="http://192.168.94.151/newlab/index.php?%BC%CC%BF%BF%B4%DB" />
+    <rdf:li rdf:resource="http://192.168.94.151/newlab/index.php?Hishida%20Laboratory" />
+    <rdf:li rdf:resource="http://192.168.94.151/newlab/index.php?MenuBar" />
+    <rdf:li rdf:resource="http://192.168.94.151/newlab/index.php?Java%A4%CE%B3%D0%BD%F1" />
+    <rdf:li rdf:resource="http://192.168.94.151/newlab/index.php?RecentDeleted" />
+    <rdf:li rdf:resource="http://192.168.94.151/newlab/index.php?OpenCampus%CD%FA%CE%F2" />
+    <rdf:li rdf:resource="http://192.168.94.151/newlab/index.php?%C6%E0%CE%C9%B7%BC%BB%D6" />
+    <rdf:li rdf:resource="http://192.168.94.151/newlab/index.php?%B8%A6%B5%E6%A5%C6%A1%BC%A5%DE" />
+    <rdf:li rdf:resource="http://192.168.94.151/newlab/index.php?%A5%B3%A5%E1%A5%F3%A5%C8%2F%C6%E0%CE%C9%B7%BC%BB%D6" />
+    <rdf:li rdf:resource="http://192.168.94.151/newlab/index.php?%B5%DC%C2%E5%C2%E7%CA%E5" />
+    <rdf:li rdf:resource="http://192.168.94.151/newlab/index.php?%BE%BE%C5%C4%C0%E8%C6%EE" />
+    <rdf:li rdf:resource="http://192.168.94.151/newlab/index.php?%A3%B2%A3%B0%A3%B0%A3%B7%C7%AF%C5%D9%A4%CE%A5%C6%A1%BC%A5%DE" />
+    <rdf:li rdf:resource="http://192.168.94.151/newlab/index.php?%B2%E1%B5%EE%A4%CE%B8%A6%B5%E6%A5%C6%A1%BC%A5%DE" />
+    <rdf:li rdf:resource="http://192.168.94.151/newlab/index.php?%A5%A4%A1%BC%A5%B5%A5%EA%A5%A2%A5%EB%B8%A6%B5%E6%BD%EA" />
+
+   </rdf:Seq>
+  </items>
+ </channel>
+
+<item rdf:about="http://192.168.94.151/newlab/index.php?2007%C7%AF%C5%D9%A1%A1%BB%A8%B5%AD%A1%F5%C6%FC%C4%F8%C9%BD">
+ <title>2007«Ø≈Ÿ°°ª®µ≠°ı∆¸ƒ¯…Ω</title>
+ <link>http://aitech.ac.jp/hishida/newlab/index.php?2007%C7%AF%C5%D9%A1%A1%BB%A8%B5%AD%A1%F5%C6%FC%C4%F8%C9%BD</link>
+ <dc:date>2007-11-02T15:43:00+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?2007%C7%AF%C5%D9%A1%A1%BB%A8%B5%AD%A1%F5%C6%FC%C4%F8%C9%BD</dc:identifier>
+
+</item>
+<item rdf:about="http://192.168.94.151/newlab/index.php?%BC%CC%BF%BF%B4%DB">
+ <title>ºÃøø¥€</title>
+ <link>http://aitech.ac.jp/hishida/newlab/index.php?%BC%CC%BF%BF%B4%DB</link>
+ <dc:date>2007-10-22T12:24:35+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?%BC%CC%BF%BF%B4%DB</dc:identifier>
+
+</item>
+<item rdf:about="http://192.168.94.151/newlab/index.php?Hishida%20Laboratory">
+ <title>Hishida Laboratory</title>
+ <link>http://aitech.ac.jp/hishida/newlab/index.php?Hishida%20Laboratory</link>
+ <dc:date>2007-10-22T12:14:57+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?Hishida%20Laboratory</dc:identifier>
+
+</item>
+<item rdf:about="http://192.168.94.151/newlab/index.php?MenuBar">
+ <title>MenuBar</title>
+ <link>http://aitech.ac.jp/hishida/newlab/index.php?MenuBar</link>
+ <dc:date>2007-10-05T12:17:46+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?MenuBar</dc:identifier>
+
+</item>
+<item rdf:about="http://192.168.94.151/newlab/index.php?Java%A4%CE%B3%D0%BD%F1">
+ <title>Java§Œ≥–ΩÒ</title>
+ <link>http://aitech.ac.jp/hishida/newlab/index.php?Java%A4%CE%B3%D0%BD%F1</link>
+ <dc:date>2007-10-05T12:15:09+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?Java%A4%CE%B3%D0%BD%F1</dc:identifier>
+
+</item>
+<item rdf:about="http://192.168.94.151/newlab/index.php?RecentDeleted">
+ <title>RecentDeleted</title>
+ <link>http://aitech.ac.jp/hishida/newlab/index.php?RecentDeleted</link>
+ <dc:date>2007-08-23T18:06:39+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?RecentDeleted</dc:identifier>
+
+</item>
+<item rdf:about="http://192.168.94.151/newlab/index.php?OpenCampus%CD%FA%CE%F2">
+ <title>OpenCampusÕ˙ŒÚ</title>
+ <link>http://aitech.ac.jp/hishida/newlab/index.php?OpenCampus%CD%FA%CE%F2</link>
+ <dc:date>2007-08-23T18:05:46+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?OpenCampus%CD%FA%CE%F2</dc:identifier>
+
+</item>
+<item rdf:about="http://192.168.94.151/newlab/index.php?%C6%E0%CE%C9%B7%BC%BB%D6">
+ <title>∆‡Œ…∑ºª÷</title>
+ <link>http://aitech.ac.jp/hishida/newlab/index.php?%C6%E0%CE%C9%B7%BC%BB%D6</link>
+ <dc:date>2007-08-20T15:21:48+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?%C6%E0%CE%C9%B7%BC%BB%D6</dc:identifier>
+
+</item>
+<item rdf:about="http://192.168.94.151/newlab/index.php?%B8%A6%B5%E6%A5%C6%A1%BC%A5%DE">
+ <title>∏¶µÊ•∆°º•ﬁ</title>
+ <link>http://aitech.ac.jp/hishida/newlab/index.php?%B8%A6%B5%E6%A5%C6%A1%BC%A5%DE</link>
+ <dc:date>2007-08-04T01:21:43+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?%B8%A6%B5%E6%A5%C6%A1%BC%A5%DE</dc:identifier>
+
+</item>
+<item rdf:about="http://192.168.94.151/newlab/index.php?%A5%B3%A5%E1%A5%F3%A5%C8%2F%C6%E0%CE%C9%B7%BC%BB%D6">
+ <title>•≥•·•Û•»/∆‡Œ…∑ºª÷</title>
+ <link>http://aitech.ac.jp/hishida/newlab/index.php?%A5%B3%A5%E1%A5%F3%A5%C8%2F%C6%E0%CE%C9%B7%BC%BB%D6</link>
+ <dc:date>2007-07-27T02:11:48+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?%A5%B3%A5%E1%A5%F3%A5%C8%2F%C6%E0%CE%C9%B7%BC%BB%D6</dc:identifier>
+
+</item>
+<item rdf:about="http://192.168.94.151/newlab/index.php?%B5%DC%C2%E5%C2%E7%CA%E5">
+ <title>µ‹¬Â¬Á Â</title>
+ <link>http://aitech.ac.jp/hishida/newlab/index.php?%B5%DC%C2%E5%C2%E7%CA%E5</link>
+ <dc:date>2007-07-26T00:51:09+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?%B5%DC%C2%E5%C2%E7%CA%E5</dc:identifier>
+
+</item>
+<item rdf:about="http://192.168.94.151/newlab/index.php?%BE%BE%C5%C4%C0%E8%C6%EE">
+ <title>ææ≈ƒ¿Ë∆Ó</title>
+ <link>http://aitech.ac.jp/hishida/newlab/index.php?%BE%BE%C5%C4%C0%E8%C6%EE</link>
+ <dc:date>2007-07-12T17:16:02+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?%BE%BE%C5%C4%C0%E8%C6%EE</dc:identifier>
+
+</item>
+<item rdf:about="http://192.168.94.151/newlab/index.php?%A3%B2%A3%B0%A3%B0%A3%B7%C7%AF%C5%D9%A4%CE%A5%C6%A1%BC%A5%DE">
+ <title>£≤£∞£∞£∑«Ø≈Ÿ§Œ•∆°º•ﬁ</title>
+ <link>http://aitech.ac.jp/hishida/newlab/index.php?%A3%B2%A3%B0%A3%B0%A3%B7%C7%AF%C5%D9%A4%CE%A5%C6%A1%BC%A5%DE</link>
+ <dc:date>2007-07-06T14:34:12+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?%A3%B2%A3%B0%A3%B0%A3%B7%C7%AF%C5%D9%A4%CE%A5%C6%A1%BC%A5%DE</dc:identifier>
+
+</item>
+<item rdf:about="http://192.168.94.151/newlab/index.php?%B2%E1%B5%EE%A4%CE%B8%A6%B5%E6%A5%C6%A1%BC%A5%DE">
+ <title>≤·µÓ§Œ∏¶µÊ•∆°º•ﬁ</title>
+ <link>http://aitech.ac.jp/hishida/newlab/index.php?%B2%E1%B5%EE%A4%CE%B8%A6%B5%E6%A5%C6%A1%BC%A5%DE</link>
+ <dc:date>2007-07-06T14:32:06+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?%B2%E1%B5%EE%A4%CE%B8%A6%B5%E6%A5%C6%A1%BC%A5%DE</dc:identifier>
+
+</item>
+<item rdf:about="http://192.168.94.151/newlab/index.php?%A5%A4%A1%BC%A5%B5%A5%EA%A5%A2%A5%EB%B8%A6%B5%E6%BD%EA">
+ <title>•§°º•µ•Í•¢•Î∏¶µÊΩÍ</title>
+ <link>http://aitech.ac.jp/hishida/newlab/index.php?%A5%A4%A1%BC%A5%B5%A5%EA%A5%A2%A5%EB%B8%A6%B5%E6%BD%EA</link>
+ <dc:date>2007-07-04T16:35:44+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?%A5%A4%A1%BC%A5%B5%A5%EA%A5%A2%A5%EB%B8%A6%B5%E6%BD%EA</dc:identifier>
+
+</item>
+
+</rdf:RDF>http://192.168.94.151/newlab/index.php?%B2%E1%B5%EE%A4%CE%B8%A6%B5%E6%A5%C6%A1%BC%A5%DE</link>
+ <dc:date>2007-07-06T14:32:06+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?%B2%E1%B5%EE%A4%CE%B8%A6%B5%E6%A5%C6%A1%BC%A5%DE</dc:identifier>
+
+</item>
+<item rdf:about="http://192.168.94.151/newlab/index.php?%A5%A4%A1%BC%A5%B5%A5%EA%A5%A2%A5%EB%B8%A6%B5%E6%BD%EA">
+ <title>•§°º•µ•Í•¢•Î∏¶µÊΩÍ</title>
+ <link>http://aitech.ac.jp/hishida/newlab/index.php?%A5%A4%A1%BC%A5%B5%A5%EA%A5%A2%A5%EB%B8%A6%B5%E6%BD%EA</link>
+ <dc:date>2007-07-04T16:35:44+09:00</dc:date>
+ <dc:identifier>http://192.168.94.151/newlab/index.php?%A5%A4%A1%BC%A5%B5%A5%EA%A5%A2%A5%EB%B8%A6%B5%E6%BD%EA</dc:identifier>

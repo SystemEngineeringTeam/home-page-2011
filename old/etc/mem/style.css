@@ -1,0 +1,195 @@
+/* ----------------------------------------------- */
+/*          未確定電脳空間 - style.css             */
+/*             デ ィ ス プ レ イ 表 示 用          */
+/* ----------------------------------------------- */
+
+/* class="red" 赤色の強調 */
+.red{
+    color: #E10000;
+    font-weight: bolder;
+}
+/* class="small" 文字を小さくする(注釈用) */
+.small{
+    font-size: 75%;
+}
+
+/* 日曜日 */
+.holiday{
+    color: #FF8080;
+    font-weight: bolder;
+}
+/* 土曜日(一日) */
+.allday {
+    color: #0000FF;
+    font-weight: bolder;
+}
+/* 今日 */
+.today {
+  font-weight: bolder;
+  color: #ffb544;
+}
+/* class="orange" 橙色 */
+.orange {
+  font-weight: bolder;
+  color: #ffb544;
+}
+/* class="radio" or "checkbox" */
+.radio,.checkbox{
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    background-color: #FFFFFF;
+}
+
+/* ヘッダ部分 */
+.header {
+	color: #1515ff;
+}
+/* フッタ部分 */
+.footer {
+  font-size: 80%;
+  color: #AAAAAA;
+  text-align: center;
+  margin-top: 20px;
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #D0D0FF;
+}
+/* class="strong" 強調 */
+.strong{
+    color: #FF8080;
+    font-weight: bolder;
+}
+.strong:link{
+    color: #FF8080;
+}
+.strong:visited{
+    color: #FF8080;
+}
+/* class="making" 作成中 */
+.making{
+    color: #BFBFBF;
+}
+
+/*  特定のタグに適用する要素 */ 
+
+/* <BODY> タグ  HTML全体に適用 */
+BODY{
+  font-family: "ＭＳ Ｐゴシック", Osaka,;
+color: #555555;
+/*  color: #4444ff; */
+/*  background-image: url(image.file/nenga.jpg);
+  background-position: center top;
+  background-repeat: repeat;*/
+  line-height: 130%;
+  margin: 1em 2%;
+  scrollbar-track-color: #EEEEFF;
+  scrollbar-face-color: #D7D7FF;
+  scrollbar-shadow-color: #C4C4FF;
+  scrollbar-highlight-color: #FFFFFF;
+  scrollbar-3dlight-color: #C4C4FF;
+  scrollbar-arrow-color: #C4C4FF;
+}
+/* <TABLE> タグ */
+TABLE{
+    line-height: 130%;
+    empty-cells: show;
+}
+/* <TD> <TH> タグ */
+TD,TH{
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D0D0D0;
+  padding: 3px 5px;
+}
+/* <A> リンクの色(未観覧) */
+A:link{
+    color: #0080FF;
+}
+/* <A> リンクの色(観覧済) */
+A:visited{
+    color: #8080FF;
+}
+/* <A> リンクの色(選択中) */
+A:hover{
+    text-decoration: none;
+    color: #FF0000;
+    border-bottom: 1px solid #FF0000;
+    background: #FFE6E6;
+}
+/* <HR> タグ */
+hr{
+    color: #FFFFFF;
+    border-style: solid;
+    border-color: #D0D0FF;
+    border-width: 0px 0px 2px 0px;
+
+}
+/* <H1> */
+h1 {
+  color: #000000; 
+  font-size: 140%;
+  line-height: 120%;
+  margin: 1em 0% 0.5em 1%;
+  border-width: 0px 0px 1px 6px;
+  border-style: solid;
+  border-color: #77DDBC;
+  padding: 0px 0px 3px 20px;
+}
+
+/* <H2> */
+h2 {
+  color: #000000; 
+  font-size: 135%;
+  line-height: 110%;
+  margin: 1em 0% 0.5em 1%;
+  border-width: 0px 0px 1px 6px;
+  border-style: solid;
+  border-color: #77DDBC;
+  padding: 0px 0px 3px 20px;
+}
+
+
+/* <H3> */
+h3 {
+  color: #000000; 
+  font-size: 130%;
+  line-height: 120%;
+  margin: 1em 0% 0.5em 1%;
+  border-width: 0px 0px 1px 6px;
+  border-style: solid;
+  border-color: #77DDBC;
+  padding: 0px 0px 3px 20px;
+}
+/* <H4> */
+h4{
+  color: #000000; 
+  line-height: 120%;
+  margin: 1em 0% 0.5em 2.5%;
+  border-width: 0px 0px 1px 6px;
+  border-style: solid;
+  border-color: #77DDBC;
+  padding: 0px 0px 3px 20px;
+}
+
+
+
+/* <INPUT> <TEXTAREA> <SELECT> <OPTION> タグ */
+input,button,textarea,select,option{
+    border-left: 1px solid #66E699;
+    border-right: 1px solid #66E699;
+    border-top: 1px solid #66E699;
+    border-bottom: 1px solid #66E699;
+    background-color: #FFFFE6;
+    color: #666666;
+}
+/* イメージタグ */
+IMG {
+  margin: 12px;
+  border-width: 0px;
+}
+IMG.nomargin {
+  margin: 0px;
+  border-width: 0px;
+}

@@ -1,0 +1,17 @@
+<!--SKIN_CONTENTS_START-->
+<div id="contents">
+	<h2>${CONFIRM_HEADING}</h2>
+	<ul>
+		<li>${INFO_MESSAGE}</li>
+	</ul>
+	<form action="${INFO_FILE}" method="post">
+		<fieldset>
+			<legend>確認フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="${CONFIRM_WORK}" />
+			${CONFIRM_DATA}
+			<p><input type="submit" value="実行する" /></p>
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_CONTENTS_END-->

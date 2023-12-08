@@ -1,0 +1,40 @@
+{BLOGN_INFORMATION}
+<div class="blogn_main">
+<form action="admin.php?mode=ping&amp;action=new" method="post">
+<div class="blogn_bar">更新PING追加</div>
+<table class="blogn_user_list">
+<tr bgcolor="#dcdcdc"><th width="30%">送信先名</th><th width="50%">送信先URL</th><th width="20%" align="center">初期状態</th></tr>
+<tr>
+	<td width="30%"><input type="text" name="blogn_ping_name" maxlength="50" style="width:96%;"></td>
+	<td width="50%"><input type="text" name="blogn_ping_url" maxlength="50" style="width:96%;"></td>
+	<td width="30%">
+		<select name="blogn_ping_default" style="width:96%;">
+			<option value="0" selected>チェックを入れない</option>
+			<option value="1">チェックを入れる</option>
+		</select>
+	</td>
+</tr>
+</table>
+<div class="blogn_submit_type"><input type="submit" name="blogn_ping_add" value="追加"></div>
+</form>
+
+<div class="blogn_bar">更新PING一覧</div><table class="blogn_user_list">
+<tr bgcolor="#dcdcdc"><th width="200">送信先名</th><th width="*">送信先URL</th><th width="150" align="center">初期状態</th><th width="50" align="center">更新</th><th width="50" align="center">削除</th></tr>
+
+{BLOGN_PING}
+	{BLOGN_PING_LOOP}
+	<form action="./admin.php?mode=ping&amp;action=edit" method="post">
+	<tr>
+		<td width="200"><input type="hidden" name="blogn_id" value="{BLOGN_PING_ID}"><input type="text" name="blogn_ping_name" maxlength="50" value="{BLOGN_PING_NAME}" style="width:96%;"></td>
+		<td width="*"><input type="text" name="blogn_ping_url" maxlength="250" value="{BLOGN_PING_URL}" style="width:96%;"></td>
+		<td><select name="blogn_ping_default" style="width:96%;">{BLOGN_PING_OPTION}</select></td>
+		<td align="center"><input type="image" src="./images/update.gif" name="submit" alt="更新"></td>
+		<td align ="center"><a href="admin.php?mode=ping&amp;action=delete&amp;id={BLOGN_PING_ID}" title="削除"><img src="./images/trash.gif" border="0"></a></td>
+	</tr>
+	</form>
+	{/BLOGN_PING_LOOP}
+{BLOGN_PING_ELSE}
+	<tr><td colspan="5" align="center">登録されているPING送信先はありません。</td></tr>
+{/BLOGN_PING}
+</table>
+</div>

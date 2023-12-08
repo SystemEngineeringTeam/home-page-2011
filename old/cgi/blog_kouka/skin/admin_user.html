@@ -1,0 +1,67 @@
+<!--SKIN_CONTENTS_START-->
+<div id="env">
+	<h2>ユーザー管理</h2>
+	<ul>
+		<li>${INFO_MESSAGE}</li>
+		<li>ユーザー名とログイン用パスワードを入力して<em>追加ボタン</em>を押してください。</li>
+		<li>ゲストユーザーとして登録すると、管理機能の利用が一部制限されたユーザーになります。</li>
+	</ul>
+	<form action="${INFO_FILE}" method="post">
+		<fieldset>
+			<legend>ユーザー設定フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="user" />
+			<dl>
+				<dt>ユーザー名</dt>
+					<dd><input type="text" name="user" size="20" value="" /></dd>
+				<dt>ログイン用パスワード</dt>
+					<dd><input type="password" name="pwd" size="20" value="" /></dd>
+				<dt>確認のためにパスワードを再度入力</dt>
+					<dd><input type="password" name="cfm" size="20" value="" /></dd>
+				<dt>権限</dt>
+					<dd>
+						<select name="authority" xml:lang="ja" lang="ja">
+							${FORM_AUTHORITY}
+						</select>
+					</dd>
+			</dl>
+			<p><input type="submit" name="exec_add" value="追加する" /></p>
+		</fieldset>
+	</form>
+<!--SKIN_CONTENTS_END-->
+
+<!--SKIN_USER_HEAD_START-->
+	<h2>ユーザー管理</h2>
+	<ul>
+		<li>登録されているユーザーは以下のとおりです。</li>
+		<li>設定を変更する場合、変更内容を入力して<em>編集ボタン</em>を押してください。</li>
+		<li>ログインしているユーザー自身の設定は変更する事ができません。</li>
+	</ul>
+	<form action="${INFO_FILE}" method="post">
+		<fieldset>
+			<legend>ユーザー設定フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="user" />
+			<p><input type="submit" name="exec_edit" value="編集する" /></p>
+			<table summary="ユーザー一覧">
+				<tr>
+					<th>ユーザー名</th>
+					<th>権限</th>
+					<th>削除</th>
+				</tr>
+<!--SKIN_USER_HEAD_END-->
+
+	<!--SKIN_USER_START-->
+				<tr>
+					<td>${USER_NAME}</td>
+					<td>${USER_AUTHORITY}</td>
+					<td><input type="checkbox" name="del${USER_NO}" value="on" /></td>
+				</tr>
+	<!--SKIN_USER_END-->
+
+<!--SKIN_USER_FOOT_START-->
+			</table>
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_USER_FOOT_END-->

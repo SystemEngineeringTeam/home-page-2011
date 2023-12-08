@@ -1,0 +1,56 @@
+{BLOGN_INFORMATION}
+<div class="blogn_main">
+<div style="float:right;margin:5px;border:1px solid #cccccc;font-size:14px;">記事ID：{BLOGN_ID}<br>タイトル：{BLOGN_TITLE}</div>
+<br clear="all">
+<script language="JavaScript">
+<!--
+	function check_delete() {
+		var msg;
+		var ckd = 0;
+		for (cnt = 1; cnt <= {BLOGN_CMT_CNT}; cnt++) {
+			if (document.loglist.elements['cmtid[' + cnt + ']'].checked) {
+				ckd = 1;
+			}
+		}
+		if (ckd == 1) {
+			msg = confirm('選択したコメントを削除して宜しいですか？');
+			if (!msg) return false;
+		}else{
+			alert('削除したいコメントを選択してください。');
+			return false;
+		}
+	}
+	function select_check(yesno) {
+		for (cnt = 1; cnt <= {BLOGN_CMT_CNT}; cnt++) {
+			document.loglist.elements['cmtid['+cnt+']'].checked = yesno;
+		}
+	}
+-->
+</script>
+<form action="./admin.php?mode=list&amp;type=comment&amp;action=delete&amp;id={BLOGN_ID}" method="post" name="loglist">
+<div class="blogn_bar">コメント一覧</div>
+<table class="blogn_user_list" summary="コメント一覧">
+{BLOGN_COMMENT}
+{BLOGN_COMMENT_LOOP}
+<tr bgcolor="#dcdcdc">
+<td width="*" valign="top" style="border-right:0px;">
+<div style="font-size:16px;font-weight:bold;">{BLOGN_NAME}</div>
+<div style="font-size:12px;">ＩＰ：{BLOGN_IP}    ブラウザ：{BLOGN_AGENT}</div>
+</td>
+<td width="25" align="center" style="border-left:0px;border-right:0px;">{BLOGN_EMAIL}</td>
+<td width="25" align="center" style="border-left:0px;border-right:0px;">{BLOGN_URL}</td>
+<td width="150" align="right" style="border-left:0px;">{BLOGN_DATE}<input type="checkbox" name="cmtid[{BLOGN_CHECK_CNT}]" value="{BLOGN_CMT_ID}"></td>
+</tr>
+<tr>
+<td colspan="4" style="padding:5px;">{BLOGN_MES}<div align="right">{BLOGN_DEL}</div></td>
+</tr>
+{/BLOGN_COMMENT_LOOP}
+</table>
+<div style="text-align:right;">[ <a href="javascript:void(0);" onclick="select_check(true);" onkeypress="select_check(true);">全て選択</a> / <a href="javascript:void(0);" onclick="select_check(false);" onkeypress="select_check(false);">全て解除</a> ] 選択した記事の処理 :<input type="image" src="./images/trashl.gif" alt="一括削除" name="blogn_select_delete" onclick="return check_delete();" onkeypress="return check_delete();"></div>
+{BLOGN_COMMENT_ELSE}
+<tr><td align="center">投稿されたコメントはありません。</td></tr>
+</table>
+{/BLOGN_COMMENT}
+</form>
+{BLOGN_PAGE}
+</div>

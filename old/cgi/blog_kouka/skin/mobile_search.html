@@ -1,0 +1,27 @@
+<!--SKIN_SEARCH_HEAD_START-->
+<hr>
+■ログ検索
+<hr>
+検索キーワードを入力してください。
+<form action="${INFO_PATH}" method="get">
+<input type="hidden" name="mode" value="search">
+<input type="text" name="word" value="${FORM_WORD}">
+<input type="submit" value="検索する">
+</form>
+<br>
+<!--SKIN_SEARCH_HEAD_END-->
+
+<!--SKIN_SEARCH_START-->
+▼<a href="${ARTICLE_URL}">${ARTICLE_SUBJ}</a>-${ARTICLE_MONTH}/${ARTICLE_DAY}-${ARTICLE_HOUR}:${ARTICLE_MINUTE}<br>
+<!--SKIN_SEARCH_END-->
+
+<!--SKIN_PAGE_START-->
+<br>
+<!--PAGE_PREV_START-->前のページ<br><!--PAGE_PREV_END-->
+<!--PAGE_NEXT_START-->次のページ<br><!--PAGE_NEXT_END-->
+<!--SKIN_PAGE_END-->
+
+<!--SKIN_SEARCH_FOOT_START-->
+<hr>
+▲<a href="${INFO_PATH}">戻る</a>
+<!--SKIN_SEARCH_FOOT_END-->

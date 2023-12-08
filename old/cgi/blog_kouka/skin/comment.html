@@ -1,0 +1,76 @@
+<!--SKIN_FORM_START-->
+<div id="form">
+	<!--FORM_COMMENT_START-->
+	<h2>コメント投稿</h2>
+	<ul>
+		<li>コメントを入力して<em>投稿ボタン</em>を押してください。</li>
+	</ul>
+	<!--FORM_COMMENT_END-->
+	<!--FORM_PREVIEW_START-->
+	<h2>プレビュー</h2>
+	<ul>
+		<li>この内容で投稿します。よろしければ<em>投稿ボタン</em>を押してください。</li>
+	</ul>
+	<!--FORM_PREVIEW_END-->
+	<!--FORM_EDIT_START-->
+	<h2>記事編集</h2>
+	<ul>
+		<li>${INFO_MESSAGE}</li>
+	</ul>
+	<!--FORM_EDIT_END-->
+	<!--FORM_ERROR_START-->
+	<h2>エラー</h2>
+	<ul>
+		<li>${INFO_ERROR}</li>
+	</ul>
+	<!--FORM_ERROR_END-->
+	<form action="${INFO_PATH}" method="post" id="comment_form">
+		<fieldset>
+			<legend>投稿フォーム</legend>
+			<input type="hidden" name="mode" value="${FORM_MODE}" />
+			<input type="hidden" name="work" value="${FORM_WORK}" />
+			<input type="hidden" name="key" value="${FORM_PWD}" />
+			<input type="hidden" name="no" value="${FORM_NO}" />
+			<input type="hidden" name="pno" value="${FORM_PNO}" />
+			<input type="hidden" name="date" value="${FORM_DATE}" />
+			<input type="hidden" name="subj" value="${FORM_SUBJ}" />
+			<input type="hidden" name="host" value="${FORM_HOST}" />
+			<dl>
+				<dt>名前</dt>
+					<dd><input type="text" name="name" size="30" value="${FORM_NAME}" /></dd>
+				<dt>Ｅメール</dt>
+					<dd><input type="text" name="mail" size="30" value="${FORM_MAIL}" /></dd>
+				<dt>ＵＲＬ</dt>
+					<dd><input type="text" name="url" size="30" value="${FORM_URL}" /></dd>
+				<dt>コメント</dt>
+					<dd><textarea name="text" cols="50" rows="10">${FORM_TEXT}</textarea></dd>
+				<!--FORM_COLOR_START-->
+				<dt>文字色</dt>
+					<dd>${FORM_COLOR}</dd>
+				<!--FORM_COLOR_END-->
+				<!--FORM_ICON_START-->
+				<dt>アイコン</dt>
+					<dd>${FORM_ICON} <a href="${INFO_FILE}?mode=icon">アイコン一覧</a></dd>
+				<!--FORM_ICON_END-->
+				<!--FORM_PWD_START-->
+				<dt>削除キー</dt>
+					<dd><input type="password" name="pwd" size="20" value="${FORM_PWD}" /></dd>
+				<!--FORM_PWD_END-->
+				<!--FORM_STAT_START-->
+				<dt>公開設定</dt>
+					<dd>${FORM_STAT}</dd>
+				<!--FORM_STAT_END-->
+			</dl>
+			<!--FORM_SAVE_START-->
+			<ul>
+				<li><input type="checkbox" name="save" id="save_checkbox" value="1"${FORM_SAVE} /> <label for="save_checkbox">投稿者情報を保存する</label></li>
+			</ul>
+			<!--FORM_SAVE_END-->
+			<p>
+				<input type="submit" name="exec_preview" value="確認する" />
+				<input type="submit" name="exec_regist" value="投稿する" />
+			</p>
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_FORM_END-->

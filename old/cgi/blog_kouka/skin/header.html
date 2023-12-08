@@ -1,0 +1,30 @@
+<!--SKIN_HEADER_START-->
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<title>${INFO_TITLE}</title>
+	<link rel="stylesheet" href="${INFO_URL}skin/common.css" type="text/css" media="all" />
+	<link rel="alternate" href="${INFO_PATH}?mode=rss" type="application/rss+xml" title="RSS" />
+	<script type="text/javascript" src="${INFO_URL}skin/common.js"></script>
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+	<h1><a href="${INFO_PATH}">${INFO_TITLE}</a></h1>
+	<p>${INFO_DESCRIPTION}</p>
+</div>
+<div id="menu">
+	<h2>目次</h2>
+	<ul>
+		<li><a href="${INFO_BACK}">戻る</a></li>
+		<li><a href="${INFO_PATH}?mode=rss">RSS</a></li>
+		<li><a href="${INFO_PATH}?mode=admin">管理者用</a></li>
+	</ul>
+</div>
+<!--SKIN_HEADER_END-->

@@ -1,0 +1,24 @@
+<!--SKIN_CONTENTS_START-->
+<div id="form">
+	<h2>サイト再構築</h2>
+	<ul>
+		<li>${INFO_MESSAGE}</li>
+	</ul>
+	<form action="${INFO_FILE}" method="post">
+		<fieldset>
+			<legend>アーカイブ管理フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="build" />
+			<dl>
+				<dt>作業内容</dt>
+					<dd>
+						<select name="build" xml:lang="ja" lang="ja">
+							${FORM_LIST}
+						</select>
+					</dd>
+			</dl>
+			<p><input type="submit" name="exec_build" value="実行する" /></p>
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_CONTENTS_END-->

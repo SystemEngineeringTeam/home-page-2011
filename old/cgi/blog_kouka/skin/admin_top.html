@@ -1,0 +1,21 @@
+<!--SKIN_CONTENTS_START-->
+<div id="env">
+	<h2>インデックスページ設定</h2>
+	<ul>
+		<li>${INFO_MESSAGE}</li>
+		<li>設定するには、テキストを入力して<em>設定ボタン</em>を押してください。</li>
+	</ul>
+	<form action="${INFO_FILE}" method="post">
+		<fieldset>
+			<legend>インデックスページ設定フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="top" />
+			<dl>
+				<dt>テキスト</dt>
+					<dd><textarea name="text" cols="60" rows="10">${FORM_TEXT}</textarea></dd>
+			</dl>
+			<p><input type="submit" name="exec_top" value="設定する" /></p>
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_CONTENTS_END-->

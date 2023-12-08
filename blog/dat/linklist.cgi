@@ -1,0 +1,5 @@
+1,1,本家ＨＰ,http://www.ait.ac.jp/,
+2,2,本家ＨＰ,http://www.sysken.net/,
+3,1,大学祭実行委員会,http://aitech.ac.jp/~festival/,
+5,2,顧問：小田先生のページ,http://aitech.ac.jp/~t-oda/,
+6,3,nJOY（エンジョイ）,http://njoy.pekori.to/blog/,

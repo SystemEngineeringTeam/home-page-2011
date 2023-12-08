@@ -1,0 +1,32 @@
+<!--SKIN_WORK_HEAD_START-->
+<div id="work">
+	<h2>管理者用</h2>
+	<form action="${INFO_FILE}" method="get">
+		<fieldset>
+			<legend>作業内容選択フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<dl>
+				<dt>作業内容</dt>
+					<dd>
+						<select name="work" xml:lang="ja" lang="ja">
+							<option value="status">選択してください</option>
+<!--SKIN_WORK_HEAD_END-->
+
+	<!--SKIN_WORK_START-->
+							<option value="${WORK_ID}">${WORK_NAME}</option>
+	<!--SKIN_WORK_END-->
+
+	<!--SKIN_WORK_SELECTED_START-->
+							<option value="${WORK_ID}" selected="selected">${WORK_NAME}</option>
+	<!--SKIN_WORK_SELECTED_END-->
+
+<!--SKIN_WORK_FOOT_START-->
+							<option value="logout">ログアウト</option>
+						</select>
+					</dd>
+			</dl>
+			<p><input type="submit" value="実行する" /></p>
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_WORK_FOOT_END-->

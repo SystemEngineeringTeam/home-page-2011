@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+{BLOGN_JS_ON}<meta http-equiv="Content-Script-Type" content="text/javascript">{/BLOGN_JS_ON}
+<meta name="copyright" content="blogn">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>BlognPlus - 管理画面</title>
+<link rel="stylesheet" type="text/css" media="screen" href="admin.css">
+{BLOGN_JS_TYPE_1}
+<script type="text/javascript" src="admin.js"></script>
+{/BLOGN_JS_TYPE_1}
+{BLOGN_JS_TYPE_2}
+<script type="text/javascript">
+		<!--
+		function delcheck(ref) {
+			if (confirm("削除してよろしいですか。")) {
+				window.location.href=ref;
+			}
+		}
+		function logout(ref) {
+			if (confirm("ログアウトしてよろしいですか。")) {
+				window.location.href=ref;
+			}
+		}
+		//--></script>{/BLOGN_JS_TYPE_2}
+</head>
+<body>
+	<!-- 左上（各種管理メニュー表示） -->
+	<table summary="BlognPlus管理メニュー" class="blogn_menu">
+	<tr style="border-width:0px;">
+	<td class="blogn_tub_l" style="border-width:0px;">
+	<ul class="blogn_navi" style="border-width:0px;">
+		<li{BLOGN_ACTION_MODE_TOP}><a href="./admin.php">TOP</a></li>
+		<li{BLOGN_ACTION_MODE_NEW}><a href="./admin.php?mode=new">新規投稿</a></li>
+		<li{BLOGN_ACTION_MODE_LIST}><a href="./admin.php?mode=list">記事編集</a></li>
+		<li{BLOGN_ACTION_MODE_FILES}><a href="./admin.php?mode=files">ファイル管理</a></li>
+		{BLOGN_ADMIN}<li{BLOGN_ACTION_MODE_CATEGORY}><a href="./admin.php?mode=category">カテゴリー管理</a></li>{/BLOGN_ADMIN}
+		{BLOGN_ADMIN}<li{BLOGN_ACTION_MODE_LINK}><a href="./admin.php?mode=link">リンク管理</a></li>{/BLOGN_ADMIN}
+		{BLOGN_ADMIN}<li{BLOGN_ACTION_MODE_PING}><a href="./admin.php?mode=ping">更新PING管理</a></li>{/BLOGN_ADMIN}
+		<li{BLOGN_ACTION_MODE_PROFILE}><a href="./admin.php?mode=profile">ユーザー情報</a></li>
+		{BLOGN_ADMIN}<li{BLOGN_ACTION_MODE_USER}><a href="./admin.php?mode=user">ユーザー管理</a></li>{/BLOGN_ADMIN}
+		{BLOGN_ADMIN}<li{BLOGN_ACTION_MODE_INIT}><a href="./admin.php?mode=init">初期設定</a></li>{/BLOGN_ADMIN}
+		{BLOGN_ADMIN}<li{BLOGN_ACTION_MODE_DATA}><a href="./admin.php?mode=data">データ管理</a></li>{/BLOGN_ADMIN}
+		{BLOGN_ADMIN}<li{BLOGN_ACTION_MODE_SKINMAKE}><a href="./admin.php?mode=skinmake">スキン追加／編集</a></li>{/BLOGN_ADMIN}
+		{BLOGN_ADMIN}<li{BLOGN_ACTION_MODE_SKINFILE}><a href="./admin.php?mode=skinfile">スキン用画像設定</a></li>{/BLOGN_ADMIN}
+		{BLOGN_ADMIN}<li{BLOGN_ACTION_MODE_SKINSET}><a href="./admin.php?mode=skinset">表示スキン設定</a></li>{/BLOGN_ADMIN}
+		{BLOGN_ADMIN}<li{BLOGN_ACTION_MODE_MODULE}><a href="./admin.php?mode=module">モジュール管理</a></li>{/BLOGN_ADMIN}
+		{BLOGN_ADMIN}<li{BLOGN_ACTION_MODE_SECURITY}><a href="./admin.php?mode=security">アクセス制限</a></li>{/BLOGN_ADMIN}
+		<li{BLOGN_ACTION_MODE_LOGOUT}><a href="javascript:logout('./admin.php?mode=logout');">ログアウト</a></li>
+	</ul>
+	</td>
+	<!-- 右上（BlognPlus表示） -->
+	<td id="blogn_title">
+	<a href="http://www.blogn.org/"><img src="./images/blognplus.gif" width="40" height="23" style="float:right;" alt="BlognPlus {BLOGN_VERSION}"></a>
+		BlognPlus<br>{BLOGN_VERSION}
+	</td></tr></table>

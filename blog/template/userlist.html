@@ -1,0 +1,54 @@
+{BLOGN_INFORMATION}
+<div class="blogn_main">
+<form action="./admin.php?mode=user" method="post">
+<div class="blogn_bar">ユーザー追加</div>
+<table class="blogn_user_list">
+<tr bgcolor="#dcdcdc">
+<th width="20%">ユーザーID</th><th width="20%">ユーザーパスワード</th><th width="20%">パスワード再入力</th>
+</tr>
+<tr>
+<td width="20%"><input type="text" name="blogn_user_id" maxlength="8" value="{BLOGN_USER_ID}" style="width:90%;"></td>
+<td width="20%"><input type="password" name="blogn_user_pw" maxlength="8" style="width:90%;"></td>
+<td width="20%"><input type="password" name="blogn_user_retype_pw" maxlength="8" style="width:90%;"></td>
+</tr>
+<tr bgcolor="#dcdcdc">
+<th width="20%">連絡先メールアドレス</th><th colspan="2">ユーザー名</th>
+</tr>
+<tr>
+<td width="20%"><input type="text" name="blogn_mail_address" maxlength="100" style="width:90%;"></td>
+<td colspan="2"><input type="text" name="blogn_user_name" maxlength="30" value="{BLOGN_USER_NAME}" style="width:90%;"></td>
+</tr>
+</table>
+<div class="blogn_submit_type"><input type="submit" name="blogn_user_add" value="追加"></div>
+</form>
+<form action="./admin.php?mode=user" method="post">
+<div class="blogn_bar">ユーザー一覧</div>
+<table class="blogn_user_list">
+<tr bgcolor="#dcdcdc">
+<th width="50"></th><th width="*">ユーザーID</th><th width="35%">ユーザー名</th><th width="35%">ユーザー状態</th>
+</tr>
+{BLOGN_USER_LIST}
+{BLOGN_USER_LIST_LOOP}
+<label for="{BLOGN_LABEL_ID}">
+<tr>
+<td width="50" align="center"><input type="radio" name="blogn_id" value="{BLOGN_ID}"{BLOGN_CHECKED} id="{BLOGN_LABEL_ID}"></td>
+<td width="*">{BLOGN_USER_LIST_ID}</td>
+<td width="35%">{BLOGN_USER_LIST_NAME}</td>
+<td width="35%"><select name="blogn_user_active_mode[{BLOGN_ID}]" style="width:96%;">
+<option value="0"{BLOGN_USER_LIST_SELECT0}>ユーザーをロック</option>
+<option value="1"{BLOGN_USER_LIST_SELECT1}>閲覧ユーザー</option>
+<option value="2"{BLOGN_USER_LIST_SELECT2}>一般ユーザー</option>
+<option value="3"{BLOGN_USER_LIST_SELECT3}>管理ユーザー</option>
+</select></td></tr></label>
+{/BLOGN_USER_LIST_LOOP}
+{BLOGN_USER_LIST_ELSE}
+<tr><td colspan="4">ユーザー情報はありません。</td></tr>
+{/BLOGN_USER_LIST}
+</table>
+<div class="blogn_submit_type">
+<input type="submit" name="blogn_user_active" value="状態変更">
+<input type="submit" name="blogn_user_edit" value="編集">
+<input type="submit" name="blogn_user_del" value="削除">
+</div>
+</form>
+</div>

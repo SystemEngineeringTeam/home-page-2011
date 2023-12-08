@@ -1,0 +1,191 @@
+{BLOGN_INFORMATION}
+<div class="blogn_main">
+<table width="100%" cellpadding="0" cellspacing="0" style="margin:0px;padding:0px;border-width:0px;">
+	<tr style="border-width:0px;">
+		<td class="blogn_tub_l" style="border-width:0px;">
+			<ul class="blogn_navi"style="border-width:0px;">
+				<li{BLOGN_SKIN_HERE0}><a href="./admin.php?mode=skinset&amp;type=0">ノーマル表示</a></li>
+				<li{BLOGN_SKIN_HERE1}><a href="./admin.php?mode=skinset&amp;type=1">ランダム表示</a></li>
+				<li{BLOGN_SKIN_HERE2}><a href="./admin.php?mode=skinset&amp;type=2">ジャンル別表示</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr style="border-width:0px;">
+		<td style="border-width:0px;">
+			{BLOGN_SKIN}
+			{BLOGN_SKIN_TYPE_NORMAL}
+			<table class="blogn_user_list">
+				<tr>
+					<th bgcolor="#dcdcdc" width="30%" align="center">
+						現在のスキン表示モード
+					</th>
+					<td width="30%" align="center" bgcolor="#e9e9e9">
+						<font color="blue"><strong>{BLOGN_SKIN_MODE}</strong></font>
+					</td>
+					<td width="*">
+						<div class="blogn_comment">※表示モードをノーマルに設定するとランダム表示で設定した内容や、ジャンル別表示で追加した内容はリセットされます。</div>
+					</td>
+				</tr>
+			</table>
+<br>
+			<form action="./admin.php?mode=skinset&amp;action=update" method="post">
+			<div class="blogn_bar">スキン設定</div>
+			<table class="blogn_user_list">
+				<tr>
+					<th bgcolor="#dcdcdc" width="30%" align="center">基本表示</th>
+					<td colspan="2">
+						<select name="blogn_view_skin" style="width:96%;">
+							{BLOGN_SKIN_OPTION}
+						</select>
+					</td>
+				</tr>
+			</table>
+			<div style="text-align:right;"><strong>スキン表示モードを <font color="red">[ {BLOGN_SKIN_MODE_NOW} ]</font> に</strong><input type="hidden" name="blogn_view_type" value="0"><input type="submit" value="設定する"></div>
+			</form>
+			{/BLOGN_SKIN_TYPE_NORMAL}
+
+			{BLOGN_SKIN_TYPE_RANDOM}
+			<table class="blogn_user_list">
+				<tr style="border:2px;">
+					<th bgcolor="#dcdcdc" width="30%" align="center">
+						現在のスキン表示モード
+					</th>
+					<td width="30%" align="center" bgcolor="#e9e9e9">
+						<font color="blue"><strong>{BLOGN_SKIN_MODE}</strong></font>
+					</td>
+					<td width="*">
+						<div class="blogn_comment">※表示モードをランダムに設定するとノーマル表示で設定した内容や、ジャンル別表示で追加した内容はリセットされます。</div>
+					</td>
+				</tr>
+			</table>
+<br>
+			<form action="./admin.php?mode=skinset&amp;action=update" method="post">
+			<div class="blogn_bar">スキン設定</div>
+			<table class="blogn_user_list">
+				{BLOGN_SKIN_LOOP}
+				<tr>
+					<th bgcolor="#dcdcdc" width="30%" align="center">{BLOGN_SKIN_NAME}</th>
+					<td colspan="2"><input type="hidden" name="blogn_view_category[{BLOGN_SKIN_NO}]" value="{BLOGN_SKIN_NO}"><input type="checkbox" name="blogn_view_skin[{BLOGN_SKIN_NO}]" value="{BLOGN_SKIN_KEY}" id="{BLOGN_SKIN_KEY}"{BLOGN_SKIN_CHECKED}><label for="{BLOGN_SKIN_KEY}">このスキンをランダム表示に追加する</label></td>
+				</tr>
+				{/BLOGN_SKIN_LOOP}
+			</table>
+			<div style="text-align:right;"><strong>スキン表示モードを <font color="red">[ {BLOGN_SKIN_MODE_NOW} ]</font> に</strong><input type="hidden" name="blogn_view_type" value="1"><input type="submit" value="設定する"></div>
+			</form>
+			{/BLOGN_SKIN_TYPE_RANDOM}
+
+			{BLOGN_SKIN_TYPE_CATEGORY}
+<script type="text/javascript">
+		<!--
+		function category_list_select() {
+			c = document.addform.blogn_new_category.value;
+			var len = document.addform.blogn_new_section.length;
+			for (i = len - 1; i > -1; i--) {
+				document.addform.blogn_new_section.options[i] = null;
+			}
+			if (c == 1) {
+				{BLOGN_JS_CATEGORY_1}
+			}else if (c == 2) {
+				{BLOGN_JS_CATEGORY_2}
+			}else if (c == 3) {
+				{BLOGN_JS_CATEGORY_3}
+			}else if (c == 4) {
+				{BLOGN_JS_CATEGORY_4}
+			}
+		}
+		//-->
+</script>
+			<table class="blogn_user_list">
+				<tr>
+					<th bgcolor="#dcdcdc" width="30%" align="center">
+						現在のスキン表示モード
+					</th>
+					<td width="30%" align="center" bgcolor="#e9e9e9">
+						<font color="blue"><strong>{BLOGN_SKIN_MODE}</strong></font>
+					</td>
+					<td width="*">
+						<div class="blogn_comment">※表示モードをジャンル別に設定するとノーマル表示で設定した内容や、ランダム表示で設定した内容はリセットされます。</div>
+					</td>
+				</tr>
+			</table>
+<br>
+			<form action="./admin.php?mode=skinset&amp;action=update" method="post">
+			<div class="blogn_bar">スキン設定</div>
+			<table class="blogn_user_list">
+				<tr>
+					<th bgcolor="#dcdcdc" width="30%" align="center">ジャンル未設定項目の表示</th>
+					<td colspan="2">
+						<input type="hidden" name="blogn_view_category" value="0">
+						<select name="blogn_view_skin" style="width:96%;">
+							{BLOGN_SKIN_OPTION}
+						</select>
+					</td>
+				</tr>
+			</table>
+			<div style="text-align:right;"><strong>スキン表示モードを <font color="red">[ {BLOGN_SKIN_MODE_NOW} ]</font> に</strong><input type="hidden" name="blogn_view_type" value="2"><input type="submit" value="設定する"></div>
+			</form>
+			{BLOGN_CATEGORY_SELECT}
+			<form action="./admin.php?mode=skinset&amp;action=add" method="post" name="addform">
+			<div class="blogn_bar">ジャンル追加</div>
+			<table class="blogn_user_list">
+				<tr bgcolor="#dcdcdc">
+					<th width="150">ジャンルグループ</th>
+					<th width="300">ジャンル名</th>
+					<th width="*">スキン名</th></tr>
+				<tr>
+					<td width="150">
+						<select name="blogn_new_category" style="width:96%;" onChange="category_list_select();">
+							{BLOGN_CATEGORY_OPTION}
+						</select>
+					</td>
+					<td width="300">
+						<select name="blogn_new_section" style="width:96%;">
+							{BLOGN_SECTION_OPTION}
+						</select>
+					</td>
+					<td width="*">
+						<select name="blogn_view_skin" style="width:96%;">
+							{BLOGN_NEW_SKIN_OPTION}
+						</select>
+					</td>
+				</tr>
+			</table>
+			<div class="blogn_submit_type"><input type="hidden" name="blogn_view_type" value="2"><input type="submit" name="blogn_category_add" value="追加"></div>
+			</form>
+			{BLOGN_CATEGORY_SKIN_LIST}
+			<div class="blogn_bar">ジャンル一覧</div>
+			<table class="blogn_user_list">
+				<tr bgcolor="#dcdcdc">
+					<th width="150">ジャンルグループ</th>
+					<th width="300">ジャンル名</th>
+					<th width="*">スキン名</th>
+					<th width="50" align="center">削除</th>
+				</tr>
+				{BLOGN_CATEGORY_SKIN_LOOP}
+				<form action="./admin.php?mode=skinset&amp;action=edit" method="post">
+				<tr>
+					<td width="150">
+						<input type="hidden" name="blogn_id" value="{BLOGN_ID}">
+						{BLOGN_CATEGORY_GROUP}
+					</td>
+					<td width="300">
+						{BLOGN_CATEGORY_NAME}
+					</td>
+					<td width="*">
+						{BLOGN_SKIN_NAME}
+					</td>
+					<td align ="center"><a href="admin.php?mode=skinset&amp;action=delete&amp;id={BLOGN_ID}" title="削除"><img src="./images/trash.gif" border="0"></a></td>
+				</tr>
+				</form>
+			{/BLOGN_CATEGORY_SKIN_LOOP}
+			{/BLOGN_CATEGORY_SKIN_LIST}
+			{/BLOGN_CATEGORY_SELECT}
+
+			{/BLOGN_SKIN_TYPE_CATEGORY}
+
+			{BLOGN_SKIN_ELSE}
+				<div align="center">登録しているスキンがありません。</div>
+			{/BLOGN_SKIN}
+		</td>
+	</tr>
+</table>
+</div>

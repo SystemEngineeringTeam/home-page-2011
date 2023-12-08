@@ -1,0 +1,56 @@
+** SET Members Site [#v337c886]
+
+　もっちもっち。
+
+-[./webalizer/ WebAnalyzer - アクセス解析]~
+毎時55分ぐらいに集計します. メンバ用ページ (/menbers/以下) へのアクセスは集計結果から除外してあります.
+-[./mailman/listinfo Mailman List - SET メーリングリスト一覧]
+-[../camera/ CameraServer - カメラサーバ]
+-[./index.php?ET%A5%ED%A5%DC%A5%B3%A5%F3 ETロボコンについて]
+&br;
+&new(その他のシス研情報);
+-----
+
+-[./bbs/futaba.php 画像掲示板]~
+　&color(red){''二次元画像、ネタ画像、何でもござれ。''};
+
+** SET Schedule List [#we713521]
+
+#calendar_viewer(SET Schedule,this,future)
+
+
+-[./index.php?SET%20Schedule 全予定一覧]
+----
+
+** サーバ情報他 [#a487ab36]
+- [../members/index.php?Servers シス研サーバ詳細]
+- [../munin/ Munin - local.sysken.net]
+- [../vnstat/ Vnstat (set-router)]
+
+
+- [http://www.center.aitech.ac.jp/mrtg/ 愛知工業大学 トラフィック量]
+
+** 練習ページ [#if72ced0]
+- [[SandBox]] -- 編集をお試しください
+
+
+** PukiWikiについて [#c2af49f4]
+
+- [[PukiWiki]] -- PukiWikiのご紹介
+
+*** ドキュメント [#o366701b]
+- [[ヘルプ>Help]] -- PukiWikiで編集するには？
+- [[テキスト整形のルール(詳細版)>FormattingRules]]
+- [[プラグインマニュアル>PukiWiki/1.4/Manual/Plugin]]
+- UID : set, DATE : 2011/12/16 (Fri) 20:06:29
+
+- UID : set, DATE : 2012/01/06 (Fri) 22:49:22
+- UID : set, DATE : 2012/01/08 (Sun) 08:25:11
+- UID : set, DATE : 2012/01/12 (Thu) 18:13:16
+- UID : set, DATE : 2012/01/12 (Thu) 18:13:58
+- UID : set, DATE : 2012/01/12 (Thu) 18:23:13
+- UID : set, DATE : 2012/01/12 (Thu) 18:24:15
+- UID : set, DATE : 2012/01/12 (Thu) 18:30:26
+- UID : set, DATE : 2012/01/12 (Thu) 18:31:19
+- UID : set, DATE : 2012/01/12 (Thu) 18:40:51
+- UID : set, DATE : 2012/01/12 (Thu) 18:46:45

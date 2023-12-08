@@ -1,0 +1,44 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="copyright" content="blogn">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>BlognPlus - 管理画面</title>
+<link rel="stylesheet" type="text/css" media="screen" href="admin.css">
+<script type="text/javascript">
+		<!--
+		function forgetpass() {
+			var userid, address;
+			userid = prompt("ユーザーIDを入力してください。","");
+			if (userid) {
+				address = prompt("パスワード再発行用に登録したメールアドレスを入力してください。","");
+				if (address) {
+					window.location.href = "./admin.php?userid=" + userid + "&forgetpass=" + address;
+				}else{
+					return void(0);
+				}
+			}else{
+				return void(0);
+			}
+		}
+		//-->
+</script>
+</head>
+<body>
+	<form action="./admin.php" method="post">
+	<div class="blogn_login">
+		<p align="center">BlognPlus 管理画面</p>
+		<p>{BLOGN_ERROR}</p>
+		<div align="center">ユーザー名</span><span><input type="text" name="blogn_req_id" value="{BLOGN_ID}" style="width:150px;"></div>
+		<div align="center">パスワード</span><span><input type="password" name="blogn_req_pw"  style="width:150px;"></div>
+		<div align="center"><input type="checkbox" name="blogn_req_auto_login" value="on" id="alogin"><label for="alogin">自動ログインを有効にする</label></div>
+		<div align="right"><input type="submit" value="LOGIN"></div>
+		<br />
+		<div style="background-color:#cccccc;text-align:left;font-size:12px;width:100%;padding:2px;"><a href="javascript:forgetpass();">パスワードを忘れた場合</a></div>
+	</div>
+	</form>
+</body>
+</html>

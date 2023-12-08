@@ -1,0 +1,74 @@
+<!--SKIN_CONTENTS_START-->
+<div id="contents">
+	<h2>コメント管理</h2>
+	<ul>
+		<li>${INFO_MESSAGE}</li>
+		<li>題名をクリックすると、コメントの内容を確認する事ができます。</li>
+	</ul>
+	<form action="${INFO_FILE}" method="post">
+		<fieldset>
+			<legend>コメント管理フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="comment" />
+			<p>
+				<input type="submit" name="exec_form" value="編集する" />
+				<input type="submit" name="exec_confirm" value="削除する" />
+				<input type="reset" value="リセット" />
+			</p>
+<!--SKIN_CONTENTS_END-->
+
+<!--SKIN_DIARY_HEAD_START-->
+			<table summary="コメント一覧">
+				<tr>
+					<th>編集</th>
+					<th>削除</th>
+					<th>No</th>
+					<th>日時</th>
+					<th>投稿者</th>
+					<th>題名</th>
+					<th>ホスト</th>
+					<th>状態</th>
+				</tr>
+<!--SKIN_DIARY_HEAD_END-->
+
+	<!--SKIN_COMMENT_START-->
+				<tr>
+					<td><input type="radio" name="edit" value="${ARTICLE_NO}" /></td>
+					<td><input type="checkbox" name="del" value="${ARTICLE_NO}" /></td>
+					<td>${ARTICLE_NO}</td>
+					<td>${ARTICLE_YEAR}/${ARTICLE_MONTH}/${ARTICLE_DAY} ${ARTICLE_HOUR}:${ARTICLE_MINUTE}</td>
+					<td>${ARTICLE_NAME}</td>
+					<td><a href="${INFO_FILE}?mode=admin&amp;work=comment&amp;no=${ARTICLE_NO}&amp;pno=${ARTICLE_PNO}&amp;exec_view=on">${ARTICLE_SUBJ}</a></td>
+					<td>${ARTICLE_HOST}</td>
+					<td><a href="${INFO_FILE}?mode=admin&amp;work=comment&amp;stat=${ARTICLE_NO}&amp;pno=${ARTICLE_PNO}&amp;exec_confirm=on">${ARTICLE_STAT}</a></td>
+				</tr>
+	<!--SKIN_COMMENT_END-->
+
+<!--SKIN_DIARY_FOOT_START-->
+			</table>
+<!--SKIN_DIARY_FOOT_END-->
+
+<!--SKIN_PAGE_START-->
+		</fieldset>
+	</form>
+</div>
+<div id="navi">
+	<h2>ページ移動</h2>
+	<form action="${INFO_FILE}" method="get">
+		<fieldset>
+			<legend>ページ移動フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="comment" />
+			<dl>
+				<dt>表示ページ</dt>
+					<dd>
+						<select name="page" xml:lang="ja" lang="ja">
+							${PAGE_LIST}
+						</select>
+					</dd>
+			</dl>
+			<p><input type="submit" value="移動する" /></p>
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_PAGE_END-->

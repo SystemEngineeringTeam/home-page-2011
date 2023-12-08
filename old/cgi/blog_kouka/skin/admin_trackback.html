@@ -1,0 +1,69 @@
+<!--SKIN_CONTENTS_START-->
+<div id="contents">
+	<h2>トラックバック管理</h2>
+	<ul>
+		<li>${INFO_MESSAGE}</li>
+		<li>題名をクリックすると、トラックバックの内容を確認する事ができます。</li>
+	</ul>
+	<form action="${INFO_FILE}" method="post">
+		<fieldset>
+			<legend>トラックバック管理フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="trackback" />
+			<p>
+				<input type="submit" name="exec_confirm" value="削除する" />
+				<input type="reset" value="リセット" />
+			</p>
+<!--SKIN_CONTENTS_END-->
+
+<!--SKIN_TRACKBACK_HEAD_START-->
+			<table summary="トラックバック一覧">
+				<tr>
+					<th>削除</th>
+					<th>No</th>
+					<th>日時</th>
+					<th>ブログ</th>
+					<th>題名</th>
+					<th>状態</th>
+				</tr>
+<!--SKIN_TRACKBACK_HEAD_END-->
+
+	<!--SKIN_TRACKBACK_START-->
+				<tr>
+					<td><input type="checkbox" name="del" value="${TRACKBACK_NO}" /></td>
+					<td>${TRACKBACK_NO}</td>
+					<td>${TRACKBACK_YEAR}/${TRACKBACK_MONTH}/${TRACKBACK_DAY} ${TRACKBACK_HOUR}:${TRACKBACK_MINUTE}</td>
+					<td>${TRACKBACK_BLOG}</td>
+					<td><a href="${INFO_FILE}?mode=admin&amp;work=trackback&amp;no=${TRACKBACK_NO}&amp;pno=${TRACKBACK_PNO}&amp;exec_view=on">${TRACKBACK_TITLE}</a></td>
+					<td><a href="${INFO_FILE}?mode=admin&amp;work=trackback&amp;stat=${TRACKBACK_NO}&amp;pno=${TRACKBACK_PNO}&amp;exec_confirm=on">${TRACKBACK_STAT}</a></td>
+				</tr>
+	<!--SKIN_TRACKBACK_END-->
+
+<!--SKIN_TRACKBACK_FOOT_START-->
+			</table>
+<!--SKIN_TRACKBACK_FOOT_END-->
+
+<!--SKIN_PAGE_START-->
+		</fieldset>
+	</form>
+</div>
+<div id="navi">
+	<h2>ページ移動</h2>
+	<form action="${INFO_FILE}" method="get">
+		<fieldset>
+			<legend>ページ移動フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="trackback" />
+			<dl>
+				<dt>表示ページ</dt>
+					<dd>
+						<select name="page" xml:lang="ja" lang="ja">
+							${PAGE_LIST}
+						</select>
+					</dd>
+			</dl>
+			<p><input type="submit" value="移動する" /></p>
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_PAGE_END-->

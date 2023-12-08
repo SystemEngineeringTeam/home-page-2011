@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<META content="text/html;charset=utf-8" http-equiv="Content-Type">
+<META NAME="ROBOTS" CONTENT="ALL">
+<META name="description" content="愛知工業大学の公認サークル、システム工学研究会の公式WEBサイトです。">
+<META name="keywords" content="システム工学研究会,AIT,愛知工業大学,aitech,シス研,SET,プログラミング,サーバー,ネットワーク,電子工作,サークル,System　Engineering　Team">
+<META http-equiv="Content-Style-Type" content="text/css">
+<LINK REV="MADE" HREF="mailto:contact@sysken.net">
+<LINK href="css/all.css" rel="stylesheet" type="text/css"> 
+  <title>会誌</title>
+</head>
+<body>
+<div align="center">
+<div style="width:800;align:center">
+<div align="left"><span style="font-family: Papyrus;"><strong>Welcome to S.E.T.</strong></span>
+</div></div>
+<hr>
+<div class=div1>愛知工業大学システム工学研究会</div>
+<div class=div1>AIT　System　Engineering　Team</div>
+<div class="g_navi"> <span class="g_navi"><a href="index.html">トップページ</a></span> <span class="g_navi"><a href="Activity.html">活動内容</a></span> <span class="g_navi"><a href="Equipment.html">設備</a></span> <span class="g_navi"><a href="joinus.html">入会について</a></span> <span class="g_navi"><a href="syscommu_transport.html">しすこみゅ！</a></span> <span class="g_navi"><a href="kaishi.html">会誌</a></span> <span class="g_navi"><a href="shinkan.html">新入生歓迎ページ</a></span></div>
+<!--SED BODY-->
+<div align="center">
+<br/>
+<TABLE width="800" height="476" cellpadding="0" cellspacing="0">
+  <tr>
+      <TD height="94" colspan="4" align="left" bgcolor="#cccccc">システム工学研究会会誌　* ISM vol.01<BR>
+      08年春（創刊号）<BR>
+      <BR>
+      Web版</TD>
+    </tr>
+  <tr>
+      <TD width="798" align="left" colspan="3"></TD>
+    </tr>
+    <TR>
+      <TD height="339" align="left" colspan="3">
+      <DIV CLASS="chaptertitle">*ISM vol.01</DIV>
+      <DIV CLASS="chapter">
+      <p class="paragraph">*ISM Web版はPDFファイルで公開しています。<BR>
+      </p>
+      <p align="center"><IMG src="koho08/ism01_title.jpg" width="300" height="426" border="0"></p>
+      <p class="paragraph">※閲覧できない場合、お使いのパソコンにAdobe Acrobat Readerが入っていない可能性があります。<BR>
+      次のリンクから入手してください。<A href="http://www.adobe.com/jp/products/acrobat/readstep2.html" target="_blank">Adobe Acrobat Reader</A><BR>
+      <BR>
+      <FONT color="#ff0000"></FONT></p>
+      </div>
+      <DIV CLASS="chaptertitle2">こちらからご覧ください。</DIV>
+            <div class="chapter">
+      <p class="paragraph"><BR>
+      </p>
+      <UL>
+        <LI><FONT size="+1"><A href="mokuji.pdf" target="_blank"><B>目次〜雑談コーナー</B></A></FONT>
+        <LI><FONT size="+1"><B>連載</B></FONT>
+        <UL>
+          <LI><FONT size="+1"><A href="software_tech.pdf" target="_blank">ソフトウェア技術　第一回</A></FONT>
+          <LI><FONT size="+1"><A href="revs_eng.pdf" target="_blank">リバースエンジニアリング実践　第一回</A></FONT>
+          <LI><FONT size="+1"><A href="books.pdf" target="_blank">オススメの本　第一回</A></FONT>
+          <LI><FONT size="+1"><A href="logic_of_infoma.pdf" target="_blank">情報理論　第一回</A></FONT>
+        </UL>
+        <LI><FONT size="+1"><B>特別企画</B></FONT>
+        <UL>
+          <LI><FONT size="+1"><A href="ipa_reports.pdf" target="_blank">情報処理技術者試験報告</A></FONT>
+          <LI><FONT size="+1"><A href="la_fonera_modd.pdf" target="_blank">FONを改造してみよう</A></FONT>
+          <LI><FONT size="+1"><A href="melanc_of_morihi.pdf" target="_blank">鯖管モリヒの憂鬱</A></FONT>
+          <LI><FONT size="+1"><A href="intro_u_car.pdf" target="_blank">あなたのクルマ紹介</A></FONT>
+        </UL>
+        <LI><FONT size="+1"><B>特集　シス研の人々</B></FONT>
+        <UL>
+          <LI><B><A href="hitobito.pdf" target="_blank"><FONT size="+1">概要と目次</FONT></A></B>
+        </UL>
+        <LI><FONT size="+1"><A href="ps_of_editorial.pdf" target="_blank">編集後記</A></FONT>
+        <LI><FONT size="+1"><B>附則</B></FONT>
+        <UL>
+          <LI><FONT size="+1"><A href="rules_of_sysken.pdf" target="_blank">システム工学研究会会則</A></FONT>
+          <LI><FONT size="+1"><A href="koka07r2.pdf" target="_blank">07年工科展冊子</A></FONT>
+        </UL>
+      </UL>
+      <BR>
+      </div>
+      <DIV CLASS="chaptertitle2">冊子版</DIV>
+            <div class="chapter">
+      <p class="paragraph">Web版は、細部が冊子版と変更になっています。<BR>
+      <BR>
+      <FONT color="#ff0000">冊子版との変更点）</FONT></p>
+      <UL>
+        <LI>　雑談コーナーが追加されています。
+        <LI>　シス研の人々の<B>全文が記載</B>されています。各個人の原稿が載っている、ってことです。
+        <LI>　附則が追加されています。
+        <LI>　要請の無い限り、実名はハンドルネームに置き換わっています。
+      </UL>
+      <p class="paragraph">冊子版は、部室にて購入できます。<BR>
+      1冊500円です。会長か会計に支払い、受け取ってください。<BR>
+      （ただし、余裕があるうちです。数が限られているのでご注意ください。）<BR>
+      <BR>
+      部室に見本があります。自由にご覧になってください。</p>
+      </div>
+      </p>
+      </TD>
+    </TR>
+    <tr>
+</TABLE>
+</div><!--SED BODY-->
+<div style="margin:15px">Mail　address: contact@sysken.net<br></div>
+<div style="margin:15px"><small>Created by Roydy and fs7f<br>
+Site Design Policy :「Simple,Cool,and Usability」</small></div><br>
+<div STYLE="width:800;font-size:11px; color:#777; font-family:Arial; text-align:right; padding:2px;border-top: 3px double #999;">
+Copyright(C) 2009 <A HREF="http://aitech.ac.jp/set1/" STYLE="color:#777; text-decoration:none;">System Engneering Team.</A> All Rights Reserved.
+</div>
+</div>
+</body>
+</html>

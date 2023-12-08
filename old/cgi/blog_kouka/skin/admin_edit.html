@@ -1,0 +1,71 @@
+<!--SKIN_CONTENTS_START-->
+<div id="contents">
+	<h2>記事編集</h2>
+	<ul>
+		<li>${INFO_MESSAGE}</li>
+	</ul>
+	<form action="${INFO_FILE}" method="post">
+		<fieldset>
+			<legend>投稿記事編集フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="edit" />
+			<p>
+				<input type="submit" name="exec_form" value="編集する" />
+				<input type="submit" name="exec_confirm" value="削除する" />
+				<input type="reset" value="リセット" />
+			</p>
+<!--SKIN_CONTENTS_END-->
+
+<!--SKIN_DIARY_HEAD_START-->
+			<table summary="投稿記事一覧">
+				<tr>
+					<th>編集</th>
+					<th>削除</th>
+					<th>No</th>
+					<th>日時</th>
+					<th>投稿者</th>
+					<th>題名</th>
+					<th>状態</th>
+				</tr>
+<!--SKIN_DIARY_HEAD_END-->
+
+	<!--SKIN_DIARY_START-->
+				<tr>
+					<td><input type="radio" name="edit" value="${ARTICLE_NO}" /></td>
+					<td><input type="checkbox" name="del" value="${ARTICLE_NO}" /></td>
+					<td>${ARTICLE_NO}</td>
+					<td>${ARTICLE_YEAR}/${ARTICLE_MONTH}/${ARTICLE_DAY} ${ARTICLE_HOUR}:${ARTICLE_MINUTE}</td>
+					<td>${ARTICLE_NAME}</td>
+					<td>${ARTICLE_SUBJ}</td>
+					<td>${ARTICLE_STAT}</td>
+				</tr>
+	<!--SKIN_DIARY_END-->
+
+<!--SKIN_DIARY_FOOT_START-->
+			</table>
+<!--SKIN_DIARY_FOOT_END-->
+
+<!--SKIN_PAGE_START-->
+		</fieldset>
+	</form>
+</div>
+<div id="navi">
+	<h2>ページ移動</h2>
+	<form action="${INFO_FILE}" method="get">
+		<fieldset>
+			<legend>ページ移動フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="edit" />
+			<dl>
+				<dt>表示ページ</dt>
+					<dd>
+						<select name="page" xml:lang="ja" lang="ja">
+							${PAGE_LIST}
+						</select>
+					</dd>
+			</dl>
+			<p><input type="submit" value="移動する" /></p>
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_PAGE_END-->

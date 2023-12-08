@@ -1,0 +1,14 @@
+ * BracketName [#cf801032]
+ WikiNameの書式で表現できない日本語などをページ名として扱えるようにする書式。
+  [[BracketName]] 
+ のように [[ ]] で囲うと[[BracketName]]になります。
+ もちろん日本語もOK。
+ 
+ -[[北海道スキーツアー:http://hski.travel-search.jp/]]
+ -[[スキーツアー:http://www.skibus.net/]]
+ -[[北海道スキー:http://hski.tabi-style.jp/]]
+ 
++-[[大阪 梅田 寿司>http://www.sushidokoro-kazu.jp/]]
++-[[大阪 京橋 風俗 高収入 求人>http://www.moemu.info/]]
++-[[大阪 風俗>http://moemu.jp/]]
++-[[高収入 求人>http://moemu-recruit.jp/]]

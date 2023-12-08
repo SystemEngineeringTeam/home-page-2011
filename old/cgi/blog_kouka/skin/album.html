@@ -1,0 +1,48 @@
+<!--SKIN_ALBUM_HEAD_START-->
+<div id="contents">
+	<h2>ファイル一覧</h2>
+	<ul>
+		<li>ファイルが添付された記事の一覧。</li>
+		<li>各ファイルをクリックすると関連記事が表示されます。</li>
+		<!--INFO_USER_START--><li><strong>管理者用ページにログインしているときのみ、非公開のファイルも表示されます。</strong></li><!--INFO_USER_END-->
+	</ul>
+	<table summary="投稿記事一覧">
+		<tr>
+			<th>ファイル</th>
+			<th>題名</th>
+			<th>投稿日時</th>
+		</tr>
+<!--SKIN_ALBUM_HEAD_END-->
+
+	<!--SKIN_ALBUM_START-->
+		<tr>
+			<td><a href="${ARTICLE_URL}">${ALBUM_INFO}</a></td>
+			<td><a href="${ARTICLE_URL}">${ARTICLE_SUBJ}</a></td>
+			<td>${ARTICLE_YEAR}/${ARTICLE_MONTH}/${ARTICLE_DAY}-${ARTICLE_HOUR}:${ARTICLE_MINUTE}</td>
+		</tr>
+	<!--SKIN_ALBUM_END-->
+
+	<!--SKIN_ALBUM_DELIMITER_START-->
+	</table>
+	<table summary="投稿記事一覧">
+		<tr>
+			<th>ファイル</th>
+			<th>題名</th>
+			<th>投稿日時</th>
+		</tr>
+	<!--SKIN_ALBUM_DELIMITER_END-->
+
+<!--SKIN_ALBUM_FOOT_START-->
+	</table>
+</div>
+<!--SKIN_ALBUM_FOOT_END-->
+
+<!--SKIN_PAGE_START-->
+<div id="page">
+	<h2>ページ移動</h2>
+	<ul>
+		<li><!--PAGE_PREV_START-->前のページ<!--PAGE_PREV_END--></li>
+		<li><!--PAGE_NEXT_START-->次のページ<!--PAGE_NEXT_END--></li>
+	</ul>
+</div>
+<!--SKIN_PAGE_END-->

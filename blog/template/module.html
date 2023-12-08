@@ -1,0 +1,25 @@
+<div class="blogn_main">
+<div class="blogn_bar">モジュール一覧</div>
+{BLOGN_MODULE}
+<table class="blogn_user_list">
+<tr>
+<th style="background-color:#dcdcdc;text-align:center;" width="*">モジュール名</th>
+<th style="background-color:#dcdcdc;text-align:center;" width="50">更新</th>
+<th style="background-color:#dcdcdc;text-align:center;" width="50">編集</th>
+</tr>
+{BLOGN_MODULE_LOOP}
+<tr>
+	<form action="./admin.php?mode=module&amp;action=edit" method="post">
+	<td style="padding:5px;">
+		<input type="hidden" name="blogn_module_name" value="{BLOGN_ID}">
+		<div>{BLOGN_MODULE_NAME}</div>
+		<div class="blogn_comment">{BLOGN_MODULE_DESC}</div>
+	</td>
+	<td align="center">{BLOGN_MODULE_CONTROL}<a href="admin.php?mode=module&amp;action=update&name={BLOGN_ID}" title="アップデート"><img src="./images/update.gif" border="0"></a>{/BLOGN_MODULE_CONTROL}</td>
+	<td align="center">{BLOGN_MODULE_CONTROL}<input type="image" src="./images/edit.gif" name="submit" alt="編集">{/BLOGN_MODULE_CONTROL}</td>
+	</form>
+</tr>
+{/BLOGN_MODULE_LOOP}
+</table>
+{/BLOGN_MODULE}
+</div>

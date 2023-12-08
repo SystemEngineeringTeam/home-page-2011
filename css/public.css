@@ -1,0 +1,53 @@
+﻿*/Public CSS*/
+body{
+	background-image:url(../img/wall4.gif);
+	}
+.backbone{
+	margin-left:auto;/* センタリング */
+	margin-right:auto;/* センタリング */
+	margin-bottom:10px;
+	padding:5px;
+	background-image:url(../img/born-wall.gif);
+	background-color: white;
+	text-align:left; 
+	width:800px;
+	}
+ul#menubar {
+   	margin-left:auto;/* センタリング */
+	margin-right:auto;/* センタリング */
+}
+ul#menubar li {
+   list-style-type: none; /* 先頭記号を消す */
+   float: left; /* リスト項目を横方向に並べる */
+   padding: 0px; /* 枠線と内容の距離をゼロに */
+}
+ul#menubar li a {
+	
+   text-decoration: none; /* 下線を消す */
+   display: block; /* ブロックレベルに */
+   
+}
+ul#menubar a img {
+	border: none;
+}
+ul#menubar li a:hover img{
+	opacity:0.5;
+	filter:alpha(opacity=10);
+}
+
+#header{
+	margin-left:auto;/* センタリング */
+	margin-right:auto;/* センタリング */
+	}
+
+#footer{      /*コピーライト*/
+	clear:both;
+	margin-right:35px;
+	font-size:small;
+	font-color:#777;
+	font-family:Arial; 
+	text-align:right;
+	margin-top:20px;
+	border-top:3px double #999;
+	border-bottom:3px double #999;
+	}

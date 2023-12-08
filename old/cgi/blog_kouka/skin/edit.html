@@ -1,0 +1,26 @@
+<!--SKIN_CONTENTS_START-->
+<div id="form">
+	<h2>記事編集</h2>
+	<ul>
+		<li>${INFO_MESSAGE}</li>
+	</ul>
+	<form action="${INFO_PATH}" method="post">
+		<fieldset>
+			<legend>認証フォーム</legend>
+			<input type="hidden" name="mode" value="edit" />
+			<input type="hidden" name="no" value="${FORM_NO}" />
+			<dl>
+				<dt>削除キー</dt>
+					<dd><input type="password" name="pwd" size="20" value="" /></dd>
+				<dt>作業内容</dt>
+					<dd>
+						<select name="work" xml:lang="ja" lang="ja">
+							${FORM_LIST}
+						</select>
+					</dd>
+			</dl>
+			<p><input type="submit" value="認証する" /></p>
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_CONTENTS_END-->

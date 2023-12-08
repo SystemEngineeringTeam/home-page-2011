@@ -1,0 +1,14 @@
+#
+# /members - Basic Authentication
+#
+
+AuthType Basic
+AuthName "S.E.T. Members only."
+# AuthDigestDomain /members/
+AuthUserFile /home/webmaster/.htmempasswd
+Require valid-user
+
+#<Location /members/home1/>
+#	DirectoryIndex 
+#</Location>
+

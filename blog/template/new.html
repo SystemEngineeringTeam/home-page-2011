@@ -1,0 +1,102 @@
+{BLOGN_INFORMATION}
+<div class="blogn_main">
+{BLOGN_ACTION_PEUP}
+<div class="blogn_bar">プレビュー</div>
+<table class="blogn_user_list">
+<tr><td><div style="height:200px;overflow: auto;">
+	<b>{BLOGN_PREVIEW_TITLE}</b><br><br>
+	{BLOGN_PREVIEW_MES}
+	<hr size="1" align="center" noshade style="margin:2px;">
+	{BLOGN_PREVIEW_MORE}
+</div></td></tr>
+</table><br>
+{/BLOGN_ACTION_PEUP}
+
+{BLOGN_ACTION_PEUO}
+<form action="./admin.php?mode=new&amp;action=update" method="post" name="post">
+	<div class="blogn_bar">記事投稿</div>
+	<table summary="記事投稿" class="blogn_user_list">
+	<tr style="background-color: #dcdcdc;">
+	<th style="text-align: center;">記事編集</th></tr>
+	<tr><td style="padding:10px;">
+	<input type="hidden" name="blogn_ent_id" value="{BLOGN_LOG_ID}">
+	<div style="font-size:12px;float:right;border:solid 1px;padding:2px;">記事ID：{BLOGN_LOG_ID}</div>
+{BLOGN_ACTION_PEUO_ELSE}
+	<form action="./admin.php?mode=new&amp;action=post" method="post" name="post">
+	<div class="blogn_bar">記事投稿</div>
+	<table summary="記事投稿" class="blogn_user_list">
+	<tr style="background-color: #dcdcdc;">
+	<th style="text-align: center;">新規投稿</th>
+	</tr>
+	<tr><td style="padding:10px;">
+{/BLOGN_ACTION_PEUO}
+
+
+<div style="font-weight:bold;">■ カテゴリー</div>
+<select name="blogn_category" style="width:50%;">
+	{BLOGN_CATEGORY}
+</select><br><br>
+<div style="font-weight:bold;">■ 記事のタイトル</div>
+<div><input name="blogn_title" size="30" value="{BLOGN_TITLE}" style="width:50%;"></div>
+<br>
+<div style="font-weight:bold;">■ 記事の内容</div>
+{BLOGN_ICON_TOOLBAR_1}
+{BLOGN_TAG_TOOLBAR_1}
+<textarea name="blogn_mes" cols="40" rows="20" style="width:98%;height:200px;" id="blogn_mes" wrap="virtual">{BLOGN_MES}</textarea>
+<div style="text-align:center;width:100%"><input type="submit" name="blogn_preview" value="プレビュー"><input type="submit" name="blogn_post" value="投稿"></div>
+
+<br clear="all">
+<div style="font-weight:bold;">■ 記事の続き</div>
+{BLOGN_ICON_TOOLBAR_2}
+{BLOGN_TAG_TOOLBAR_2}
+<textarea cols="40" rows="20" style="width:98%;height:200px;" id="blogn_more_mes" name="blogn_more" wrap="virtual">{BLOGN_MORE}</textarea>
+<br><br>
+<div style="font-weight:bold;">■ 記事の日付</div>
+<input type="checkbox" name="blogn_reserve" value="1" id="reserve"{BLOGN_RESERVE_CHECK}>
+<label for="reserve">予約投稿にする</label>
+<span style="font-size:10px;">（指定日になると記事を公開します。）</span><br>
+<select name="blogn_ent_year">
+	{BLOGN_ENT_YEAR}
+</select> 年 
+<select name="blogn_ent_month">
+	{BLOGN_ENT_MONTH}
+</select> 月 
+<select name="blogn_ent_day">
+	{BLOGN_ENT_DAY}
+</select> 日   
+<select name="blogn_ent_hour">
+	{BLOGN_ENT_HOUR}
+</select> 時 
+<select name="blogn_ent_minutes">
+	{BLOGN_ENT_MINUTES}
+</select> 分 
+<select name="blogn_ent_second">
+	{BLOGN_ENT_SECOND}
+</select> 秒 
+<input type="button" name="datenow" value="現在時刻を取得" onclick="dnow()" onkeypress="dnow()"><br><br>
+
+<div style="font-weight:bold;">■ リアクション</div>
+<input type="checkbox" name="blogn_comment_ok" value="1" id="cok"{BLOGN_COMMENT_CHECK}>
+<label for="cok">コメントを受け付ける</label>
+<input type="checkbox" name="blogn_trackback_ok" value="1" id="tok"{BLOGN_TRACKBACK_CHECK} onclick="javascript:document.post.blogn_secret.checked=false;" onkeypress="javascript:document.post.blogn_secret.checked=false;">
+<label for="tok">トラックバックを受け付ける</label>　
+<input type="checkbox" name="blogn_secret" value="1" id="secret"{BLOGN_SECRET_CHECK} onclick="javascript:document.post.blogn_trackback_ok.checked=false;" onkeypress="javascript:document.post.blogn_trackback_ok.checked=false;">
+<label for="secret">記事を非公開にする<span class="blogn_comment">（ログインユーザーのみ閲覧可能）</span></label>
+<br>
+<input type="checkbox" name="blogn_br_change" value="1" id="br_change"{BLOGN_BR_CHECK}>
+<label for="br_change">改行を自動的に&lt;br /&gt;に変換して投稿する</label>
+<br><br>
+<div style="font-weight:bold;">■ トラックバックを送信する </div>
+<div style="font-size:10px;">※複数のアドレスに送信する場合はアドレスごとに改行してください。</div>
+<textarea style="WIDTH: 96%;font-size:12px;" name="blogn_send_trackback" rows="4" cols="50">{BLOGN_SEND_TRACKBACK}</textarea>
+<br><br>
+
+<div style="font-weight:bold;">■ 更新PING</div>
+{BLOGN_SEND_PING}
+<div style="text-align:center;">
+<input type="submit" name="blogn_preview" value="プレビュー">
+<input type="submit" name="blogn_new" value="投稿"></div>
+</td></tr>
+</table>
+</form>
+</div>

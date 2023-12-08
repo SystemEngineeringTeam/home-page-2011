@@ -1,0 +1,29 @@
++* Servers [#s36ba7ad]
+ 
++　シス研のサーバたち（一台しかないけど）
++
++
++* set-router [#q95acfc7]
++
++　システム工学研究会セグメント用ルータ。
++
++ OS : Debian GNU/Linux 6.0.1
++
++|Interface|IPAddr|FQDN|Info|
++|eth0|192.168.54.21/24|set1.ie.aitech.ac.jp|旧SET1アクセス用|
++|~|192.168.54.22/24|-----|旧SET2アクセス用|
++|eth1|172.16.55.254/24|set-router.local.sysken.net|SET側|
++|ipip0|172.16.55.253|-----|伊藤研トンネリング用(172.16.100.0/24)|
++
++-set-server
++
++　システム工学研究会 Web/Mail/Samba サーバ。
++
++
++ OS : Debian GNU/Linux 6.0.1
++
++|Interface|IPAddr|FQDN|Info|
++|eth0|172.16.55.11|set-server.local.sysken.net||
++|~|172.16.55.12|-----|旧SET2互換用|
++
++- UID : set, DATE : 2012/01/06 (Fri) 21:20:10

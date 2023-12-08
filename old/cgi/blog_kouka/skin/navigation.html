@@ -1,0 +1,267 @@
+<!--SKIN_NAVIGATION_HEAD_START-->
+<div id="navigation">
+<!--SKIN_NAVIGATION_HEAD_END-->
+
+	<!--SKIN_CALENDAR_HEAD_START-->
+	<div class="block">
+		<h2>カレンダー</h2>
+		<table summary="${CALENDAR_THIS_YEAR}年${CALENDAR_THIS_MONTH}月のカレンダー">
+			<tr>
+				<th colspan="7">${CALENDAR_THIS_YEAR}年${CALENDAR_THIS_MONTH}月</th>
+			</tr>
+			<tr>
+				<td>日</td>
+				<td>月</td>
+				<td>火</td>
+				<td>水</td>
+				<td>木</td>
+				<td>金</td>
+				<td>土</td>
+			</tr>
+	<!--SKIN_CALENDAR_HEAD_END-->
+
+			<!--SKIN_CALENDAR_WEEKHEAD_START-->
+			<tr>
+			<!--SKIN_CALENDAR_WEEKHEAD_END-->
+
+				<!--SKIN_CALENDAR_DAY_START-->
+				<td id="calendar_${CALENDAR_CODE}"><!--CALENDAR_DAY_START--><span class="day">${CALENDAR_DAY}</span><!--CALENDAR_DAY_END--></td>
+				<!--SKIN_CALENDAR_DAY_END-->
+
+				<!--SKIN_CALENDAR_SATDAY_START-->
+				<td id="calendar_${CALENDAR_CODE}"><!--CALENDAR_DAY_START--><span class="satday">${CALENDAR_DAY}</span><!--CALENDAR_DAY_END--></td>
+				<!--SKIN_CALENDAR_SATDAY_END-->
+
+				<!--SKIN_CALENDAR_SUNDAY_START-->
+				<td id="calendar_${CALENDAR_CODE}"><!--CALENDAR_DAY_START--><span class="sunday">${CALENDAR_DAY}</span><!--CALENDAR_DAY_END--></td>
+				<!--SKIN_CALENDAR_SUNDAY_END-->
+
+				<!--SKIN_CALENDAR_VOID_START-->
+				<td>-</td>
+				<!--SKIN_CALENDAR_VOID_END-->
+
+			<!--SKIN_CALENDAR_WEEKFOOT_START-->
+			</tr>
+			<!--SKIN_CALENDAR_WEEKFOOT_END-->
+
+	<!--SKIN_CALENDAR_FOOT_START-->
+		</table>
+		<ul class="calender">
+			<li><a href="${INFO_PATH}?date=${CALENDAR_PREV_YEAR}${CALENDAR_PREV_MONTH}">前の月</a></li>
+			<li><a href="${INFO_PATH}?date=${CALENDAR_NEXT_YEAR}${CALENDAR_NEXT_MONTH}">次の月</a></li>
+		</ul>
+	</div>
+	<!--SKIN_CALENDAR_FOOT_END-->
+
+	<!--SKIN_MENULIST_HEAD_START-->
+	<div class="block">
+		<h2>コンテンツ</h2>
+		<ul>
+	<!--SKIN_MENULIST_HEAD_END-->
+
+		<!--SKIN_MENULIST_FIELD_START-->
+			<li>
+				${MENU_FIELD}
+		<!--SKIN_MENULIST_FIELD_END-->
+
+			<!--SKIN_MENU_HEAD_START-->
+				<ul>
+			<!--SKIN_MENU_HEAD_END-->
+
+				<!--SKIN_MENU_START-->
+					<li><a href="${MENU_URL}">${MENU_NAME}</a></li>
+				<!--SKIN_MENU_END-->
+
+			<!--SKIN_MENU_FOOT_START-->
+				</ul>
+			<!--SKIN_MENU_FOOT_END-->
+
+		<!--SKIN_MENULIST_DELIMITER_START-->
+			</li>
+		<!--SKIN_MENULIST_DELIMITER_END-->
+
+	<!--SKIN_MENULIST_FOOT_START-->
+		</ul>
+	</div>
+	<!--SKIN_MENULIST_FOOT_END-->
+
+	<!--SKIN_FIELD_HEAD_START-->
+	<div class="block">
+		<h2>分類一覧</h2>
+		<ul>
+	<!--SKIN_FIELD_HEAD_END-->
+
+		<!--SKIN_FIELD_START-->
+			<li>
+				<a href="${INFO_PATH}?field=${FIELD_NO}">${FIELD_NAME}</a> （${FIELD_SIZE}件）
+		<!--SKIN_FIELD_END-->
+
+			<!--SKIN_CHILD_HEAD_START-->
+				<ul>
+			<!--SKIN_CHILD_HEAD_END-->
+
+				<!--SKIN_CHILD_START-->
+					<li><a href="${INFO_PATH}?field=${FIELD_NO}">${FIELD_NAME}</a> （${FIELD_SIZE}件）</li>
+				<!--SKIN_CHILD_END-->
+
+			<!--SKIN_CHILD_FOOT_START-->
+				</ul>
+			<!--SKIN_CHILD_FOOT_END-->
+
+		<!--SKIN_FIELD_DELIMITER_START-->
+			</li>
+		<!--SKIN_FIELD_DELIMITER_END-->
+
+	<!--SKIN_FIELD_FOOT_START-->
+		</ul>
+	</div>
+	<!--SKIN_FIELD_FOOT_END-->
+
+	<!--SKIN_SEARCH_START-->
+	<div class="block">
+		<h2>ログ検索</h2>
+		<form action="${INFO_PATH}" method="get">
+			<fieldset>
+				<legend>検索フォーム</legend>
+				<input type="hidden" name="mode" value="search" />
+				<input type="hidden" name="cond" value="and" />
+				<dl>
+					<dt>キーワード</dt>
+						<dd><input type="text" name="word" size="20" value="" /></dd>
+				</dl>
+				<p><input type="submit" value="検索する" /></p>
+			</fieldset>
+		</form>
+	</div>
+	<!--SKIN_SEARCH_END-->
+
+	<!--SKIN_LIST_HEAD_START-->
+	<div class="block">
+		<h2>最近の記事</h2>
+		<dl>
+	<!--SKIN_LIST_HEAD_END-->
+
+		<!--SKIN_LIST_START-->
+			<dt><a href="${ARTICLE_URL}">${ARTICLE_SUBJ}</a><!--ARTICLE_NEW_START--> <em class="new">New!</em><!--ARTICLE_NEW_END--></dt>
+				<dd>${ARTICLE_YEAR}/${ARTICLE_MONTH}/${ARTICLE_DAY} ${ARTICLE_HOUR}:${ARTICLE_MINUTE}</dd>
+		<!--SKIN_LIST_END-->
+
+	<!--SKIN_LIST_FOOT_START-->
+		</dl>
+	</div>
+	<!--SKIN_LIST_FOOT_END-->
+
+	<!--SKIN_IMAGE_HEAD_START-->
+	<div class="block">
+		<h2>最近の画像</h2>
+		<ul>
+	<!--SKIN_IMAGE_HEAD_END-->
+
+		<!--SKIN_IMAGE_START-->
+			<li><a href="${ARTICLE_URL}">${ARTICLE_IMAGE}</a></li>
+		<!--SKIN_IMAGE_END-->
+
+	<!--SKIN_IMAGE_FOOT_START-->
+		</ul>
+	</div>
+	<!--SKIN_IMAGE_FOOT_END-->
+
+	<!--SKIN_CMTLIST_HEAD_START-->
+	<div class="block">
+		<h2>最近のコメント</h2>
+		<dl>
+	<!--SKIN_CMTLIST_HEAD_END-->
+
+		<!--SKIN_CMTLIST_START-->
+			<dt><a href="${INFO_PATH}?mode=comment&amp;no=${ARTICLE_PNO}#comment">${ARTICLE_SUBJ}</a><!--ARTICLE_NEW_START--> <em class="new">New!</em><!--ARTICLE_NEW_END--></dt>
+				<dd>${ARTICLE_NAME}</dd>
+				<dd>${ARTICLE_YEAR}/${ARTICLE_MONTH}/${ARTICLE_DAY} ${ARTICLE_HOUR}:${ARTICLE_MINUTE}</dd>
+		<!--SKIN_CMTLIST_END-->
+
+	<!--SKIN_CMTLIST_FOOT_START-->
+		</dl>
+	</div>
+	<!--SKIN_CMTLIST_FOOT_END-->
+
+	<!--SKIN_TBLIST_HEAD_START-->
+	<div class="block">
+		<h2>最近のトラックバック</h2>
+		<dl>
+	<!--SKIN_TBLIST_HEAD_END-->
+
+		<!--SKIN_TBLIST_START-->
+			<dt><a href="${INFO_PATH}?mode=trackback&amp;no=${TRACKBACK_PNO}#trackback">${TRACKBACK_TITLE}</a><!--TRACKBACK_NEW_START--> <em class="new">New!</em><!--TRACKBACK_NEW_END--></dt>
+				<dd>${TRACKBACK_BLOG}</dd>
+				<dd>${TRACKBACK_YEAR}/${TRACKBACK_MONTH}/${TRACKBACK_DAY} ${TRACKBACK_HOUR}:${TRACKBACK_MINUTE}</dd>
+		<!--SKIN_TBLIST_END-->
+
+	<!--SKIN_TBLIST_FOOT_START-->
+		</dl>
+	</div>
+	<!--SKIN_TBLIST_FOOT_END-->
+
+	<!--SKIN_PAST_HEAD_START-->
+	<div class="block">
+		<h2>過去ログ</h2>
+		<ul>
+	<!--SKIN_PAST_HEAD_END-->
+
+		<!--SKIN_PAST_START-->
+			<li><a href="${INFO_PATH}?date=${PAST_YEAR}${PAST_MONTH}">${PAST_YEAR}年${PAST_MONTH}月</a> （${PAST_SIZE}件）</li>
+		<!--SKIN_PAST_END-->
+
+	<!--SKIN_PAST_FOOT_START-->
+		</ul>
+	</div>
+	<!--SKIN_PAST_FOOT_END-->
+
+	<!--SKIN_LINKLIST_HEAD_START-->
+	<div class="block">
+		<h2>リンク集</h2>
+		<ul>
+	<!--SKIN_LINKLIST_HEAD_END-->
+
+		<!--SKIN_LINKLIST_FIELD_START-->
+			<li>
+				${LINK_FIELD}
+		<!--SKIN_LINKLIST_FIELD_END-->
+
+			<!--SKIN_LINK_HEAD_START-->
+				<ul>
+			<!--SKIN_LINK_HEAD_END-->
+
+				<!--SKIN_LINK_START-->
+					<li><a href="${LINK_URL}">${LINK_NAME}</a></li>
+				<!--SKIN_LINK_END-->
+
+			<!--SKIN_LINK_FOOT_START-->
+				</ul>
+			<!--SKIN_LINK_FOOT_END-->
+
+		<!--SKIN_LINKLIST_DELIMITER_START-->
+			</li>
+		<!--SKIN_LINKLIST_DELIMITER_END-->
+
+	<!--SKIN_LINKLIST_FOOT_START-->
+		</ul>
+	</div>
+	<!--SKIN_LINKLIST_FOOT_END-->
+
+	<!--SKIN_PROFILE_HEAD_START-->
+	<div class="block">
+		<h2>プロフィール</h2>
+		<ul>
+	<!--SKIN_PROFILE_HEAD_END-->
+
+		<!--SKIN_PROFILE_START-->
+			<li><a href="${INFO_PATH}?mode=profile&amp;user=${PROFILE_USER}">${PROFILE_NAME}</a></li>
+		<!--SKIN_PROFILE_END-->
+
+	<!--SKIN_PROFILE_FOOT_START-->
+		</ul>
+	</div>
+	<!--SKIN_PROFILE_FOOT_END-->
+
+<!--SKIN_NAVIGATION_FOOT_START-->
+</div>
+<!--SKIN_NAVIGATION_FOOT_END-->

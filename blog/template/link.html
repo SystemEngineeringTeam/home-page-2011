@@ -1,0 +1,83 @@
+{BLOGN_INFORMATION}
+<div class="blogn_main">
+<form action="./admin.php?mode=link&amp;action=group_new" method="post">
+<div class="blogn_bar">グループ追加</div>
+<table class="blogn_user_list">
+<tr>
+<td width="30%" bgcolor="#dcdcdc" style="font-weight:bold;">サイトグループ名</td>
+<td width="*"><input type="text" name="blogn_link_name" maxlength="50" style="width:96%;"></td>
+</tr>
+</table>
+<div class="blogn_submit_type"><input type="submit" name="blogn_group_add" value="追加"></div>
+</form>
+
+{BLOGN_LINK2_LIST}
+<form action="./admin.php?mode=link&amp;action=link_new" method="post">
+<div class="blogn_bar">サイト追加</div>
+<table class="blogn_user_list">
+<tr bgcolor="#dcdcdc"><th width="30%">サイトグループ名</th><th width="30%">サイト名</th><th width="40%">サイトURL</th></tr>
+<tr><td width="30%"><select name="blogn_id" style="width:96%;">
+{BLOGN_LINK1_OPTION}
+</select></td><td width="30%"><input type="text" name="blogn_link_name" maxlength="50" style="width:96%;"></td>
+<td width="30%"><input type="text" name="blogn_link_url" maxlength="100" style="width:96%;"></td></tr>
+</table>
+<div class="blogn_submit_type"><input type="submit" name="blogn_link_add" value="追加"></div>
+</form>
+{/BLOGN_LINK2_LIST}
+<div class="blogn_bar">サイト一覧</div>
+<table class="blogn_user_list">
+<tr bgcolor="#dcdcdc"><th width="*" colspan="2">グループ／サイト名／サイトURL</th><th width="50" align="center">更新</th><th width="50" align="center">削除</th><th colspan="4" width="100" align="center">並び替え</th></tr>
+
+{BLOGN_LINK}
+{BLOGN_LINK1_LOOP}
+	<form action="./admin.php?mode=link&amp;action=group_edit" method="post">
+	<tr bgcolor="#e9e9e9">
+		<td width="*" colspan="2"><input type="hidden" name="blogn_id" value="{BLOGN_LINK1_ID}"><input type="text" name="blogn_link_name" maxlength="50" value="{BLOGN_LINK1_NAME}" style="width:96%;"></td>
+		<td align="center"><input type="image" src="./images/update.gif" name="submit" alt="更新"></td>
+		<td align="center"><a href=Javascript:delcheck("{BLOGN_LINK1_DELETE}"); title="削除"><img src="./images/trashl.gif" border="0"></a></td>
+		<td bgcolor="#e9e9e9" colspan="2"><img src="./images/blank.gif" width="50" height="1"></td>
+
+		{BLOGN_LINK1_TYPE1}
+			<td align="center" width="25"{BLOGN_LINK1_ROWSPAN}><img src="./images/x.gif"></td><td align="center" width="25"{BLOGN_LINK1_ROWSPAN}><img src="./images/x.gif"></td>
+		{/BLOGN_LINK1_TYPE1}
+		{BLOGN_LINK1_TYPE2}
+			<td align="center" width="25"{BLOGN_LINK1_ROWSPAN}><img src="./images/x.gif"></td><td align="center" width="25"{BLOGN_LINK1_ROWSPAN}><a href="admin.php?mode=link&amp;action=group_change&amp;id={BLOGN_LINK1_ID}&amp;updown=down"><img src="./images/down.gif" width="20" height="20" border="0"></a></td>
+		{/BLOGN_LINK1_TYPE2}
+		{BLOGN_LINK1_TYPE3}
+			<td align="center" width="25"{BLOGN_LINK1_ROWSPAN}><a href="admin.php?mode=link&amp;action=group_change&amp;id={BLOGN_LINK1_ID}&amp;updown=up"><img src="./images/up.gif" width="20" height="20" border="0"></a></td><td align="center" width="25"{BLOGN_LINK1_ROWSPAN}><img src="./images/x.gif"></td>
+		{/BLOGN_LINK1_TYPE3}
+		{BLOGN_LINK1_TYPE4}
+			<td align="center" width="25"{BLOGN_LINK1_ROWSPAN}><a href="admin.php?mode=link&amp;action=group_change&amp;id={BLOGN_LINK1_ID}&amp;updown=up"><img src="./images/up.gif" width="20" height="20" border="0"></a></td><td align="center" width="25"{BLOGN_LINK1_ROWSPAN}><a href="admin.php?mode=link&amp;action=group_change&amp;id={BLOGN_LINK1_ID}&amp;updown=down"><img src="./images/down.gif" width="20" height="20" border="0"></a></td>
+		{/BLOGN_LINK1_TYPE4}
+		</tr></form>
+
+		{BLOGN_LINK2_LOOP}
+			<form action="./admin.php?mode=link&amp;action=link_edit" method="post"><tr>
+			<td width="200" style="padding:0px 0px 0px 25px;">
+				<input type="hidden" name="blogn_id" value="{BLOGN_LINK2_ID}">
+				<input type="hidden" name="blogn_group_id" value="{BLOGN_LINK1_ID}">
+				<input type="text" name="blogn_link_name" maxlength="50" value="{BLOGN_LINK2_NAME}" style="width:96%;">
+			</td>
+			<td width="*"><input type="text" name="blogn_link_url" maxlength="250" value="{BLOGN_LINK2_URL}" style="width:96%;"></td>
+			<td align="center"><input type="image" src="./images/update.gif" name="submit" alt="更新"></td>
+			<td align="center"><a href="admin.php?mode=link&amp;action=link_delete&amp;id={BLOGN_LINK2_ID}" title="削除"><img src="./images/trash.gif" border="0"></a></td>
+			{BLOGN_LINK2_TYPE1}
+				<td align="center" width="25"><img src="./images/x.gif"></td><td align="center" width="25"><img src="./images/x.gif"></td>
+			{/BLOGN_LINK2_TYPE1}
+			{BLOGN_LINK2_TYPE2}
+				<td align="center" width="25"><img src="./images/x.gif"></td><td align="center" width="25"><a href="admin.php?mode=link&amp;action=link_change&amp;gid={BLOGN_LINK1_ID}&amp;id={BLOGN_LINK2_ID}&amp;updown=down"><img src="./images/down.gif" width="20" height="20" border="0"></a></td>
+			{/BLOGN_LINK2_TYPE2}
+			{BLOGN_LINK2_TYPE3}
+				<td align="center" width="25"><a href="admin.php?mode=link&amp;action=link_change&amp;gid={BLOGN_LINK1_ID}&amp;id={BLOGN_LINK2_ID}&amp;updown=up"><img src="./images/up.gif" width="20" height="20" border="0"></a></td><td align="center" width="25"><img src="./images/x.gif"></td>
+			{/BLOGN_LINK2_TYPE3}
+			{BLOGN_LINK2_TYPE4}
+				<td align="center" width="25"><a href="admin.php?mode=link&amp;action=link_change&amp;gid={BLOGN_LINK1_ID}&amp;id={BLOGN_LINK2_ID}&amp;updown=up"><img src="./images/up.gif" width="20" height="20" border="0"></a></td><td align="center" width="25"><a href="admin.php?mode=link&amp;action=link_change&amp;gid={BLOGN_LINK1_ID}&amp;id={BLOGN_LINK2_ID}&amp;updown=down"><img src="./images/down.gif" width="20" height="20" border="0"></a></td>
+			{/BLOGN_LINK2_TYPE4}
+			</tr></form>
+		{/BLOGN_LINK2_LOOP}
+	{/BLOGN_LINK1_LOOP}
+	{BLOGN_LINK_ELSE}
+	<td colspan="8" align="center">登録されているリンクはありません。</td></tr>
+	{/BLOGN_LINK}
+</table>
+</div>

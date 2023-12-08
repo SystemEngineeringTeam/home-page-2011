@@ -1,0 +1,52 @@
+{BLOGN_INFORMATION}
+<div class="blogn_main">
+<form action="./admin.php?mode=skinmake&amp;action=new" enctype="multipart/form-data" method="post">
+<div class="blogn_bar">スキン追加</div>
+<table class="blogn_user_list">
+<tr bgcolor="#dcdcdc">
+<th width="40%">スキン名</th><th width="30%">HTMLファイル</th><th width="30%">CSSファイル</th>
+</tr>
+<tr valign="top">
+<td width="40%"><input type="text" name="blogn_skin_name" maxlength="50" style="width:96%;"></td>
+<td width="30%">
+	<div><input type="file" name="blogn_html_upload_file" accept="text/html" size="30"></div>
+	<div align="right" class="blogn_comment">※ ファイル形式は .html　.htm でお願いします。</div>
+</td>
+<td width="30%">
+	<div><input type="file" name="blogn_css_upload_file" accept="text/css" size="30"></div>
+	<div align="right" class="blogn_comment">※ ファイル形式は .css でお願いします。</div>
+</td>
+</tr>
+</table>
+<div class="blogn_submit_type"><input type="submit" name="blogn_user_add" value="追加"></div>
+</form>
+<div class="blogn_bar">スキン一覧</div>
+<table class="blogn_user_list">
+<tr bgcolor="#dcdcdc">
+<th width="*">スキン名</th>
+<th width="150" align="center">HTML更新日</th>
+<th width="150" align="center">CSS更新日</th>
+<th width="50" align="center">更新</th>
+<th width="50" align="center">編集</th>
+<th width="50" align="center">削除</th>
+</tr>
+{BLOGN_SKIN_LIST}
+{BLOGN_SKIN_LIST_LOOP}
+<form action="admin.php?mode=skinmake&amp;action=update" method=post>
+<tr>
+<td>
+<input type="hidden" name="blogn_skin_id" value="{BLOGN_SKIN_ID}">
+<input type="text" name="blogn_skin_name" maxlength="50" value="{BLOGN_SKIN_NAME}" style="width:96%;">
+</td>
+<td align="center"><input type="hidden" name="blogn_html_file_name" value="{BLOGN_HTML_NAME}">{BLOGN_HTML_TIME}</td>
+<td align="center"><input type="hidden" name="blogn_css_file_name" value="{BLOGN_CSS_NAME}">{BLOGN_CSS_TIME}</td>
+<td align="center"><input type="image" src="./images/update.gif" name="submit" alt="更新"></td>
+<td align="center"><a href="admin.php?mode=skinmake&amp;action=edit&amp;id={BLOGN_SKIN_ID}"><img src="./images/edit.gif" border="0" alt="編集"></a></td>
+<td align="center"><a href="admin.php?mode=skinmake&amp;action=delete&id={BLOGN_SKIN_ID}"><img src="./images/trash.gif" border="0" alt="削除"></a></td>
+</tr>
+</form>
+{/BLOGN_SKIN_LIST_LOOP}
+{BLOGN_SKIN_LIST_ELSE}
+<tr><td colspan="6" align="center">登録されているスキンはありません。</td></tr>
+{/BLOGN_SKIN_LIST}
+</table></div>

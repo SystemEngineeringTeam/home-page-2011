@@ -1,0 +1,308 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="ja">
+<head>
+<title>{SITETITLE}</title>
+<meta http-equiv=content-type content="text/html; charset={CHARSET}">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="{HOMELINK}?mode=rss">
+<link rel="stylesheet" href="{CSSNAME}" type="text/css">
+<SCRIPT language="JavaScript">
+<!--
+function time() {
+var now = new Date()
+yea = now.getYear()
+if(yea <= 2000){yea=yea+1900}
+mon = now.getMonth()+1
+if (mon<10) {mon="0"+mon}
+day = now.getDate()
+if (day<10) {day="0"+day}
+hou = now.getHours()
+if (hou<10) {hou="0"+hou}
+min = now.getMinutes()
+if (min<10) {min="0"+min}
+sec = now.getSeconds()
+if (sec<10) {sec="0"+sec}
+document.form_clock.clock.value= yea +"."+ mon +"."+ day +"/"+ hou +":"+ min +":"+ sec
+setTimeout('time()',1000)
+}
+//-->
+</SCRIPT>
+</head>
+<body onload="time()">
+<div id="inbox">
+<!-- ここからbanner -->
+  <div id="banner">
+    <!-- ここからdescription -->
+    <div id="banner_l">
+      <h1 class="site_title"><a href={HOMELINK}>{SITENAME}</a></h1>
+      <div class="description">{SITEDESC}</div>
+    </div>
+    <!-- ここまでdescription -->
+    <!-- ここからサーチ -->
+    <div id="searcharea">
+      <form action="./" method=get>
+        <label for=search class="description">サイト内検索</label>
+        <input id=search name=search>
+        <input type=submit value="検索">
+      </form>
+    </div>
+    <!-- ここまでサーチ -->
+  </div>
+  <!-- ここまでbanner -->
+  <!-- ここからsideエリア -->
+  <div id="side">
+    <form name="form_clock">
+      <input type="text" size="30" name="clock" class="clock">
+    </form>
+    <div align="center">
+    <div class="linktitle">■CALENDAR■</div>
+    <div class="linktext">
+      <table class="calendar">
+        <tr align="center">
+          <td class=cell_sunday>日</td>
+          <td class=cell>月</td>
+          <td class=cell>火</td>
+          <td class=cell>水</td>
+          <td class=cell>木</td>
+          <td class=cell>金</td>
+          <td class=cell_saturday>土</td>
+        </tr>
+      </table>
+    {CALENDARBOX}
+{CDCTRLBACK}<<前月{/CDCTRLBACK}
+{CDYM}Y年m月{/CDYM}
+{CDCTRLNEXT}次月>>{/CDCTRLNEXT}
+</div>
+    </div>
+{NE}
+    <div class="linktitle">■NEW ENTRIES■</div>
+    <div class="linktext">
+      <ul>
+      {NELOOP}
+        <li>{NELINK}{NETITLE} ({NEYMD}m/d{/NEYMD}){/NELINK}
+      {/NELOOP}
+      </ul>
+    </div>
+{/NE}
+
+{RC}
+    <div class="linktitle">■RECENT COMMENTS■</div>
+    <div class="linktext">
+      <ul>
+        {RCLOOP1}
+          <li>{RCTITLE}<br>
+            <ul>
+              {RCLOOP2}
+                <li>{RCLINK}{RCNAME}({RCYMD}m/d{/RCYMD}){/RCLINK}</li>
+              {/RCLOOP2}
+            </ul>
+          </li>
+        {/RCLOOP1}
+      </ul>
+    </div>
+{/RC}
+
+{RT}
+    <div class="linktitle">■RECENT TRACKBACK■</div>
+    <div class="linktext">
+      <ul>
+        {RTLOOP1}
+          <li>{RTTITLE}<br>
+            <ul>
+              {RTLOOP2}
+                <li>{RTLINK}{RTNAME}({RTYMD}m/d{/RTYMD}){/RTLINK}</li>
+              {/RTLOOP2}
+            </ul>
+          </li>
+          {/RTLOOP1}
+        </ul>
+    </div>
+{/RT}
+
+{CA}
+    <div class="linktitle">■CATEGORIES■</div>
+    <div class="linktext">
+      <ul>
+        {CALOOP}
+        <li>{CALINK}{CATITLE} ({CACOUNT}件){/CALINK}
+        {/CALOOP}
+      </ul>
+    </div>
+{/CA}
+
+{AR}
+    <div class="linktitle">■ARCHIVES■</div>
+    <div class="linktext">
+      <ul>
+        {ARLOOP}
+        <li>{ARLINK}{ARYM}Y年m月{/ARYM}({ARCOUNT}件){/ARLINK}
+        {/ARLOOP}
+      </ul>
+    </div>
+{/AR}
+
+{LI}
+    <div class="linktitle">■LINK■</div>
+    <div class="linktext">
+      <ul>
+        {LILOOP1}
+          <li>{LICATEGORY}
+            <ul>
+              {LILOOP2}
+                <li>{LINAME}</li>
+              {/LILOOP2}
+            </ul>
+          </li>
+        {/LILOOP1}
+      </ul>
+    </div>
+{/LI}
+
+{PR}
+    <div class="linktitle">■PROFILE■</div>
+    <div class="linktext">
+      <ul>
+        <li>{PRLINK}{PRNAME}{/PRLINK}
+      </ul>
+    </div>
+{/PR}
+
+    <div class="linktitle">■POWERED BY■</div>
+    <div class="linktext" align=center>
+      <a href="http://www.rone.jp/~blogn/" target="new"><img src="images/blogn2.gif" alt="BLOGN（ぶろぐん）" border="0"></a>
+    </div>
+    <div class="linktitle">■OTHER■</div>
+    <div class="linktext">
+      <ul>
+        <li><a href="{HOMELINK}?mode=rss">RSS 1.0</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- ここまでsideエリア -->
+  <!-- ここからmainサイド -->
+  <div id="main">
+  <a name="top"></a>
+  <!-- ここからpageareaサイド -->
+    <div id="pagearea" class="linktext">
+      {NEXTPAGE}<<次の記事{/NEXTPAGE}　{BACKPAGE}前の記事>>{/BACKPAGE}
+    </div>
+  <!-- ここまでpageareaサイド -->
+      {SEARCH}
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tr>
+          <td>
+            <div class="entry_date">
+              サイト内検索結果一覧</div>
+            <div class="entry_body">
+              <ul>
+              {SEARCHLOOP}
+                <li>{SEARCHLIST}
+              {/SEARCHLOOP}
+              </ul>
+            </div>
+          </td>
+          </tr>
+        </table>
+      {/SEARCH}
+      {PROFILES}
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tr>
+          <td>
+            <div class="entry_date">
+              プロフィール</div>
+            <div class="entry_title">
+              {PROFILENAME}</div>
+            <div class="entry_body">
+            <span class="pict">{PROFILEAVATAR}</span>
+              {PROFILEMES}</div>
+          </td>
+          </tr>
+        </table>
+      {/PROFILES}
+      <p>
+      {LOGLOOP}
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tr>
+          <td>
+            <div class="entry_date">
+              {LOGYMD}Y,m,d, l{/LOGYMD}</div>
+            <div class="entry_title">
+              {LOGTITLE}</div>
+            <div class="entry_author" style="text-align:right;">
+              author : {LOGAUTHOR}</div>
+            <div class="entry_body">
+              {LOGBODY}<br>
+<br>
+{MOREMARK}続き▽{/MOREMARK}
+{LOGMORE}
+</div>
+            <div class="entry_state">
+              | {LOGCATEGORY} | {LOGHMS}h:i A{/LOGHMS} | {LOGCOMMENT} | {LOGTRACKBACK} |</div>
+          </td>
+          </tr>
+        </table>
+      {/LOGLOOP}
+      {COMMENT} <a name="comments"></a>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tr>
+          <td>
+            <div class="entry_date">
+              コメント</div>
+            {COMMENTLOOP}
+            <div class="entry_body">
+              {COMMENTBODY}</div>
+            <div class="entry_state">
+              | {COMMENTEMAIL}{COMMENTUSER}{/COMMENTEMAIL} | {COMMENTURL}URL{/COMMENTURL} | | {COMMENTYMD}Y/m/d h:i A{/COMMENTYMD} | {COMMENTID} |</div>
+            <br>
+            {/COMMENTLOOP}<br>
+            <div class=entry_date>
+              コメントする</div>
+            <div class=entry_body>
+              <form action="index.php?mode=comment" method=post>
+                <input type=hidden value={CEID} name=c_eid> <label for=c_name>name:</label><br>
+                <input id=c_name tabindex=1 name=c_name value={CNAME}><br>
+                <label for=c_email>email:</label><br>
+                <input id=c_email tabindex=2 name=c_email value={CEMAIL}><br>
+                <label for=c_url>URL:</label><br>
+                <input id=c_url tabindex=3 name=c_url value={CURL}><br>
+                <label for=c_mes>comments:</label><br>
+                <textarea id=c_mes style="WIDTH: 400px" tabindex=4 name=c_mes rows=10 cols=40></textarea><br>
+                <br>
+                <input type=submit value=コメント送信> <input id=set_cookie type=checkbox value=on name=set_cookie> <label for=set_cookie>Cookieに登録</label>
+              </form>
+            </div>
+          </td>
+          </tr>
+        </table>
+      {/COMMENT}
+      {TRACKBACK} <a name="trackback"></a>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tr>
+          <td>
+            <div class="entry_date">
+              この記事のトラックバックURL</div>
+            <div class=entry_body>
+              {TRACKBACKURL}</div>
+            <div class="entry_date">
+              トラックバック</div>
+            {TRACKBACKLOOP}
+            <div class="entry_title">
+              {TRACKBACKTITLE}</div>
+            <div class="entry_body">
+              {TRACKBACKBODY}</div>
+            <div class="entry_state">
+              | {TRACKBACKUSER} | {TRACKBACKYMD}Y/m/d h:i A{/TRACKBACKYMD} |</div>
+            {/TRACKBACKLOOP}
+          </td>
+          </tr>
+        </table>
+      {/TRACKBACK}
+<a href="#top" style="color:#cccccc;font:10px;border:1px solid;padding:3px 10px 3px 10px;">PAGE TOP ↑</a>
+  </div><br clear="all" />
+  <!-- ここまで右サイド -->
+  <!-- ここからフッタ -->
+  <div id="footer" class="copyright">
+      Copyright &copy; 2004 {SITETITLE} All Rights Reserved.</div>
+  <!-- ここまでフッタ -->
+</div>
+</body>
+</html>

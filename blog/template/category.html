@@ -1,0 +1,99 @@
+{BLOGN_INFORMATION}
+<div class="blogn_main">
+<form action="./admin.php?mode=category&amp;action=category1_new" method="post">
+<div class="blogn_bar">第1階層追加</div>
+<table class="blogn_user_list">
+<tr>
+<td width="50%" bgcolor="#dcdcdc" style="font-weight:bold;">第1階層カテゴリー名</td>
+<td width="50%"><input type="text" name="blogn_category1_name" maxlength="50" style="width:96%;"></td>
+</tr>
+</table>
+<div class="blogn_submit_type"><input type="submit" name="blogn_category1_add" value="追加"></div>
+</form>
+
+{BLOGN_CATEGORY2_LIST}
+<form action="./admin.php?mode=category&amp;action=category2_new" method="post">
+<div class="blogn_bar">第2階層追加</div>
+<table class="blogn_user_list">
+<tr bgcolor="#dcdcdc"><th width="50%">第1階層カテゴリー名</th><th width="50%">第2階層カテゴリー名</th></tr>
+<tr><td width="50%"><select name="blogn_category1_id" style="width:96%;">
+{BLOGN_CATEGORY1_OPTION}
+</select></td><td width="50%"><input type="text" name="blogn_category2_name" maxlength="50" style="width:96%;"></td></tr>
+</table>
+<div class="blogn_submit_type"><input type="submit" name="blogn_category2_add" value="追加"></div>
+</form>
+{/BLOGN_CATEGORY2_LIST}
+<div class="blogn_bar">カテゴリー一覧</div>
+<table class="blogn_user_list">
+<tr bgcolor="#dcdcdc"><th width="*">カテゴリー名</th><th width="100" align="center">一覧表示</th><th width="50" align="center">更新</th><th width="50" align="center">削除</th><th colspan="4" width="100" align="center">並び替え</th></tr>
+
+{BLOGN_CATEGORY}
+	{BLOGN_CATEGORY1_LOOP}
+		<form action="./admin.php?mode=category&amp;action=category1_edit" method="post">
+		<tr bgcolor="#e9e9e9">
+			<td width="*">
+				<input type="hidden" name="blogn_category1_id" value="{BLOGN_CATEGORY1_ID}">
+				<input type="text" name="blogn_category1_name" maxlength="50" value="{BLOGN_CATEGORY1_NAME}" style="width:96%;">
+			</td>
+			<td>
+				<select name="blogn_category_view_mode" style="width:98%">
+					<option value="0"{BLOGN_CATEGORY1_NOVIEW_SELECT}>非表示</option>
+					<option value="1"{BLOGN_CATEGORY1_VIEW_SELECT}>表示</option>
+				</select>
+			</td>
+			<td align="center"><input type="image" src="./images/update.gif" name="submit" alt="更新"></td>
+			<td align="center"><a href="Javascript:delcheck('{BLOGN_CATEGORY1_DELETE}');" title="削除"><img src="./images/trashl.gif" border="0" alt="削除"></a></td>
+			<td bgcolor="#e9e9e9"colspan="2"><img src="./images/blank.gif" width="50" height="1" alt=""></td>
+			{BLOGN_CATEGORY1_TYPE1}
+				<td align="center" width="25"{BLOGN_CATEGORY1_ROWSPAN}><img src="./images/x.gif" alt="×"></td><td align="center" width="25"{BLOGN_CATEGORY1_ROWSPAN}><img src="./images/x.gif" alt="×"></td>
+			{/BLOGN_CATEGORY1_TYPE1}
+			{BLOGN_CATEGORY1_TYPE2}
+				<td align="center" width="25"{BLOGN_CATEGORY1_ROWSPAN}><img src="./images/x.gif" alt="×"></td><td align="center" width="25"{BLOGN_CATEGORY1_ROWSPAN}><a href="admin.php?mode=category&amp;action=category1_change&amp;id={BLOGN_CATEGORY1_ID}&amp;updown=down"><img src="./images/down.gif" width="20" height="20" border="0" alt="↓"></a></td>
+			{/BLOGN_CATEGORY1_TYPE2}
+			{BLOGN_CATEGORY1_TYPE3}
+				<td align="center" width="25"{BLOGN_CATEGORY1_ROWSPAN}><a href="admin.php?mode=category&amp;action=category1_change&amp;id={BLOGN_CATEGORY1_ID}&amp;updown=up"><img src="./images/up.gif" width="20" height="20" border="0" alt="↑"></a></td><td align="center" width="25"{BLOGN_CATEGORY1_ROWSPAN}><img src="./images/x.gif" alt="×"></td>
+			{/BLOGN_CATEGORY1_TYPE3}
+			{BLOGN_CATEGORY1_TYPE4}
+				<td align="center" width="25"{BLOGN_CATEGORY1_ROWSPAN}><a href="admin.php?mode=category&amp;action=category1_change&amp;id={BLOGN_CATEGORY1_ID}&amp;updown=up"><img src="./images/up.gif" width="20" height="20" border="0" alt="↑"></a></td><td align="center" width="25"{BLOGN_CATEGORY1_ROWSPAN}><a href="admin.php?mode=category&amp;action=category1_change&amp;id={BLOGN_CATEGORY1_ID}&amp;updown=down"><img src="./images/down.gif" width="20" height="20" border="0" alt="↓"></a></td>
+			{/BLOGN_CATEGORY1_TYPE4}
+		</tr>
+		</form>
+			{BLOGN_CATEGORY2_LOOP}
+				<form action="./admin.php?mode=category&amp;action=category2_edit" method="post">
+				<tr>
+				<td width="*" style="padding:0px 0px 0px 25px;">
+					<input type="hidden" name="blogn_category1_id" value="{BLOGN_CATEGORY1_ID}">
+					<input type="hidden" name="blogn_category2_id" value="{BLOGN_CATEGORY2_ID}">
+					<input type="text" name="blogn_category2_name" maxlength="50" value="{BLOGN_CATEGORY2_NAME}" style="width:96%;">
+				</td>
+				<td align="right">
+					<select name="blogn_category_view_mode" style="width:80%">
+						<option value="0"{BLOGN_CATEGORY2_NOVIEW_SELECT}>非表示</option>
+						<option value="1"{BLOGN_CATEGORY2_VIEW_SELECT}>表示</option>
+					</select>
+				</td>
+				<td align="center"><input type="image" src="./images/update.gif" name="submit" alt="更新"></td>
+				<td align="center"><a href="admin.php?mode=category&amp;action=category2_delete&amp;id={BLOGN_CATEGORY2_ID}" title="削除"><img src="./images/trash.gif" border="0"></a></td>
+				{BLOGN_CATEGORY2_TYPE1}
+					<td align="center" width="25"><img src="./images/x.gif" alt="×"></td><td align="center" width="25"><img src="./images/x.gif" alt="×"></td>
+				{/BLOGN_CATEGORY2_TYPE1}
+				{BLOGN_CATEGORY2_TYPE2}
+					<td align="center" width="25"><img src="./images/x.gif" alt="×"></td><td align="center" width="25"><a href="admin.php?mode=category&amp;action=category2_change&amp;cid={BLOGN_CATEGORY1_ID}&amp;id={BLOGN_CATEGORY2_ID}&amp;updown=down"><img src="./images/down.gif" width="20" height="20" border="0" alt="↓"></a></td>
+				{/BLOGN_CATEGORY2_TYPE2}
+				{BLOGN_CATEGORY2_TYPE3}
+					<td align="center" width="25"><a href="admin.php?mode=category&amp;action=category2_change&amp;cid={BLOGN_CATEGORY1_ID}&amp;id={BLOGN_CATEGORY2_ID}&amp;updown=up"><img src="./images/up.gif" width="20" height="20" border="0" alt="↑"></a></td><td align="center" width="25"><img src="./images/x.gif" alt="×"></td>
+				{/BLOGN_CATEGORY2_TYPE3}
+				{BLOGN_CATEGORY2_TYPE4}
+					<td align="center" width="25"><a href="admin.php?mode=category&amp;action=category2_change&amp;cid={BLOGN_CATEGORY1_ID}&amp;id={BLOGN_CATEGORY2_ID}&amp;updown=up"><img src="./images/up.gif" width="20" height="20" border="0" alt="↑"></a></td><td align="center" width="25"><a href="admin.php?mode=category&amp;action=category2_change&amp;cid={BLOGN_CATEGORY1_ID}&amp;id={BLOGN_CATEGORY2_ID}&amp;updown=down"><img src="./images/down.gif" width="20" height="20" border="0" alt="↓"></a></td>
+				{/BLOGN_CATEGORY2_TYPE4}
+				</tr>
+				</form>
+			{/BLOGN_CATEGORY2_LOOP}
+	{/BLOGN_CATEGORY1_LOOP}
+{BLOGN_CATEGORY_ELSE}
+	<td colspan="8" align="center">登録されているカテゴリーはありません。</td></tr>
+{/BLOGN_CATEGORY}
+</table>
+<br>
+<div class="blogn_comment">※一覧表示について<br>・ブログ表示時（サイドバー）のカテゴリー一覧を個別に表示／非表示にできます。<br>・第一階層カテゴリーを非表示にするとその第一階層に対応する第二階層カテゴリーは全て非表示になります。<br>・第二階層カテゴリーを表示に変更した場合、対応する第一階層カテゴリーは（非表示の場合）表示に変更されます。</div>
+</div>

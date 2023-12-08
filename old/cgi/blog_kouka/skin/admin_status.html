@@ -1,0 +1,41 @@
+<!--SKIN_CONTENTS_START-->
+<div id="status">
+	<h2>ステータス</h2>
+	<ul>
+		<li>${INFO_TITLE}の最新状態を表示しています。</li>
+		<li>記事の投稿は<a href="${INFO_FILE}?mode=admin&amp;work=new">新規投稿</a>から行う事ができます。</li>
+		<!--STATUS_PAINT_START--><li>イラストの投稿と編集は<a href="${INFO_FILE}?mode=admin&amp;work=paint">イラスト管理</a>から行う事ができます。</li><!--STATUS_PAINT_END-->
+		<!--INFO_USER_START--><li>ユーザー <em>${INFO_USER}</em> でログインしています。</li><!--INFO_USER_END-->
+	</ul>
+	<h3>ログ件数</h3>
+	<dl>
+		<dt>記事件数</dt>
+			<dd><em>${STATUS_DIARY_SIZE}</em>件（非公開<em>${STATUS_DIARY_HIDDEN_SIZE}</em>件） ... <a href="${INFO_FILE}?mode=admin&amp;work=edit">記事一覧を表示</a></dd>
+		<dt>コメント件数</dt>
+			<dd><em>${STATUS_COMT_SIZE}</em>件（未承認<em>${STATUS_COMT_HIDDEN_SIZE}</em>件）<!--STATUS_ROOT_START--> ... <a href="${INFO_FILE}?mode=admin&amp;work=comment">コメント一覧を表示</a><!--STATUS_ROOT_END--></dd>
+		<dt>トラックバック件数</dt>
+			<dd><em>${STATUS_TB_SIZE}</em>件（未承認<em>${STATUS_TB_HIDDEN_SIZE}</em>件）<!--STATUS_ROOT_START--> ... <a href="${INFO_FILE}?mode=admin&amp;work=trackback">トラックバック一覧を表示</a><!--STATUS_ROOT_END--></dd>
+	</dl>
+	<h3>ファイルサイズ</h3>
+	<dl>
+		<dt>記事</dt>
+			<dd><em>${STATUS_DIARY_FILE_SIZE}</em>KB</dd>
+		<dt>コメント</dt>
+			<dd><em>${STATUS_COMT_FILE_SIZE}</em>KB</dd>
+		<dt>トラックバック</dt>
+			<dd><em>${STATUS_TB_FILE_SIZE}</em>KB</dd>
+		<dt>アップロードファイル</dt>
+			<dd><em>${STATUS_UPFILE_FILE_SIZE}</em>KB</dd>
+		<!--STATUS_ARCHIVE_START-->
+		<dt>アーカイブファイル</dt>
+			<dd><em>${STATUS_ARCHIVE_FILE_SIZE}</em>KB</dd>
+		<!--STATUS_ARCHIVE_END-->
+		<!--STATUS_PAINT_START-->
+		<dt>ペイントファイル</dt>
+			<dd><em>${STATUS_PAINT_FILE_SIZE}</em>KB</dd>
+		<dt>PCHファイル</dt>
+			<dd><em>${STATUS_PCH_FILE_SIZE}</em>KB</dd>
+		<!--STATUS_PAINT_END-->
+	</dl>
+</div>
+<!--SKIN_CONTENTS_END-->

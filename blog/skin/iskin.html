@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>{SITETITLE}</title>
+<meta http-equiv=content-type content="text/html; charset=Shift_JIS">
+</head>
+<body>
+<a href="{HOMELINK}">{SITENAME}</a><br>
+{SITEDESC}<br>
+{NE}
+<hr>
+{NELOOP}
+■[{NELINK}{NETITLE} ({NEYMD}m/d{/NEYMD}){/NELINK}]<br>
+{/NELOOP}
+{/NE}
+<hr>
+<div align="right">{NEXTPAGE}&lt;&lt;次の記事{/NEXTPAGE}  {BACKPAGE}前の記事&gt;&gt;{/BACKPAGE}</div>
+<p>
+{PROFILES}
+<u>{PROFILENAME}</u><br>
+{PROFILEMES}<br>
+{/PROFILES}
+{LOG}
+{LOGLOOP}
+<u>{LOGYMD}Y,m,d, l{/LOGYMD}</u><br>
+{LOGTITLE}<br>
+{LOGBODY}<br><br>
+{MOREMARK}続きを読む{/MOREMARK}
+{LOGMORE}
+<div align="right">Author: {LOGAUTHOR}</div>
+<br>
+|{LOGCATEGORY}|{LOGHMS}h:i A{/LOGHMS}|{LOGCOMMENT}|{LOGTRACKBACK}|<br>
+<hr>
+{COMMENT} <a name="comments"></a>
+<u>コメント</u><br>
+{COMMENTLOOP}<br>
+{COMMENTBODY}<br><br>
+<div align="right">by {COMMENTUSER}</div>
+<br>
+|{COMMENTYMD}Y/m/d h:i A{/COMMENTYMD}|{COMMENTID}|<br>
+<hr>
+{/COMMENTLOOP}<br>
+コメント投稿<br>
+<form action="index.php" method="post">
+<input type="hidden" value="comment" name="mode">
+<input type="hidden" value="{CEID}" name="blogn_cid"> <label for="c_name">name:</label><br>
+<input type="text" id="c_name" tabindex="1" size="8" name="blogn_cname" value="{CNAME}"><br>
+<label for="c_email">email:</label><br>
+<input type="text" id="c_email" tabindex="2" size="8" name="blogn_cemail" value="{CEMAIL}"><br>
+<label for="c_url">URL:</label><br>
+<input type="text" id="c_url" tabindex="3" size="8" name="blogn_curl" value="{CURL}"><br>
+<label for="c_mes">comments:</label><br>
+<textarea id="c_mes" tabindex="4" name="blogn_cmes" rows="2" cols="20"></textarea><br>
+<br>
+<input type="submit" value="コメント送信"> <input id="set_cookie" type="checkbox" value="on" name="set_cookie"> <label for="set_cookie">Cookieに登録</label>
+</form>
+{/COMMENT}
+{TRACKBACK} <a name="trackback"></a>
+<u>トラックバック</u>
+{TRACKBACKLOOP}
+{TRACKBACKTITLE}<br>
+{TRACKBACKBODY}<br><br>
+<div align="right">by {TRACKBACKUSER}</div>
+<br>
+|{TRACKBACKYMD}Y/m/d h:i A{/TRACKBACKYMD}|<br>
+<hr>
+{/TRACKBACKLOOP}
+{/TRACKBACK}
+{/LOGLOOP}
+{/LOG}
+<hr>
+<div align="right">{NEXTPAGE}&lt;&lt;次の記事{/NEXTPAGE}  {BACKPAGE}前の記事&gt;&gt;{/BACKPAGE}</div>
+<br><br>
+Copyright &copy; 2004 {SITENAME} All Rights Reserved.
+	<!-- ここまでフッタ -->
+</body>
+</html>

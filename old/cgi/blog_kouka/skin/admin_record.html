@@ -1,0 +1,53 @@
+<!--SKIN_CONTENTS_START-->
+<div id="contents">
+	<h2>操作履歴表示</h2>
+	<ul>
+		<li>管理者ページの操作履歴を表示しています。</li>
+	</ul>
+<!--SKIN_CONTENTS_END-->
+
+<!--SKIN_RECORD_HEAD_START-->
+	<table summary="操作履歴一覧">
+		<tr>
+			<th>日時</th>
+			<th>ユーザー名</th>
+			<th>操作内容</th>
+			<th>ホスト</th>
+		</tr>
+<!--SKIN_RECORD_HEAD_END-->
+
+	<!--SKIN_RECORD_START-->
+		<tr>
+			<td>${RECORD_YEAR}/${RECORD_MONTH}/${RECORD_DAY} ${RECORD_HOUR}:${RECORD_MINUTE}</td>
+			<td>${RECORD_USER}</td>
+			<td>${RECORD_TEXT}</td>
+			<td>${RECORD_HOST}</td>
+		</tr>
+	<!--SKIN_RECORD_END-->
+
+<!--SKIN_RECORD_FOOT_START-->
+	</table>
+<!--SKIN_RECORD_FOOT_END-->
+
+<!--SKIN_PAGE_START-->
+</div>
+<div id="navi">
+	<h2>ページ移動</h2>
+	<form action="${INFO_FILE}" method="get">
+		<fieldset>
+			<legend>ページ移動フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="record" />
+			<dl>
+				<dt>表示ページ</dt>
+					<dd>
+						<select name="page" xml:lang="ja" lang="ja">
+							${PAGE_LIST}
+						</select>
+					</dd>
+			</dl>
+			<p><input type="submit" value="移動する" /></p>
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_PAGE_END-->

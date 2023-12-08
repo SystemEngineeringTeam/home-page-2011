@@ -1,0 +1,40 @@
+<!--SKIN_CONTENTS_HEAD_START-->
+<div id="form">
+	<h2>管理者用</h2>
+	<ul>
+		<li>管理者用パスワードを入力してください。</li>
+		<li>管理機能を利用するには、CookieがONになっている必要があります。</li>
+	</ul>
+	<form action="${INFO_FILE}" method="post">
+		<fieldset>
+			<legend>認証フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<dl>
+				<!--INFO_USER_START-->
+				<dt>ユーザー</dt>
+					<dd><input type="text" name="admin_user" size="20" value="" /></dd>
+				<!--INFO_USER_END-->
+				<dt>パスワード</dt>
+					<dd><input type="password" name="admin_pwd" size="20" value="" /></dd>
+				<dt>作業内容</dt>
+					<dd>
+						<select name="work" xml:lang="ja" lang="ja">
+							<option value="status">選択してください</option>
+<!--SKIN_CONTENTS_HEAD_END-->
+
+	<!--SKIN_WORK_START-->
+							<option value="${WORK_ID}">${WORK_NAME}</option>
+	<!--SKIN_WORK_END-->
+
+<!--SKIN_CONTENTS_FOOT_START-->
+						</select>
+					</dd>
+			</dl>
+			<ul>
+				<li><input type="checkbox" name="hold" id="hold_checkbox" value="1" /> <label for="hold_checkbox">ログイン状態を記憶する</label></li>
+			</ul>
+			<p><input type="submit" value="認証する" /></p>
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_CONTENTS_FOOT_END-->

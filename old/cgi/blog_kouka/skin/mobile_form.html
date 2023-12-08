@@ -1,0 +1,44 @@
+<!--SKIN_FORM_START-->
+<hr>
+■${FORM_LABEL}
+<hr>
+<form action="${INFO_FILE}" method="${INFO_METHOD}">
+<input type="hidden" name="admin_user" value="${INFO_USER}">
+<input type="hidden" name="admin_pwd" value="${INFO_PWD}">
+<input type="hidden" name="mode" value="admin">
+<input type="hidden" name="work" value="${FORM_WORK}">
+<input type="hidden" name="edit" value="${FORM_NO}">
+題名<br>
+<input type="text" name="subj" value="${FORM_SUBJ}"><br>
+日付<br>
+${FORM_DATE}<br>
+<!--FORM_FIELD_START-->
+分類<br>
+${FORM_FIELD}<br>
+<!--FORM_FIELD_END-->
+<!--FORM_ICON_START-->
+アイコン<br>
+${FORM_ICON}<br>
+<!--FORM_ICON_END-->
+本文<br>
+<textarea name="text" cols="14" rows="5">${FORM_TEXT}</textarea><br>
+<!--FORM_NAME_START-->
+投稿者ID<br>
+${FORM_NAME}<br>
+<!--FORM_NAME_END-->
+<!--FORM_ID_START-->
+記事ID<br>
+<input type="text" name="id" value="${FORM_ID}"><br>
+<!--FORM_ID_END-->
+<br>
+<input type="checkbox" name="stat" value="1"${FORM_STAT}>記事を公開する<br>
+<input type="checkbox" name="break" value="1"${FORM_BREAK}>改行を変換する<br>
+<input type="checkbox" name="comt" value="1"${FORM_COMT}>ｺﾒﾝﾄを受け付ける<br>
+<input type="checkbox" name="tb" value="1"${FORM_TB}>ﾄﾗｯｸﾊﾞｯｸを受け付ける<br>
+<!--FORM_PING_START--><input type="checkbox" name="ping" value="1"${FORM_PING}>更新PINGを送信する<br><!--FORM_PING_END-->
+<br>
+<input type="submit" name="exec_regist" value="投稿する">
+</form>
+<hr>
+▲<a href="${INFO_PATH}">戻る</a>
+<!--SKIN_FORM_END-->

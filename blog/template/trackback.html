@@ -1,0 +1,57 @@
+{BLOGN_INFORMATION}
+<div class="blogn_main">
+<div style="float:right;border:solid 1px;">記事ID：{BLOGN_ID}<br>タイトル：{BLOGN_TITLE}</div>
+<br clear="all">
+<script language="JavaScript">
+<!--
+	function check_delete() {
+		var msg;
+		var ckd = 0;
+		for (cnt = 1; cnt <= {BLOGN_TRK_CNT}; cnt++) {
+			if (document.loglist.elements['trkid[' + cnt + ']'].checked) {
+				ckd = 1;
+			}
+		}
+		if (ckd == 1) {
+			msg = confirm('選択したトラックバックを削除して宜しいですか？');
+			if (!msg) return false;
+		}else{
+			alert('削除したいトラックバックを選択してください。');
+			return false;
+		}
+	}
+	function select_check(yesno) {
+		for (cnt = 1; cnt <= {BLOGN_TRK_CNT}; cnt++) {
+			document.loglist.elements['trkid['+cnt+']'].checked = yesno;
+		}
+	}
+-->
+</script>
+<form action="./admin.php?mode=list&amp;type=trackback&amp;action=delete&amp;id={BLOGN_ID}" method="post" name="loglist">
+<div class="blogn_bar">トラックバック一覧</div>
+<table class="blogn_user_list" summary="トラックバック一覧">
+{BLOGN_TRACKBACK}
+{BLOGN_TRACKBACK_LOOP}
+<tr bgcolor="#dcdcdc">
+<td width="*" valign="top" style="border-right:0px;">
+<div style="font-size:16px;font-weight:bold;">{BLOGN_NAME}</div>
+<div style="font-size:12px;">ＩＰ：{BLOGN_IP}</div>
+</td>
+<td width="150" align="right" style="border-left:0px;">{BLOGN_DATE}<input type="checkbox" name="trkid[{BLOGN_CHECK_CNT}]" value="{BLOGN_TRK_ID}"></td>
+</tr>
+<tr>
+<td colspan="2" style="padding:5px;">
+<div style="font-weight:bold;margin:0px 0px 5px 0px;">{BLOGN_TITLE}</div>
+<div>{BLOGN_MES}</div><div align="right">{BLOGN_DEL}</div>
+</td>
+</tr>
+{/BLOGN_TRACKBACK_LOOP}
+</table>
+<div style="text-align:right;">[ <a href="javascript:void(0);" onclick="select_check(true);" onkeypress="select_check(true);">全て選択</a> / <a href="javascript:void(0);" onclick="select_check(false);" onkeypress="select_check(false);">全て解除</a> ] 選択した記事の処理 :<input type="image" src="./images/trashl.gif" alt="一括削除" name="blogn_select_delete" onclick="return check_delete();" onkeypress="return check_delete();"></div>
+{BLOGN_TRACKBACK_ELSE}
+<tr><td align="center">トラックバックはありません。</td></tr>
+</table>
+{/BLOGN_TRACKBACK}
+</form>
+{BLOGN_PAGE}
+</div>

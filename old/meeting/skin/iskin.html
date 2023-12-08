@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>{SITETITLE}</title>
+<meta http-equiv=content-type content="text/html; charset=Shift_JIS">
+</head>
+<body>
+<a href="{HOMELINK}">{SITENAME}</a><br>
+{SITEDESC}<br>
+{NEXTPAGE}&lt;&lt;次の記事{/NEXTPAGE}  {BACKPAGE}前の記事&gt;&gt;{/BACKPAGE}
+<hr>
+{SEARCH}
+<center>
+<u>サイト内検索結果一覧</u>
+<ul>
+{SEARCHLOOP}
+<li>{SEARCHLIST}</li>
+{/SEARCHLOOP}
+</ul>
+<hr>
+{/SEARCH}
+{PROFILES}
+<u>プロフィール</u><br>
+{PROFILENAME}<br>
+<div align="right">{PROFILEAVATAR}</div>
+<div align="left">
+<br>
+{PROFILEMES}
+</div>
+{/PROFILES}
+<p>
+{LOGLOOP}
+<u>{LOGYMD}Y,m,d, l{/LOGYMD}</u><br>
+{LOGTITLE}<br>
+{LOGBODY}<br><br>
+{MOREMARK}続きを読む{/MOREMARK}
+{LOGMORE}
+<div align="right">Author: {LOGAUTHOR}</div>
+<br>
+|{LOGCATEGORY}|{LOGHMS}h:i A{/LOGHMS}|{LOGCOMMENT}|{LOGTRACKBACK}|<br>
+<hr>
+{/LOGLOOP}
+{COMMENT} <a name="comments"></a>
+<u>コメント</u><br>
+{COMMENTLOOP}<br>
+{COMMENTBODY}<br><br>
+<div align="right">by {COMMENTUSER}</div>
+<br>
+|{COMMENTYMD}Y/m/d h:i A{/COMMENTYMD}|{COMMENTID}|<br>
+<hr>
+{/COMMENTLOOP}<br>
+コメント投稿<br>
+<form action="index.php?mode=comment" method="post">
+<input type="hidden" value="{CEID}" name="c_eid"> <label for="c_name">name:</label><br>
+<input type="text" id="c_name" tabindex="1" size="8" name="c_name" value="{CNAME}"><br>
+<label for="c_email">email:</label><br>
+<input type="text" id="c_email" tabindex="2" size="8" name="c_email" value="{CEMAIL}"><br>
+<label for="c_url">URL:</label><br>
+<input type="text" id="c_url" tabindex="3" size="8" name="c_url" value="{CURL}"><br>
+<label for="c_mes">comments:</label><br>
+<textarea id="c_mes" tabindex="4" name="c_mes" rows="2" cols="20"></textarea><br>
+<br>
+<input type="submit" value="コメント送信"> <input id="set_cookie" type="checkbox" value="on" name="set_cookie"> <label for="set_cookie">Cookieに登録</label>
+</form>
+{/COMMENT}
+{TRACKBACK} <a name="trackback"></a>
+<u>トラックバック</u>
+{TRACKBACKLOOP}
+{TRACKBACKTITLE}<br>
+{TRACKBACKBODY}<br><br>
+<div align="right">by {TRACKBACKUSER}</div>
+<br>
+|{TRACKBACKYMD}Y/m/d h:i A{/TRACKBACKYMD}|<br>
+<hr>
+{/TRACKBACKLOOP}
+{/TRACKBACK}
+<hr>
+{NEXTPAGE}&lt;&lt;次の記事{/NEXTPAGE}  {BACKPAGE}前の記事&gt;&gt;{/BACKPAGE}
+<br><br>
+Copyright &copy; 2004 {SITENAME} All Rights Reserved.
+	<!-- ここまでフッタ -->
+</body>
+</html>

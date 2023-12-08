@@ -1,0 +1,22 @@
+{BLOGN_INFORMATION}
+<div class="blogn_main">
+<div class="blogn_bar">データ入出力</div>
+<table class="blogn_user_list">
+<tr bgcolor="#dcdcdc">
+<td style="padding:5px;">
+<form action="./admin.php?mode=data&amp;action=import" enctype="multipart/form-data" method="post">
+<div style="font-weight:bold;">■ ログのインポート <span style="font-size:12px;">※Movable Type形式</span></div>
+<input type="file" name="blogn_upfile" size="50"> <input type="submit" value="インポートする">
+</form>
+<br>
+<form action="./admin.php?mode=data&amp;action=export" method="post">
+<div style="font-weight:bold;">■ ログのエクスポート <span style="font-size:12px;">※Movable Type形式</span></div>
+<div>出力する文字形式</div>
+<input type="radio" name="blogn_file_charset" value="1" id="euc"><label for="euc">EUC</label>
+<input type="radio" name="blogn_file_charset" value="2" id="sjis"><label for="sjis">S-JIS</label>
+<input type="radio" name="blogn_file_charset" value="4" id="utf-8" checked><label for="utf-8">UTF-8</label>
+ <input type="submit" value="エクスポートする">
+</td>
+</tr>
+</table>
+</div>

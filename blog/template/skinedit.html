@@ -1,0 +1,22 @@
+{BLOGN_INFORMATION}
+<div class="blogn_main">
+<form action="./admin.php?mode=skinmake&amp;action=edit" method="post" name="post">
+<div class="blogn_bar">スキン編集</div>
+<table summary="" class="blogn_user_list">
+<tr><td>
+<div style="margin: 5px;">
+<div style="text-align: right;"><input type="hidden" name="blogn_skin_id" value="{BLOGN_SKIN_ID}">スキン名：<input type="hidden" name="blogn_skin_name" value="{BLOGN_SKIN_NAME}">{BLOGN_SKIN_NAME}</div>
+<br>
+<div style="float: right">最終更新日：{BLOGN_HTML_TIME}</div>
+<div>■ HTML編集</div>
+<div><input type="hidden" name="blogn_html_name" value="{BLOGN_HTML_NAME}"><textarea cols="40" rows="20" style="width:98%;height:200px;" id="blogn_html" name="blogn_html" wrap="virtual">{BLOGN_HTML_FILE}</textarea></div>
+<br>
+<div style="float: right">最終更新日：{BLOGN_CSS_TIME}</div>
+<div>■ CSS編集</div>
+<div><input type="hidden" name="blogn_css_name" value="{BLOGN_CSS_NAME}"><textarea cols="40" rows="20" style="width:98%;height:200px;" id="blogn_css" name="blogn_css" wrap="virtual">{BLOGN_CSS_FILE}</textarea></div>
+</div>
+</td></tr>
+</table>
+<div style="text-align: center;"><input type="submit" name="blogn_qry_html" value="HTMLを更新する"><input type="submit" name="blogn_qry_css" value="CSSを更新する"></div>
+</form>
+</div>

@@ -1,0 +1,46 @@
+<!--SKIN_LIST_HEAD_START-->
+<hr>
+■${LIST_TITLE}
+<hr>
+<!--SKIN_LIST_HEAD_END-->
+
+<!--SKIN_LIST_START-->
+▼<a href="${ARTICLE_URL}">${ARTICLE_SUBJ}</a>-${ARTICLE_MONTH}/${ARTICLE_DAY}-${ARTICLE_HOUR}:${ARTICLE_MINUTE}<br>
+<!--SKIN_LIST_END-->
+
+<!--SKIN_PAGE_START-->
+<br>
+<!--PAGE_PREV_START-->前のページ<br><!--PAGE_PREV_END-->
+<!--PAGE_NEXT_START-->次のページ<br><!--PAGE_NEXT_END-->
+<!--SKIN_PAGE_END-->
+
+<!--SKIN_FIELD_HEAD_START-->
+<hr>
+<form action="${INFO_PATH}" method="get">
+<select name="field">
+<option value="">表示分類選択</option>
+<!--SKIN_FIELD_HEAD_END-->
+
+<!--SKIN_FIELD_START-->
+<option value="${FIELD_NO}">${FIELD_NAME}(${FIELD_SIZE})</option>
+<!--SKIN_FIELD_END-->
+
+<!--SKIN_CHILD_START-->
+<option value="${FIELD_NO}">└${FIELD_NAME}(${FIELD_SIZE})</option>
+<!--SKIN_CHILD_END-->
+
+<!--SKIN_FIELD_FOOT_START-->
+</select>
+<input type="submit" value="表示する">
+</form>
+<!--SKIN_FIELD_FOOT_END-->
+
+<!--SKIN_LIST_FOOT_START-->
+<hr>
+<!--LIST_COMTNAVI_START-->▼<a href="${INFO_PATH}?mode=comtnavi">最近のコメント</a><br><!--LIST_COMTNAVI_END-->
+<!--LIST_TBNAVI_START-->▼<a href="${INFO_PATH}?mode=tbnavi">最近のトラックバック</a><br><!--LIST_TBNAVI_END-->
+▼<a href="${INFO_PATH}?mode=search">ログ検索</a><br>
+▼<a href="${INFO_PATH}?mode=admin">管理者用</a>
+<hr>
+▲<a href="${INFO_MOBILEBACK}">戻る</a>
+<!--SKIN_LIST_FOOT_END-->

@@ -1,0 +1,37 @@
+<!--SKIN_LOGS_HEAD_START-->
+<div id="logs">
+	<div id="diary">
+		<h2>インデックス</h2>
+<!--SKIN_LOGS_HEAD_END-->
+
+	<!--SKIN_TOP_START-->
+		<div class="diary">
+			<h3>${INFO_TITLE}</h3>
+			<div class="text">
+				${TOP_TEXT}
+	<!--SKIN_TOP_END-->
+
+	<!--SKIN_DIARY_HEAD_START-->
+				<h4><!--DIARY_TITLE_START-->新着記事<!--DIARY_TITLE_END--><!--DIARY_FIELD_START-->${DIARY_FIELD} <a href="${INFO_PATH}?target=${DIARY_FNO}">一覧</a><!--DIARY_FIELD_END--></h4>
+				<ul>
+	<!--SKIN_DIARY_HEAD_END-->
+
+		<!--SKIN_DIARY_START-->
+					<li>${ARTICLE_YEAR}/${ARTICLE_MONTH}/${ARTICLE_DAY} ${ARTICLE_HOUR}:${ARTICLE_MINUTE} ... <a href="${ARTICLE_URL}" title="記事No.${ARTICLE_NO}の固定URL">${ARTICLE_SUBJ}</a> （<a href="${INFO_PATH}?field=${ARTICLE_FNO}">${ARTICLE_FIELD}</a>）</li>
+		<!--SKIN_DIARY_END-->
+
+		<!--SKIN_DIARY_DELIMITER_START-->
+				</ul>
+				<ul>
+		<!--SKIN_DIARY_DELIMITER_END-->
+
+	<!--SKIN_DIARY_FOOT_START-->
+				</ul>
+	<!--SKIN_DIARY_FOOT_END-->
+
+<!--SKIN_LOGS_FOOT_START-->
+			</div>
+		</div>
+	</div>
+</div>
+<!--SKIN_LOGS_FOOT_END-->

@@ -1,0 +1,121 @@
+<!--SKIN_CONTENTS_START-->
+<div id="form">
+	<h2>イラスト管理</h2>
+	<ul>
+		<li>${INFO_MESSAGE}</li>
+		<li>各記事にイラストを表示させるには、本文に<em>$PAINT + イラスト番号</em>を記述します。（例：<em>$PAINT1</em>）</li>
+		<!--PAINT_VIEWER_START--><li>描画アニメーションへのリンクを表示させるには、本文に<em>$PCH + イラスト番号</em>を記述します。（例：<em>$PCH1</em>）</li><!--PAINT_VIEWER_END-->
+		<li>イラストを編集する場合、キャンパスサイズは新規投稿時に指定したものが使用されます。</li>
+	</ul>
+	<form action="${INFO_FILE}" method="post">
+		<fieldset>
+			<legend>イラスト管理フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="paint" />
+			<dl>
+				<dt>作業対象</dt>
+					<dd>
+						<select name="pch" xml:lang="ja" lang="ja">
+							<option value="">新規イラスト</option>
+							${FORM_PCH}
+						</select> <a href="${INFO_FILE}?mode=gallery">イラスト一覧</a>
+					</dd>
+				<dt>ツール</dt>
+					<dd>
+						<select name="tool" xml:lang="ja" lang="ja">
+							${FORM_TOOL}
+						</select>
+					</dd>
+				<dt>フォーマット</dt>
+					<dd>
+						<select name="type" xml:lang="ja" lang="ja">
+							<option value="">自動判別</option>
+							<option value="png">PNG</option>
+							<option value="jpeg">JPEG</option>
+						</select>
+					</dd>
+				<dt>キャンパス</dt>
+					<dd>
+						<select name="width" xml:lang="ja" lang="ja">
+							${FORM_WIDTH}
+						</select>
+						×
+						<select name="height" xml:lang="ja" lang="ja">
+							${FORM_HEIGHT}
+						</select>
+					</dd>
+			</dl>
+			<p>
+				<input type="submit" name="exec_paint" value="ペイント" />
+				<input type="submit" name="exec_view" value="表示する" />
+				<input type="submit" name="exec_confirm" value="削除する" />
+			</p>
+		</fieldset>
+	</form>
+	<h2>アップロードから描画</h2>
+	<ul>
+		<li>一時的にアップロードした画像を、はじめに読み込んでからイラストを描くことができます。</li>
+		<li>対応しているファイル形式は <em>JPEG</em>、<em>GIF</em>、<em>PCH</em> です。<em>PNG</em> を読み込めるかどうかは環境によります。</li>
+	</ul>
+	<form action="${INFO_FILE}" method="post" enctype="multipart/form-data">
+		<fieldset>
+			<legend>イラスト投稿フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="paint" />
+			<dl>
+				<dt>ファイル</dt>
+					<dd><input type="file" name="file" size="30" /></dd>
+				<dt>ツール</dt>
+					<dd>
+						<select name="tool" xml:lang="ja" lang="ja">
+							${FORM_TOOL}
+						</select>
+					</dd>
+				<dt>フォーマット</dt>
+					<dd>
+						<select name="type" xml:lang="ja" lang="ja">
+							<option value="">自動判別</option>
+							<option value="png">PNG</option>
+							<option value="jpeg">JPEG</option>
+						</select>
+					</dd>
+			</dl>
+			<p><input type="submit" name="exec_paint" value="ペイント" /></p>
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_CONTENTS_END-->
+
+<!--SKIN_CANVAS_START-->
+<div id="canvas">
+	<h2>ペイント</h2>
+	<applet mayscript code="${CANVAS_CODE}" archive="${CANVAS_ARCHIVE}" name="paintbbs" width="500" height="450">
+		<param name="url_save" value="${INFO_PAINTPATH}" />
+		<param name="url_exit" value="${CANVAS_EXIT}" />
+		<param name="send_header" value="admin_user=${CANVAS_USER}&amp;admin_pwd=${CANVAS_PWD}&amp;pch=${CANVAS_NO}" />
+		<param name="compress_level" value="${CANVAS_COMPRESS_LEVEL}" />
+		<param name="dir_resource" value="${CANVAS_RESOURCE}" />
+		<param name="image_canvas" value="${CANVAS_IMAGE}" />
+		<param name="image_width" value="${CANVAS_WIDTH}" />
+		<param name="image_height" value="${CANVAS_HEIGHT}" />
+		<param name="image_interlace" value="false" />
+		<param name="image_jpeg" value="1" />
+		<param name="image_size" value="${CANVAS_IMAGE_SIZE}" />
+		<param name="layer_count" value="${CANVAS_LAYER}" />
+		<param name="pch_file" value="${CANVAS_PCH}" />
+		<param name="poo" value="false" />
+		<param name="quality" value="${CANVAS_QUALITY}" />
+		<param name="res.zip" value="${CANVAS_RESZIP}" />
+		<param name="send_advance" value="true" />
+		<param name="send_header_count" value="true" />
+		<param name="send_header_image_type" value="true" />
+		<param name="send_header_timer" value="true" />
+		<param name="send_language" value="utf8" />
+		<param name="thumbnail_type" value="animation" />
+		<param name="tools" value="${CANVAS_TOOLS}" />
+		<param name="tt.zip" value="${CANVAS_TTZIP}" />
+		<param name="undo" value="100" />
+		<param name="undo_in_mg" value="100_IN_MG" />
+	</applet>
+</div>
+<!--SKIN_CANVAS_END-->

@@ -1,0 +1,62 @@
+{BLOGN_INFORMATION}
+<div class="blogn_main">
+<br>
+	<form action="./admin.php?mode=files&amp;action=new" enctype="multipart/form-data" method="post">
+	<div class="blogn_bar">ファイル追加</div>
+	<table class="blogn_user_list" summary="ファイル一覧">
+	<tr style="background-color:#dcdcdc"><th width="50%">ファイル</th><th width="50%">コメント</th></tr>
+	<tr><td width="50%">
+	<div><input type="hidden" name="blogn_id" value={BLOGN_NEW_ID}><input type="file" name="blogn_upload_file" size="50"></div>
+	<div class="blogn_comment">※投稿可能なファイルタイプは <b>{BLOGN_PERMIT_FILE_TYPE}</b> です。<br>
+	※投稿可能なファイルの最大サイズは <b>{BLOGN_MAX_FILESIZE} KB</b> です。</div></td>
+	<td width="50%"><input type="text" name="blogn_comment" maxlength="50" style="width:96%;"><div class="blogn_comment">※コメント欄はタグ使用不可です。</div></td></tr>
+	</table>
+	<div class="blogn_submit_type"><input type="submit" name="blogn_upload_file_add" value="追加"></div>
+	</form><br>
+	<div class="blogn_bar">ファイル一覧</div>
+{BLOGN_FILES}
+{BLOGN_FILES_LOOP}
+	<form action="./admin.php?mode=files&amp;action=edit&amp;page={BLOGN_NOW_PAGE}" method="post" style="margin:0px;padding:0px;">
+	<table class="blogn_user_list" style="margin:0px;">
+	<tr><td width="100" style="border-right:0px;text-align:center;">
+	<img src="{BLOGN_FILE_IMAGE}" width="{BLOGN_FILE_WIDTH}" height="{BLOGN_FILE_HEIGHT}" alt="{BLOGN_FILE_COMMNET}"></td>
+	<td style="border-left:0px;border-right:0;">
+	<div style="font-size:16px;background-color:#e9e9e9;margin:0 0 12px 0;">
+	<a href="{BLOGN_FILE_LINK}" target="_blank">{BLOGN_FILE_NAME}</a></div>
+	<div style="font-size:12px;">サイズ：{BLOGN_FILE_SIZE} KB</div>
+	<div style="font-size:12px;">投稿者：{BLOGN_FILE_AUTHOR}</div>
+	<div style="font-size:12px;">投稿日：{BLOGN_FILE_DATE}</div>
+	<div><input type="hidden" name="blogn_id" value="{BLOGN_ID}">
+	<input type="text" name="blogn_comment" value="{BLOGN_FILE_COMMENT}" style="width:96%;"></div></td>
+	<td align="right" valign="bottom" width="50" style="border-left:0;">
+	<div style="padding-bottom:45px;">
+	<a href="admin.php?mode=files&amp;action=delete&amp;id={BLOGN_ID}" title="削除">
+	<img src="./images/trash.gif" border="0" alt="削除"></a>
+	</div>
+	<div>
+	<input type="image" src="./images/update.gif" name="submit" alt="コメント更新">
+	<a href="javascript:void(0);" onClick="window.open('pictedit.php?name={BLOGN_FILE_NAME}','WindowOpen1','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=480,height=350');" title="編集">
+	<img src="./images/edit.gif" onClick="" border="0" alt="編集"></a><br>
+	</div>
+	</td></tr>
+	</table></form>
+{/BLOGN_FILES_LOOP}
+{BLOGN_FILES_ELSE}
+	<table class="blogn_user_list">
+	<tr><td align="center">登録されたファイルはありません。</td></tr>
+	</table>
+{/BLOGN_FILES}
+{BLOGN_PAGE}
+{BLOGN_ADMIN}
+	<form action="./admin.php?mode=files&amp;action=add" method="post">
+	<br>
+	<div class="blogn_bar">ファイル検査</div>
+	<table class="blogn_user_list" summary="データベースに反映">
+	<tr><td>FTPでアップロードしたファイル等データベースに反映されていないファイルを検査し、データベースに登録を行う場合は下の「データベースに反映する」ボタンを押してください。<br>
+	※反映されていないファイルがあった場合、投稿者名は管理権限のあるユーザーになります。</td></tr>
+	</table>
+	<div class="blogn_submit_type"><input type="submit" value="データベースに反映する"></div>
+	</form>
+{/BLOGN_ADMIN}
+</div>
+</div>

@@ -1,0 +1,76 @@
+<!--SKIN_CONTENTS_START-->
+<div id="env">
+	<h2>分類設定</h2>
+	<ul>
+		<li>${INFO_MESSAGE}</li>
+		<li>分類名を入力して<em>追加ボタン</em>を押してください。</li>
+	</ul>
+	<form action="${INFO_FILE}" method="post">
+		<fieldset>
+			<legend>環境設定フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="field" />
+			<dl>
+				<dt>分類名</dt>
+					<dd><input type="text" name="field" size="30" value="" /></dd>
+				<dt>親分類</dt>
+					<dd>
+						<select name="parent" xml:lang="ja" lang="ja">
+							<option value="">なし</option>
+							${FORM_PARENT}
+						</select>
+					</dd>
+			</dl>
+			<p><input type="submit" name="exec_add" value="追加する" /></p>
+		</fieldset>
+	</form>
+<!--SKIN_CONTENTS_END-->
+
+<!--SKIN_FIELD_HEAD_START-->
+	<h2>分類管理</h2>
+	<ul>
+		<li>登録されている分類は以下のとおりです。</li>
+		<li>設定を変更する場合、変更内容を入力して<em>編集ボタン</em>を押してください。</li>
+	</ul>
+	<form action="${INFO_FILE}" method="post">
+		<fieldset>
+			<legend>環境設定フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="field" />
+			<p><input type="submit" name="exec_edit" value="編集する" /></p>
+			<table summary="分類一覧">
+				<tr>
+					<th>分類名</th>
+					<th>親分類</th>
+					<th>移動元</th>
+					<th>移動先</th>
+					<th>削除</th>
+				</tr>
+<!--SKIN_FIELD_HEAD_END-->
+
+	<!--SKIN_PARENT_START-->
+				<tr>
+					<td><input type="text" name="field${FIELD_NO}" size="30" value="${FIELD_NAME}" /></td>
+					<td></td>
+					<td><input type="radio" name="from" value="${FIELD_NO}" /></td>
+					<td><input type="radio" name="to" value="${FIELD_NO}" /></td>
+					<td><input type="checkbox" name="del${FIELD_NO}" value="on" /></td>
+				</tr>
+	<!--SKIN_PARENT_END-->
+
+	<!--SKIN_CHILD_START-->
+				<tr>
+					<td><input type="text" name="field${FIELD_NO}" size="30" value="${FIELD_NAME}" /></td>
+					<td>${FIELD_PARENT}</td>
+					<td><input type="radio" name="from" value="${FIELD_NO}" /></td>
+					<td><input type="radio" name="to" value="${FIELD_NO}" /></td>
+					<td><input type="checkbox" name="del${FIELD_NO}" value="on" /></td>
+				</tr>
+	<!--SKIN_CHILD_END-->
+
+<!--SKIN_FIELD_FOOT_START-->
+			</table>
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_FIELD_FOOT_END-->

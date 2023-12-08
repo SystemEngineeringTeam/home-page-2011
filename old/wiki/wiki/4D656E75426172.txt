@@ -1,0 +1,13 @@
+***コンテンツ [#j1bbc2ab]
+~
+-[[TOP]]~
+-[[卒業生連絡ページ]]~
+//-[[ご意見板]]~
+~
+~
+#recent(5)
+----
+LEFT:今日：&counter(today);
+LEFT:合計：&counter(total);
+----
+&edit(SiteMenu,noicon){edit};

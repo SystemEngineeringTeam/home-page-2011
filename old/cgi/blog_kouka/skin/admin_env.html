@@ -1,0 +1,54 @@
+<!--SKIN_CONTENTS_HEAD_START-->
+<div id="env">
+	<h2>環境設定</h2>
+	<ul>
+		<li>${INFO_MESSAGE}</li>
+		<li>設定ボタンは、どれを押してもすべての変更が反映されます。</li>
+	</ul>
+	<form action="${INFO_FILE}" method="post">
+		<fieldset>
+			<legend>環境設定フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="env" />
+			<p>
+				<input type="submit" name="exec_env" value="設定する" />
+				<input type="submit" name="exec_confirm" value="初期値に戻す" />
+			</p>
+			<h3>設定項目一覧</h3>
+<!--SKIN_CONTENTS_HEAD_END-->
+
+<!--SKIN_ENVLIST_HEAD_START-->
+			<ul>
+<!--SKIN_ENVLIST_HEAD_END-->
+
+	<!--SKIN_ENVLIST_START-->
+				<li><a href="#${ENV_ID}">${ENV_TITLE}</a></li>
+	<!--SKIN_ENVLIST_END-->
+
+<!--SKIN_ENVLIST_FOOT_START-->
+			</ul>
+<!--SKIN_ENVLIST_FOOT_END-->
+
+<!--SKIN_ENV_TITLE_START-->
+			<h3 id="${ENV_ID}">${ENV_TITLE}</h3>
+<!--SKIN_ENV_TITLE_END-->
+
+<!--SKIN_ENV_HEAD_START-->
+			<dl>
+<!--SKIN_ENV_HEAD_END-->
+
+	<!--SKIN_ENV_START-->
+				<dt>${ENV_TITLE}</dt>
+					<dd>${ENV_VALUE}</dd>
+	<!--SKIN_ENV_END-->
+
+<!--SKIN_ENV_FOOT_START-->
+			</dl>
+			<p><input type="submit" name="exec_env" value="設定する" /></p>
+<!--SKIN_ENV_FOOT_END-->
+
+<!--SKIN_CONTENTS_FOOT_START-->
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_CONTENTS_FOOT_END-->

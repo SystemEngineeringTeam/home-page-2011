@@ -1,0 +1,38 @@
+div.g_navi {
+	text-align: left;
+	border:1px blue solid;
+	font-size: 16px;
+	width: 800px;
+	color:#5C7554;
+	line-height: 200%;
+	margin: 10px;
+}
+.g_navi a {
+	text-decoration:none;
+}
+.g_navi a:hover{
+	background-color: #d1d1d1;
+}
+.c-both { clear: both; }
+
+
+img{
+	vertical-align:middle;
+	margin-right:5px;
+}
+.logotype{
+	font-size:18px;
+	font-weight:bold;
+	color:#FF3300;
+}
+.title {
+	font-size: 16px;
+	font-weight: bold;
+	color:#333333;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.footer{
+	font-size:10px;
+	color:#FFFFFF;
+	line-height:100%;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta name="keywords" content="SET,シスケン,システム工学研究会,シス研,しすけん,愛工大,愛知工業大学,愛知県">
+<meta name="description" content="愛知工業大学 公認サークル　システム工学研究会です。パソコン技術やCGアートなどを勉強しています。">
+<title>愛知工業大学　システム工学研究会　公式WebSite　-TOP</title>
+<link href="./css/top.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!---->
+</style>
+
+</head>
+<body background="img/bkg.gif">
+<div align="center">
+<table width="750" height="578" border="0" cellpadding="0" cellspacing="0" background="img/back01.gif">
+  <tr>
+    <td height="104" colspan="2" align="left" bgcolor="#223C91" ><a href="index.php"><img src="img/head.gif" width="233" height="100" border="0" /></a></td>
+  </tr>
+  <tr valign="top">
+    <td width="150" height="165"><img src="img/spacer.gif" width="150" height="1"><table width="154" height="614" border="0" cellpadding="0" cellspacing="2" bgcolor="#223C91">
+      <tr>
+        <td width="150" height="41" align="center" bgcolor="#223C91"><div align="center"><img src="img/menu.gif" width="110" height="41" /></div></td>
+      </tr>
+      <tr>
+        <td align="center" class="now">TOP</td>
+      </tr>
+	  <tr>
+      	<td align="center" bgcolor="#FFFFFF"><h2><a href="set-work.html">活動内容</a></h2></td>
+      </tr>
+	  <tr>
+        <td align="center" bgcolor="#FFFFFF"><h2><a href="set-machine.html">所有設備</a></h2></td>
+      </tr>
+	  <tr>
+        <td align="center" bgcolor="#FFFFFF"><h2><a href="set-nyukai.html">入会案内</a></h2></td>
+      </tr>
+	   <tr>
+        <td align="center" bgcolor="#FFFFFF"><h2><a href="new-index.html"target="_blank">新入生へ</a></h2></td>
+      </tr>
+		<tr>
+        <td align="center" bgcolor="#FFFFFF"><h2><a href="set-bbs.html">BBS</a></h2></td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="#FFFFFF"><h2><a href="index.php">不定期更新日記</a></h2></td>
+      </tr>
+	  <tr>
+        <td align="center" bgcolor="#FFFFFF"><h2><a href="set-contact.html">連絡先</a></h2></td>
+      </tr>
+	  <tr>
+        <td align="center" bgcolor="#FFFFFF"><h2><a href="etc/mem/index.html">会員専用</a></h2></td>
+      </tr>
+	  <tr>
+        <td align="center" bgcolor="#FFFFFF"><h2><a href="http://ob.sysken.net">OB専用</a></h2></td>
+      </tr>
+		<tr valign="top">
+        <td align="center" bgcolor="#FFFFFF">
+		  <p><br/>====お勧めリンク====<br/><br/>
+		    <a href="http://www.aitech.ac.jp/index.html">愛知工業大学</a><br/>
+		    <a href="http://aitech.ac.jp/~koho/">入試広報課</a><br/>
+		    <a href="http://www.center.aitech.ac.jp/">計算センター</a><br/>
+		    <a href="http://aitech.ac.jp/~gakuyuu/">愛工大学友会</a><br/>
+		    <a href="http://aitech.ac.jp/~t-oda/">顧問：小田先生のページ</a><br/>
+		    <a href="http://kokaten.sysken.net/">07年度工科展ページ</a><br/>
+		    <br/>
+		    <br/>
+		    </p>		  </td>
+      </tr>
+	  
+	  	  
+    </table></td>
+    <td width="584" align="center"><table width="594" border="0" cellspacing="0" cellpadding="5">
+      <tr>
+        <td width="584" height="29" align="left"><strong><a href="./">＞　TOP</a></strong>
+          <div align="center"><img src="img/line01.gif" width="584" height="1" /></div></td>
+      </tr>
+    </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5">
+        <tr>
+          <td align="center"><p><strong><a href="#"></a></strong></p>
+            <table width="584" border="1" cellpadding="0" cellspacing="1">
+              <tr>
+                <td width="380"><img src=<? require('img/topimg/img.php'); ?> galleryimg="no" width="370" height="250" /></td>
+                <td width="195"><a href="new-index.html"target="_blank"><img src="img/top2.gif"width="200" height="109" border="1" /></a><br />
+                    <img src="img/spacer.gif" width="200" height="2" /><br />
+                  <a href="set-kouza.html"><img src="img/top3.gif"width="200" height="140" border="1" /></a></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td align="left"><DIV CLASS="chaptertitle">システム工学研究会にようこそ！！</DIV>
+   			  <CLASS="chapter"><P CLASS="paragraph"><br><a href="set-bbs.html">お知らせ</a><br><a href="shougai.html">25日におこったメールサーバ障害について</a><br>２００６年度のシステム工学研究は、上記リンクのように、愛知工業大学系列学校への外部教育プログラム、学内生徒を対象としたパソコン講座の学内講習会などの、今までとはひと味違った”シス研”を皆様に味わっていただこうと、関係各所と調整中です。</P>
+			  <P CLASS="paragraph">			  この草案はとても大きな企画ですが、私たちシステム工学研究会員にとっては”おしえる”＝”教えるモノへ対しての十分な理解”ということもあり、モチベーションの向上にも繋がると考えております。また愛知工業大学のアピールとして大学に対しての貢献という意味合いでも気合いが入っています！
+			  </P>
+			  <P CLASS="paragraph">             ２００６年度、新入生の方は新入生特設ページをご覧ください。　昨年度の新入生に当たる先輩の”生”の意見が聞けるかと思います。
+			  　私たちはあなた達とそのやる気を待っています！！</P>
+			  <!--下記DIVはパラグラフ締めのモノ。 -->
+			  </DIV>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="5">
+        <tr valign="top">
+          <td align="left"><div align="center"><img src="img/line01.gif" width="584" height="1" /></div></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="9" colspan="2" align="center" bgcolor="#223C91"><span class="footer">copyright C 1995-2006 System Engineering Team All Right Reserved. </span></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

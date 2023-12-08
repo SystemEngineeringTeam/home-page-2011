@@ -1,0 +1,52 @@
+﻿/*index CSS*/
+#middlebone{
+	float:left;
+	//clear:both;
+	margin-right:10px;
+
+	}
+#topimage{
+	/*padding: 10px;*/
+	margin-top:20px;
+	margin-bottom:10px;
+	}
+
+#text{
+	float:left;
+}
+.topics{
+	float:left;
+	margin-top:2px;
+	width:480px;
+	display:block;
+	//margin-left:auto;/* センタリング */
+	//margin-right:auto;/* センタリング */
+	}
+.topics p{ /*Design by pine*/
+	border-color:#CC3399;
+	border-style:solid;
+	border-width:0px 0px 1px 0px;
+	color:#ff0066;
+	}
+.topicslist{
+	display:block;
+	width:450px;
+	list-style-type: none;
+	background-color: #FFFFCC;
+}
+.topicslist li{
+	background:url(../img/dot.gif) repeat-x scroll left bottom transparent;
+	font-size:80%;
+	padding-bottom: 10px;
+    padding-top: 10px;
+}
+.link ul{
+	display:block;
+	list-style-type: none;
+	//padding-left:10px;
+	//width:200px;
+}
+.link li{
+	padding-bottom: 5px;
+    padding-top: 5px;
+}

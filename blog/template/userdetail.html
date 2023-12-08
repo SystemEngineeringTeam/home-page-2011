@@ -1,0 +1,129 @@
+{BLOGN_INFORMATION}
+<div class="blogn_main">
+<br>
+<form action="./admin.php?mode=profile&amp;action=update" method="post" name="post">
+<input type="hidden" name="blogn_user_id" value="{BLOGN_USER_ID}">
+<div class="blogn_bar">ユーザー情報</div>
+<table class="blogn_user_list">
+<tr><th bgcolor="#dcdcdc" align="center">プロフィール</th></tr>
+<tr><td>
+{BLOGN_ICON_TOOLBAR}
+{BLOGN_TAG_TOOLBAR}
+<textarea cols="40" rows="20" style="width:98%;height:200px;" id="blogn_profile" name="blogn_user_profile" rows="10" cols="50" wrap="virtual">{BLOGN_USER_PROFILE}</textarea>
+<div style="text-align:right;margin-right:10px;"><input type="checkbox" name="blogn_br_change" value="1" id="br_change"{BLOGN_BR_CHECK}>
+<label for="br_change">改行を自動的に&lt;br /&gt;に変換して投稿する</label></div>
+</td></tr>
+</table>
+<table class="blogn_user_list">
+<tr><th bgcolor="#dcdcdc" align="center" colspan="4">ログイン情報</th></tr>
+<tr><td bgcolor="#e9e9e9" width="25%"><input type="hidden" name="blogn_id" value="{BLOGN_USER_ID}">ユーザーID</td>
+	<td width="25%"><input type="text" name="blogn_user_id" maxlength="30" value="{BLOGN_LOGIN_ID}" style="width:90%;"></td>
+	<td bgcolor="#e9e9e9" width="25%">ユーザー名</td>
+	<td width="25%"><input type="text" name="blogn_user_name" maxlength="30" value="{BLOGN_USER_NAME}" style="width:90%;"></td>
+</tr>
+<tr>
+	<td bgcolor="#e9e9e9" width="25%">ユーザーパスワード<div class="blogn_comment">※パスワードの変更を行わない場合、パスワード欄は空欄のままにしてください。</div></td>
+	<td width="25%"><input type="password" name="blogn_user_pw" maxlength="8" style="width:90%;"></td>
+	<td bgcolor="#e9e9e9" width="25%">ユーザーパスワード（再入力）<div class="blogn_comment">※パスワードを変更する場合はこちらの再入力欄にも正しく入力してください。</div></td>
+	<td width="25%"><input type="password" name="blogn_user_retype_pw" maxlength="8" style="width:90%;"></td>
+</tr>
+<tr>
+	<td bgcolor="#e9e9e9" width="25%">連絡先メールアドレス</td>
+	<td width="25%" style="border-right:0px;"><input type="text" name="blogn_user_mail_address" maxlength="250" value="{BLOGN_USER_MAIL}" style="width:90%;"></td>
+	<td width="50%" colspan="2" style="border-left:0px;"><div class="blogn_comment">※パスワード紛失の場合に新しいパスワードを連絡できるメールアドレスを登録してください。</div></td>
+</tr>
+<tr><th bgcolor="#dcdcdc" align="center" colspan="4">投稿初期設定</th></tr>
+<tr>
+	<td bgcolor="#e9e9e9" width="25%">投稿記事へのコメント<div class="blogn_comment">新規記事作成時の初期表示です。</div></td>
+	<td width="25%">
+		<select name="blogn_init_comment_ok" style="width:96%;">
+			{BLOGN_INIT_COMMENT}
+		</select>
+	</td>
+	<td bgcolor="#e9e9e9" width="25%">投稿記事へのトラックバック<div class="blogn_comment">新規記事作成時の初期表示です。</div></td>
+	<td width="25%">
+		<select name="blogn_init_trackback_ok" style="width:96%;">
+			{BLOGN_INIT_TRACKBACK}
+		</select>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#e9e9e9" width="25%">投稿記事カテゴリ<div class="blogn_comment">新規記事作成時の初期表示です。</div></td>
+	<td width="25%">
+		<select name="blogn_init_category" style="width:96%;">
+			{BLOGN_INIT_CATEGORY}
+		</select>
+	</td>
+	<td bgcolor="#e9e9e9" width="25%">絵文字表示<div class="blogn_comment">記事／プロフィール作成時に絵文字一覧を出すかどうかの選択です。</div></td>
+	<td width="25%">
+		<select name="blogn_init_icon_ok" style="width:96%;">
+			{BLOGN_INIT_ICON_OK}
+		</select>
+	</td>
+</tr>
+<tr><th bgcolor="#dcdcdc" align="center" colspan="4">携帯投稿情報</th></tr>
+<tr>
+	<td bgcolor="#e9e9e9" width="25%">受信メールアドレス登録<div class="blogn_comment">携帯メールを受信する為のメールアドレスを設定してください。</div></td>
+	<td width="25%"><input type="text" name="blogn_receive_mail_address" maxlength="250" style="width:90%" value="{BLOGN_RECEIVE_ADDRESS}"><br>
+		<div style="text-align:right"><input type="submit" name="blogn_mailcheck" value="接続テスト"></div>
+	</td>
+	<td bgcolor="#e9e9e9" width="25%">受信メールPOP3サーバー<div class="blogn_comment">左記アドレス用の受信メールサーバーを設定してください。</div></td>
+	<td width="25%"><input type="text" name="blogn_receive_mail_pop3" maxlength="250" style="width:90%;" value="{BLOGN_RECEIVE_POP3}"></td>
+</tr>
+<tr>
+	<td bgcolor="#e9e9e9" width="25%">受信メール用ユーザーID</td>
+	<td width="25%"><input type="text" name="blogn_receive_mail_user_id" maxlength="50" style="width:90%;" value="{BLOGN_RECEIVE_MAIL_USER_ID}"></td>
+	<td bgcolor="#e9e9e9" width="25%">受信メール用パスワード</td>
+	<td width="25%"><input type="password" name="blogn_receive_mail_user_pw" maxlength="50" style="width:90%;" value="{BLOGN_RECEIVE_MAIL_USER_PW}"></td>
+</tr>
+<tr>
+	<td bgcolor="#e9e9e9" width="25%">パスワード認証方式</td>
+	<td width="25%">{BLOGN_PASSWORD_TYPE}</td>
+	<td bgcolor="#e9e9e9" width="25%">メールアクセス間隔(分)</td>
+	<td width="25%">
+		<select name="blogn_access_time">
+			{BLOGN_ACCESS_TIME}
+		</select>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#e9e9e9" width="25%">送信メールアドレス登録<div class="blogn_comment">携帯電話のメールアドレスを入力してください。</div></td>
+	<td width="25%"><input type="text" name="blogn_send_mail_address" maxlength="250" style="width:90%" value="{BLOGN_SEND_MAIL}"><div class="blogn_comment">※ここで登録したアドレス以外のメールは取得しません。</div></td>
+	<td bgcolor="#e9e9e9" width="25%">投稿記事カテゴリ<div class="blogn_comment">携帯投稿時の表示カテゴリを設定します。</div></td>
+	<td width="25%">
+		<select name="blogn_mobile_category" style="width:96%;">
+			{BLOGN_MOBILE_CATEGORY}
+		</select>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#e9e9e9" width="25%">投稿記事へのコメント</td>
+	<td width="25%">
+		<select name="blogn_mobile_comment_ok" style="width:96%;">
+			{BLOGN_MOBILE_COMMENT_OK}
+		</select>
+	</td>
+	<td bgcolor="#e9e9e9" width="25%">投稿記事へのトラックバック</td>
+	<td width="25%">
+		<select name="blogn_mobile_trackback_ok" style="width:96%;">
+			{BLOGN_MOBILE_TRACKBACK_OK}
+		</select>
+	</td>
+</tr>
+<tr><th bgcolor="#dcdcdc" align="center" colspan="4">メール通知設定</th></tr>
+<tr>
+	<td bgcolor="#e9e9e9" width="25%">受信メールアドレス</td>
+	<td width="25%"><input type="text" name="blogn_information_mail_address" maxlength="250" style="width:90%" value="{BLOGN_INFORMATION_MAIL}"></td>
+	<td width="25%">
+		<input type="checkbox" name="blogn_information_comment" value="1"{BLOGN_INFORMATION_COMMENT} id="cok">
+		<label for=cok>コメントがあればメールで連絡</label>
+	</td>
+	<td width="25%">
+		<input type="checkbox" name="blogn_information_trackback" value="1"{BLOGN_INFORMATION_TRACKBACK} id="tok">
+		<label for=tok>トラックバックがあればメールで連絡</label>
+	</td>
+</tr>
+</table>
+<div align="center"><input type="submit" name="blogn_profile_update" value="更新する"></div>
+</form>
+</div>

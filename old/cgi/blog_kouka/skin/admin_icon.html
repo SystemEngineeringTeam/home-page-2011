@@ -1,0 +1,57 @@
+<!--SKIN_CONTENTS_START-->
+<div id="env">
+	<h2>アイコン登録</h2>
+	<ul>
+		<li>${INFO_MESSAGE}</li>
+		<li>ファイルを選択してアイコン名を指定し、<em>追加ボタン</em>を押してください。</li>
+	</ul>
+	<form action="${INFO_FILE}" method="post" enctype="multipart/form-data">
+		<fieldset>
+			<legend>アイコン登録フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="icon" />
+			<dl>
+				<dt>ファイル</dt>
+					<dd><input type="file" name="file" size="30" /></dd>
+				<dt>アイコン名</dt>
+					<dd><input type="text" name="name" size="20" value="${FORM_NAME}" /></dd>
+			</dl>
+			<p><input type="submit" name="exec_add" value="追加する" /></p>
+		</fieldset>
+	</form>
+<!--SKIN_CONTENTS_END-->
+
+<!--SKIN_ICON_HEAD_START-->
+	<h2>登録アイコン一覧</h2>
+	<ul>
+		<li>登録されているアイコンは以下のとおりです。</li>
+		<li>アイコンを削除する場合、削除したいアイコンを選択して<em>削除ボタン</em>を押してください</li>
+	</ul>
+	<form action="${INFO_FILE}" method="post">
+		<fieldset>
+			<legend>アイコン削除フォーム</legend>
+			<input type="hidden" name="mode" value="admin" />
+			<input type="hidden" name="work" value="icon" />
+			<p><input type="submit" name="exec_del" value="削除する" /></p>
+			<table summary="アイコン一覧">
+				<tr>
+					<th>選択</th>
+					<th>ファイル</th>
+					<th>アイコン名</th>
+				</tr>
+<!--SKIN_ICON_HEAD_END-->
+
+	<!--SKIN_ICON_START-->
+				<tr>
+					<td><input type="radio" name="edit" value="${ICON_FILE}" /></td>
+					<td>${ICON_IMAGE}</td>
+					<td>${ICON_NAME}</td>
+				</tr>
+	<!--SKIN_ICON_END-->
+
+<!--SKIN_ICON_FOOT_START-->
+			</table>
+		</fieldset>
+	</form>
+</div>
+<!--SKIN_ICON_FOOT_END-->

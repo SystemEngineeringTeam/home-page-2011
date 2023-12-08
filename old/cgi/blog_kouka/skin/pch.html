@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>PCHViewer</title>
+<style type="text/css">
+
+* {
+	margin: 0px;
+	padding: 0px;
+
+	font-size: 13px;
+	font-style: normal;
+	font-family: 'ＭＳ Ｐゴシック', 'MS UI Gothic', Osaka, sans-serif;
+	text-align: center;
+}
+
+body {
+	background-color: #FFFFFF;
+}
+h1 {
+	display: none;
+}
+
+ul {
+	margin: 20px;
+
+	list-style-type: none;
+}
+li {
+	color: #000000;
+}
+
+a {
+	color: #0000CC;
+
+	text-decoration: underline;
+}
+
+div#container {
+	margin: 20px;
+}
+
+</style>
+</head>
+<body>
+<div id="container">
+	<h1>PCHViewer</h1>
+	<applet code="${CANVAS_CODE}" archive="${CANVAS_ARCHIVE}" name="pch" width="500" height="450">
+		<param name="speed" value="-1" />
+		<param name="pch_file" value="${CANVAS_PCH}" />
+		<param name="buffer_progress" value="false" />
+		<param name="buffer_canvas" value="false" />
+		<param name="res.zip" value="${CANVAS_RESZIP}" />
+		<param name="tt.zip" value="${CANVAS_TTZIP}" />
+		<param name="layer_count" value="3" />
+		<param name="layer_max" value="8" />
+		<param name="layer_last" value="2" />
+		<param name="tt_size" value="31" />
+	</applet>
+	<ul>
+		<li><a href="javascript:history.back();">前のページへ戻る</a></li>
+	</ul>
+</div>
+</body>
+</html>

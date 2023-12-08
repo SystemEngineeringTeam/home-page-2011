@@ -1,0 +1,22 @@
+*ETロボコン/Subversionについて [#z1744855]
+
+　ETロボコン用のSubversionは以下のものが運用中です。
+
+&color(red){''SVNにアクセスするには別途アカウントが必要です。ETロボコンの責任者に問い合わせてください。''};
+
+
+- ETロボコン2010
+-- http://set1.ie.aitech.ac.jp/svn/etrobo2010
+- ETロボコン2011
+-- ソースコード : http://set1.ie.aitech.ac.jp/svn/etrobo2011_code
+-- 各種データ  : http://set1.ie.aitech.ac.jp/svn/etrobo2011_data
+- ETロボコン2012
+-- ソースコード : http://set1.ie.aitech.ac.jp/svn/etrobo2012_code
+-- 各種データ  : http://set1.ie.aitech.ac.jp/svn/etrobo2012_data
+
+
+** Web上から閲覧 [#m03fa400]
+
+http://set1.ie.aitech.ac.jp/websvn/
+- UID : set, DATE : 2012/01/06 (Fri) 21:14:03
+- UID : set, DATE : 2012/01/06 (Fri) 21:14:14

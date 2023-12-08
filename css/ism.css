@@ -1,0 +1,52 @@
+﻿.ism2 p{
+    text-align: center;
+
+}
+.ism2 img{
+    display:block;
+    margin: 0 auto;
+
+}
+
+p.paragraph {
+	text-indent:1em;
+	line-height:130%;
+	font-size:15px;
+	line-height : 140%;
+}
+div.chaptertitle {
+	border-color:#FF3300;
+	border-style:solid;
+	border-width:0px 0px 1px 13px;
+	padding-left:1em;
+	font-style:normal;
+	font-size:24px;
+	color:#CC3300;
+	margin-top:32px;
+	margin-bottom:0em;
+	margin-left:20px;
+	margin-right: 30px;
+}
+div.chaptertitle2 {
+	border-color:#CC3399;
+	border-style:solid;
+	border-width:0px 0px 1px 10px;
+	padding-left:1em;
+	font-style:normal;
+	font-weight:bold;
+	font-size:16px;
+	color:#996699;
+	margin-top:1em;
+	margin-bottom:0em;
+	margin-left:25px;
+	margin-right: 35px;
+}
+div.chapter {
+	font-style:normal;
+	margin-top:1em;
+	margin-bottom:0em;
+	margin-left:30px;
+	margin-right:30px;
+	padding-left:1em;
+	padding-right:1em;
+}
